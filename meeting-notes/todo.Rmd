@@ -1,0 +1,88 @@
+---
+title: "CHAMPS book sprint"
+output:
+  md_document:
+    toc: yes
+    variant: markdown_github
+  html_document:
+    theme: united
+    toc: yes
+  pdf_document:
+    highlight: zenburn
+    toc: yes
+---
+# Preliminary planning
+
+
+## Content
+
+See ![slides](https://uob-my.sharepoint.com/:p:/g/personal/ba13026_bristol_ac_uk/ETG_bPMtVuFMl7eluLLOuycB252nnnWuQsTDTHMFOBdSrQ?e=4%3afp08yE&at=9) for updated content and assignments. Needs access via University of Bristol email.
+
+Condense the paper materials to form an illustration of the ideas.
+
+For each problem, we will follow the structure:
+
+* Introduction and development of the problem
+* Revealing the phase space structure
+* Implications for reaction dynamics
+
+### Dynamical systems concepts
+
+__Coordinates__
+
+__Degrees of freedom__
+
+__Reaction__
+
+__Reaction coordinates__
+
+__Total energy, Hamiltonians__
+
+__Phase space structures: Dimensionality, DS and reaction coordinates, saddles, periodic orbits, NHIMs, Invariant manifolds__
+
+__Chemical reaction dynamics: Flux across DS, Bifurcations in chemical models, LDs__
+
+### Problems
+
+
+__1 DoF__
+
+_Saddle_
+
+_Morse oscillator_
+
+_Saddle-node and pitchfork_
+
+
+__2 DoF__
+
+_Index-1 saddle_
+
+_Index-2 saddle_
+
+_Double-Morse_
+
+_Chesnavich model: roaming and thermostat_
+
+_Caldera: dynamical matching_
+
+_4 well potential_
+
+_System-bath model_
+
+_Barbanis, De Leon-Berne, Saddle-node with bath_
+
+
+__N-DoF__
+
+_3 DoF quadratic normal form_
+
+_2 DoF system coupled with bath modes_
+
+
+
+## Implementation
+
+
+
+

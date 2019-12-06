@@ -8,6 +8,8 @@
 </a>
 
 
+Collection of meeting notes, templates, and tests
+=================================================
 
 # CHAMPS Book-Sprint Planning
 
