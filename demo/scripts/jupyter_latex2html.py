@@ -42,8 +42,14 @@ def find_replace_citations_in_cell(cell, citations_pattern_latex):
     for j in range(len(cell['source'])):
         item = cell['source'][j]
         citations_matched_raw = re.findall(citations_pattern_latex, item)
+        bibliography_matched_raw = re.findall(bibliography_pattern_latex,item)
+        
         if citations_matched_raw:
             item_modified = replace_citation_syntax(citations_matched_raw, item)
+            cell['source'][j] = item_modified
+            
+        elif bibliography_matched_raw:
+            item_modified = replace_bibliography_syntax(bibliography_matched_raw, item)
             cell['source'][j] = item_modified
     return cell
 
@@ -60,6 +66,17 @@ def replace_citation_syntax(citations_matched_raw, item):
         chunk_new = separator.join(jekyll_syntax_items)
         chunk_original = '\cite{'+match+'}'
         item_modified = item_modified.replace(chunk_original, chunk_new)
+    return item_modified
+
+def replace_bibliography_syntax(bibliography_matched_raw, item):
+    # Only one single bibliography line exists
+    bib_tags_raw = re.split(",", bibliography_matched_raw[0])
+    bib_tags_clean = [x.strip() for x in bib_tags_raw]
+    separator = ' '
+    jekyll_syntax_items = ["{% bibliography"]+[separator.join(['--file', x]) for x in bib_tags_clean]+["--cited %}"]
+    chunk_new = separator.join(jekyll_syntax_items)
+    chunk_original = r'\bibliography{'+bibliography_matched_raw[0]+'}'
+    item_modified = item.replace(chunk_original, chunk_new)
     return item_modified
 
 ##########################################################################################
