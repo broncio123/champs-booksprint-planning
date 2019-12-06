@@ -64,41 +64,40 @@ def latex_to_html_captions(nb):
                 cell_number = i
                 item_modified = replace_caption_syntax(captions_matched_raw, cell_number, item)
                 nb['cells'][i]['source'][j] = item_modified
-
-    #############################################
-    # Modify cell content with new syntax accordingly
-    #############################################
     return nb
 
 if __name__ == "__main__":
     import re
+    import os
     import sys
     import json
-    #############################################
-    # Settings
-    #############################################
-    marker = 'fig'
-    strings_for_removal = ').,;:'
-#     labels_pattern_latex = re.compile(r'\\label\{'+marker+'(.+?)\}')
-    labels_pattern_html = re.compile(r'<a id=(.+?)></a>')
-    captions_pattern = re.compile(r'\\caption\{(.+?)\}$')
     #############################################
     # Script input arguments (self-explanatory)
     #############################################
     nb_infile = sys.argv[1]
     nb_outfile = sys.argv[2]
+    marker = sys.argv[3]
+    #############################################
+    # Settings
+    #############################################
+    strings_for_removal = ').,;:'
+    labels_pattern_html = re.compile(r'<a id=(.+?)></a>')
+    captions_pattern = re.compile(r'\\caption\{(.+?)\}$')
     #############################################
     # Load Jupyter Notebook as Dictionary
     #############################################
     try:
+        print(os.path.isfile(nb_infile))
         with open(nb_infile,'r') as fp:
             nb = json.load(fp)
         fp.close()
+#         print(nb)
         #############################################
         # Turn LaTeX label/ref syntax in Jupyter Noteboks into MD syntax
         #############################################
-        nb_modified = latex_to_html_captions(nb)
+#         nb_modified = latex_to_html_captions(nb)
         
+        print(nb)
         with open(nb_outfile,'w') as fp:
             json.dump(nb_modified, fp)
         fp.close()

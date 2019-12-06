@@ -115,6 +115,6 @@ if __name__ == "__main__":
         with open(nb_outfile,'w') as fp:
             json.dump(nb_modified, fp)
         fp.close()
-    print("New Notebook successfully generated")
+        print("New Notebook successfully generated")
     except:
         print("Couldn't find Jupyter Notebook. Check your input path")

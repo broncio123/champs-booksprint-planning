@@ -104,68 +104,91 @@ def replace_ref_syntax(refs_matched_raw, item):
     return item
 
 ##########################################################################################
-
+# VERSION 2
 def find_labels_captions_in_cell(cell, labels_pattern_latex, captions_pattern_latex):
     """Find raw LaTeX labels/captions defined in cell. This assumes a single pair is only present."""
     dic = {}
+    dic['label'] = []
+    dic['caption'] = []
     for j in range(len(cell['source'])):
         item = cell['source'][j]
         labels_matched_raw = re.findall(labels_pattern_latex, item)
         captions_matched_raw = re.findall(captions_pattern_latex, item)
         if labels_matched_raw:
-            dic['label'] = labels_matched_raw[0]
-        if captions_matched_raw:
-            dic['caption'] = captions_matched_raw[0]
+            dic['label'].append(labels_matched_raw[0])
+        elif captions_matched_raw:
+            dic['caption'].append(captions_matched_raw[0])
     return dic
- 
+
+##########################################################################################   
+
 def replace_labels_captions_in_cell(cell, labels_pattern_latex, captions_pattern_latex):
     dic = find_labels_captions_in_cell(cell, labels_pattern_latex, captions_pattern_latex)
-    for j in range(len(cell['source'])):
-        item = cell['source'][j]
-        labels_matched_raw = re.findall(labels_pattern_latex, item)
-        captions_matched_raw = re.findall(captions_pattern_latex, item)
-        
-        if labels_matched_raw:
-            item_modified = replace_label_syntax(item, dic)
-            cell['source'][j] = item_modified
-            
-        if captions_matched_raw:
-            item_modified = replace_caption_syntax(item, dic)
-            cell['source'][j] = item_modified
-        else:
-            item_modified = item
-    return cell
+    n_labels = len(dic['label']); n_captions = len(dic['caption'])
+    
+    if n_captions == 0:
+        for j in range(len(cell['source'])):
+            item = cell['source'][j]
+            labels_matched_raw = re.findall(labels_pattern_latex, item)
+            if labels_matched_raw:
+                item_modified = replace_label_syntax(labels_matched_raw, item)
+                cell['source'][j] = item_modified
+            else:
+                item_modified = item
+                cell['source'][j] = item_modified
+        return cell
+    
+    elif n_captions > 0:
+        for j in range(len(cell['source'])):
+            item = cell['source'][j]
+            labels_matched_raw = re.findall(labels_pattern_latex, item)
+            captions_matched_raw = re.findall(captions_pattern_latex, item)
 
-def replace_label_syntax(item, dic):
-    label_original = dic['label']
-    try: 
+            if labels_matched_raw:
+                item_modified = replace_label_syntax(labels_matched_raw, item)
+                cell['source'][j] = item_modified
+
+            elif captions_matched_raw:
+                item_modified = replace_caption_syntax(item, dic)
+                cell['source'][j] = item_modified
+            else:
+                item_modified = item
+        return cell
+
+def replace_label_syntax(labels_matched_raw, item):
+    label_original = labels_matched_raw[0]
+    try:
         marker, label_name = get_label_elements(label_original)
         chunk_new = '\n<a id="'+label_original+'"></a>'
         item_modified = re.sub(labels_pattern_latex, chunk_new, item)
         return item_modified
     except:
         return item
-
+    
 def replace_caption_syntax(item, dic):
-    caption = dic['caption']
-    label_original = dic['label']
-    marker, label_name = get_label_elements(label_original)
-    label_number = labels_tags_dic[marker][label_name]
-    #############################################
-    html_syntax_items = (
-        '<figcaption style="text-align:center;font-size:14px">',
-        '<b>',
-        marker+':'+label_number+' ',
-        '</b>',
-        '<em>'+' ',
-        caption,
-        '</em>',
-        '</figcaption>'
-    )
-    chunk_new = ''.join(html_syntax_items)
-    chunk_original = r'\caption{'+caption+'}'
-    item_modified = item.replace(chunk_original, chunk_new)
-    return item_modified
+    if len(dic['caption']) == 1:
+        caption = dic['caption'][0]
+        label_original = dic['label'][0]
+        marker, label_name = get_label_elements(label_original)
+        label_number = labels_tags_dic[marker][label_name]
+        #############################################
+        html_syntax_items = (
+            '<figcaption style="text-align:center;font-size:14px">',
+            '<b>',
+            marker+':'+label_number+' ',
+            '</b>',
+            '<em>'+' ',
+            caption,
+            '</em>',
+            '</figcaption>'
+        )
+        chunk_new = ''.join(html_syntax_items)
+        chunk_original = r'\caption{'+caption+'}'
+        item_modified = item.replace(chunk_original, chunk_new)
+        return item_modified
+    else:
+        print("More than one caption was found. Keep a single label/caption pair per cell.")
+
 ##########################################################################################
 
 def latex_to_html_in_jupyter(nb):
