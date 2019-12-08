@@ -1,0 +1,131 @@
+---
+redirect_from:
+  - "/fundamental-models/2-dof-index-2-saddle/index-2-saddle-new"
+interact_link: content/fundamental_models/2_DoF_index_2_saddle/index_2_saddle_new.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  Three DoF Index 2
+pagenum: 7
+prev_page:
+  url: /fundamental_models/2_DoF_index_1_saddle/2_dof_index_1_saddle_new.html
+next_page:
+  url: /fundamental_models/3_DoF_index_1_saddle/3_dof_index_1_saddle_new.html
+suffix: .ipynb
+search: q frac index fig p partial saddle dividing surface energy h points globalds equation mbox file begin end cite reactiondynamics bib saddles potential dot total dynamics given associated structure examples uncoupled well systems label nonumber pot critical reactants products region example global reaction collins such geometrical type give above system consider img width height src png id figcaption style text align centerfont size pxbfig bem em figcaptionhr hamiltonian underbrace eqnarray array minima illustrate eqref denotes particular corresponded sign coordinate influence studied ezraphase haller mauguiere construction general k however section describe point constructed analyzing isomerization buckled nanobeam collinsisomerization intriguingly similar arose
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div id="page-info"><div id="page-title">Three DoF Index 2</div>
+</div>
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Index-Two-Saddle-Example:-A-Global-Dividing-Surface">Index Two Saddle Example: A Global Dividing Surface<a class="anchor-link" href="#Index-Two-Saddle-Example:-A-Global-Dividing-Surface"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The influence of index two saddle points on reaction dynamics has been studied in {% cite ezra2009phase collins:244105 Haller10 Mauguiere13 --file reaction_dynamics.bib %}. The construction of a dividing surface for general index <em>k</em> saddles was given in {% cite collins:244105 --file reaction_dynamics.bib %}.  However, in this section we describe a ''global dividing surface'' that is associated with an index two saddle point and two index one saddle points. Such a structure was constructed in analyzing the isomerization dynamics of a buckled nanobeam in {% cite collins2012isomerization --file reaction_dynamics.bib %}. Intriguingly, a similar geometrical structure arose on the study of the so-called ''roaming phenomenon'' in {% cite Harding_et_al_2012 suits14 --file reaction_dynamics.bib %}. Consequently, this type of geometrical structure could be more widespread in reaction dynamics so we believe it may be useful to give an analytically tractable example of such a situation.</p>
+<p>As opposed to our linear examples above,  for the system to have multiple saddle points it must be  nonlinear.  We will consider two identical uncoupled two well potential systems, as shown in Fig. <a href="#fig:globalDS1">fig:1</a>.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img width="560" height="315" src="global_DS_1.png"></p>
+<p><a id="fig:globalDS1"></a></p>
+<p><figcaption style="text-align:center;font-size:14px"><b>fig:1 </b><em> a) Graphs of the potential energy for the two uncoupled two well systems. b) Phase portraits for the two uncoupled two well systems.</em></figcaption><hr></p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The Hamiltonian for this system is given by:</p>
+\begin{equation}
+H =\underbrace{\frac{p_1^2}{2} - \frac{q_1^2}{2} + \frac{q_1^4}{4}}_{H_1} +
+\underbrace{\frac{p_2^2}{2} - \frac{q_2^2}{2} + \frac{q_2^4}{4}}_{H_2},
+\label{hamGDS}
+\end{equation}<p>with the associated Hamiltonian vector field:</p>
+\begin{eqnarray}
+\dot{q}_1 &amp; = &amp; \frac{\partial H}{\partial p_1}=  p_1, \nonumber \\
+\dot{p}_1 &amp; = &amp; -\frac{\partial H}{\partial q_1}= q_1 - q_1^3, \nonumber \\
+\dot{q}_2 &amp; = &amp; \frac{\partial H}{\partial p_2}=  p_2, \nonumber \\
+\dot{p}_2 &amp; = &amp; -\frac{\partial H}{\partial q_2}=  q_2- q_2^3. 
+\label{hameqGDS}
+\end{eqnarray}<p>The potential energy is given by:</p>
+\begin{equation}
+V(q_1, q_2) =  - \frac{q_1^2}{2} + \frac{q_1^4}{4}- \frac{q_2^2}{2} + \frac{q_2^4}{4}.
+\label{pot}
+\end{equation}<p>The potential energy has nine critical points, which we list below, along with their stability type and total energy:</p>
+\begin{equation}
+\begin{array}{cll}
+(0,0), &amp; \mbox{index two saddle}, &amp; \mbox{total energy} \, \, 0,\\
+(0,1), (0, -1), (1, 0), (-1, 0), &amp; \mbox{index one saddles}, &amp; \mbox{total energy} \, \,-{1}/{4} ,\\
+(1, 1), (1, -1), (-1, 1), (-1, -1), &amp; \mbox{minima}, &amp; \mbox{total energy} \, \, -{1}/{2},
+\end{array}
+\end{equation}<p>We illustrate the critical points of \eqref{pot} in Fig. <a href="#fig:globalDS2">fig:2</a>.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img width="560" height="315" src="global_DS_2.png"></p>
+<p><a id="fig:globalDS2"></a></p>
+<p><figcaption style="text-align:center;font-size:14px"><b>fig:2 </b><em> Critical points of \eqref{pot}. ++ denotes the index two saddle, + denotes index one saddles, and the black circles denote the minima.</em></figcaption><hr></p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In order to consider a surface to be a dividing surface  we need to understand what the surface is dividing. In the language of chemical reactions,  index one saddles give rise to dividing surfaces that  divide reactants and products.  The examples above were designed  only to illustrate the geometry associated with the passage of trajectories through a dividing surface. In particular,  in the examples "<em>reactants</em>" corresponded to a region have a particular sign of the $q_1$  coordinate and "<em>products</em>" corresponded to a region corresponding to the opposite sign of the $q_1$ coordinate. and it was arbitrary which region was considered reactants and which products.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="References">References<a class="anchor-link" href="#References"> </a></h1><p>{% bibliography --file roaming_v8 --cited %}</p>
+
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+
+    </main>
+    

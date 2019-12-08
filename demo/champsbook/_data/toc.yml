@@ -17,37 +17,65 @@
 # - header: My Header  # Will insert a header with no link in the sidebar
 
 
-- url: /01/ham_bif_html-captions
-  title: Dynamical Systems Concepts
-  author: Stephen Wiggins  
-    
-- url: /02/booksprinttest_makrina_new3
-  title: Exploring Isomerization Dynamics on a four well Potential
-  author: Makrina Agaoglou
-    
-- url: /03/Draft_new3
-  title: Rafa chapter
-  author: Rafael Garcia-Meseguer
+- url: /prologe/Prologue_new
+  title: Introduction and Background
+  expand_sections: true
+  sections:
+    - url: /prologe/LDs/LDs_victor_new
+      title: Lagrangian Descriptors (LDs)
+      not_numbered: true
+    - url: /prologe/Definition_of_the_index_of_a_saddle/saddle_index_definition_new
+      title: Definition of Index of a Saddle
+      not_numbered: true
+    - url: /prologe/TST
+      title: Transition State Theory
+      not_numbered: true
 
-- url: /04/test
-  title: Vladi chapter
-  author: Vladimir Krajnak
+- url: /fundamental_models/fundamental_models
+  title: Fundamental Models
+  expand_sections: true
+  sections:
+    - url: /fundamental_models/1_DoF_saddle/1_DOF_saddle_new
+      title: One DoF Quadratic Normal Form
+      not_numbered: true
+    - url: /fundamental_models/2_DoF_index_1_saddle/2_dof_index_1_saddle_new
+      title: Two DoF Quadratic Normal Form
+      not_numbered: true
+    - url: /fundamental_models/2_DoF_index_2_saddle/index_2_saddle_new
+      title: Three DoF Index 2
+      not_numbered: true
+    - url: /fundamental_models/3_DoF_index_1_saddle/3_dof_index_1_saddle_new
+      title: Three DoF Index 1 Quadratic Normal Form
+      not_numbered: true
 
-- url: /05/quad-normal-form/quad-normal-form_new3
-  title: Finding NHIM using LD N DoF quadratic normal form Hamiltonian
-  author: S. Naik 
+- url: /act1/intro_act1
+  title: Act1 Title
+  expand_sections: true
+  sections:
+    - url: /act1/Morse/Morse_new
+      title: Morse Oscillator
+    - url: /act1/Hamiltonian_bifurcation/ham_bif_new
+      title: Hamiltonian Bifurcations
 
-- url: /06/caldera-1_new
-  title: Dynamical Matching in a Caldera Potential energy surface
-  author: Matthaios Katsanikas
-
-- url: /test_page
-  title: Writing LaTeX-like in Jupyter
-  author: Broncio Aguilar-Sanjuan
+- url: /act2/intro_act2
+  title: Act2 Title
+  expand_sections: true
+  sections:
+    - url: /act2/hamiltonian_sn/HSN_victor
+      title: Saddle-Node Hamiltonian
+    - url: /act2/barbanis2D/barbanis2d
+      title: Barbanis model
+    - url: /act2/caldera/caldera-1_new
+      title: Caldera model
+    - url: /act2/deLeon_Berne/deleon_berne
+      title: De Leon model
+    - url: /act2/system_bath1/system_bath1
+      title: System Bath 1
+    - url: /act2/four_well_morse/booksprinttest_makrina_new
+      title: Four-well potential
+    - url: /act2/double_morse/prueba
+      title: Double-Morse oscillator
         
-- url: /contributing
-  not_numbered: true
-    
 - url: https://github.com/broncio123/champs-booksprint-planning
   title: GitHub repository
   external: true

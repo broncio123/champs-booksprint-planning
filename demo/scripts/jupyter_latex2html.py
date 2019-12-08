@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+
+#############################################
+# List of valid label markers for HTML syntax conversion
+#############################################
 MARKERS_latex = ['ch','sec','subsec','fig','tab']
 out = []
 
@@ -159,9 +164,18 @@ def replace_label_syntax(labels_matched_raw, item):
     label_original = labels_matched_raw[0]
     try:
         marker, label_name = get_label_elements(label_original)
-        chunk_new = '\n<a id="'+label_original+'"></a>'
-        item_modified = re.sub(labels_pattern_latex, chunk_new, item)
-        return item_modified
+        #############################################
+        # Replace syntax only for labels with specific markers
+        #
+        # This will skip any label without a marker
+        # And those not defined in the list MARKERS_latex (e.g., eq)
+        #############################################
+        if marker in MARKERS_latex:
+            chunk_new = '\n<a id="'+label_original+'"></a>'
+            item_modified = re.sub(labels_pattern_latex, chunk_new, item)
+            return item_modified
+        else:
+            return item
     except:
         return item
     
@@ -180,7 +194,8 @@ def replace_caption_syntax(item, dic):
             '<em>'+' ',
             caption,
             '</em>',
-            '</figcaption>'
+            '</figcaption>',
+            '<hr>'
         )
         chunk_new = ''.join(html_syntax_items)
         chunk_original = r'\caption{'+caption+'}'
@@ -226,6 +241,7 @@ if __name__ == "__main__":
         with open(nb_infile,'r') as fp:
             nb = json.load(fp)
         fp.close()
+        
         #############################################
         # Turn LaTeX label/ref syntax in Jupyter Noteboks into MD syntax
         #############################################
@@ -235,6 +251,7 @@ if __name__ == "__main__":
         with open(nb_outfile,'w') as fp:
             json.dump(nb_modified, fp)
         fp.close()
+        
         print("New Notebook successfully generated")
     except:
         print("Couldn't find Jupyter Notebook. Check your input path")
