@@ -46,7 +46,8 @@ def replace_caption_syntax(captions_matched_raw, cell_number, item):
         '<em>'+' ',
         caption,
         '</em>',
-        '</figcaption>'
+        '</figcaption>',
+        '<hr>'
     )
     chunk_new = ''.join(html_syntax_items)
     chunk_original = r'\caption{'+caption+'}'

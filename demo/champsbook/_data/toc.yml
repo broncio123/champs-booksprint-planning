@@ -61,7 +61,7 @@
   title: Act2 Title
   expand_sections: true
   sections:
-    - url: /act2/hamiltonian_sn/HSN_victor
+    - url: /act2/hamiltonian_sn/HSN_victor_new3
       title: Saddle-Node Hamiltonian
     - url: /act2/barbanis2D/barbanis2d
       title: Barbanis model
