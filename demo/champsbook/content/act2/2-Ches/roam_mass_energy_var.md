@@ -199,8 +199,8 @@ for $-\pi\leq\theta<0$.
   $q_1^+$, $q_2^+$ and $\widetilde{q}_1^+$ varies with $a$ and is shown
   graphically in Figure [\[fig:thpi2\]](#fig:thpi2).
 
-   Energy (kcal mol$^{-1}$)   $r$ (Å)   $\theta$ (radians)       Significance              Label
-  -------------------------- --------- -------------------- ---------------------- ---------------------
+  | Energy (kcal mol$^{-1}$)  | $r$ (Å)  | $\theta$ (radians)  |     Significance      |        Label       |
+  :--------------------------: --------- :-------------------- :----------------------: ---------------------:
             $-47$              $1.1$           $0$              potential well            $q_0^+$
              $>0$             $<1.1$         $\pi/2$         isomerisation saddle         $q_1^+$
              $>0$             $>1.1$         $\pi/2$            local maximum             $q_2^+$

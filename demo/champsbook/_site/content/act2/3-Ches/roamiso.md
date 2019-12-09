@@ -223,7 +223,7 @@ potential and a flat area beyond them as shown in Fig.
 Dashed lines correspond to $U<0$, solid lines correspond to $U\geq0$.
 Contours correspond to values of potential shown on the colorbar right,
 with some values indicated in the plot.
-[]{label="fig:pot"}](figure1.jpg){#fig:pot width="50%"}
+[]{label="fig:pot"}](figures/figure1.jpg){#fig:pot width="50%"}
 
 The long range potential is
 \begin{equation}
@@ -301,7 +301,7 @@ none of the orbits is directly related to a saddle point of the system.
 
 ![Configuration space projections of inner ($\Gamma^i$), middle
 ($\Gamma^a$) and outer ($\Gamma^o$) periodic orbits for
-$E=5$.[]{label="fig:orbitse5"}](figure2.jpg){#fig:orbitse5
+$E=5$.[]{label="fig:orbitse5"}](figures/figure2.jpg){#fig:orbitse5
 width="60%"}
 
 Their significance is as follows:
@@ -383,7 +383,7 @@ immediately dissociating trajectories in orange. Roaming and isomerising
 trajectories in the blue area just left the well and do not dissociate
 immediately, while roaming and dissociating trajectories in the orange
 are dissociate immediately but did not just leave the potential
-wells.[]{label="fig:DSa"}](figure3.jpg){#fig:DSa}
+wells.[]{label="fig:DSa"}](figures/figure3.jpg){#fig:DSa}
 
 ### Hamiltonian and periodic orbits for thermostatted Chesnavich model
 
@@ -453,7 +453,7 @@ potential wells, see Fig. [\[fig:disI\]](#fig:disI){reference-type="ref"
 reference="fig:disI"}; we therefore refer to it as the inner orbit.
 
 ![Inner periodic orbit on the potential energy surface
-$- \frac{1}{2}e^{-U}$.[]{label="fig:disI"}](figure4.jpg){#fig:disI
+$- \frac{1}{2}e^{-U}$.[]{label="fig:disI"}](figures/figure4.jpg){#fig:disI
 width="60%"}
 
 The outer orbit, beyond which trajectories do not return and corresponds
@@ -499,14 +499,14 @@ in Chesnavich's model (left) and on the outward annulus of the inner DS
 in the isokinetic model (right). Short isomerisation times are shown in
 light purple, long isomerisation times in dark purple, short
 dissociation times in light green and long dissociation times in dark
-green.[]{label="fig:DSescape"}](figure5a.jpg){#fig:DSescape
+green.[]{label="fig:DSescape"}](figures/figure5a.jpg){#fig:DSescape
 width="49%"} ![Escape times for initial conditions on the outward
 annulus of DS$^a$ in Chesnavich's model (left) and on the outward
 annulus of the inner DS in the isokinetic model (right). Short
 isomerisation times are shown in light purple, long isomerisation times
 in dark purple, short dissociation times in light green and long
 dissociation times in dark
-green.[]{label="fig:DSescape"}](figure5b.jpg){#fig:DSescape
+green.[]{label="fig:DSescape"}](figures/figure5b.jpg){#fig:DSescape
 width="49%"}
 
 The two most natural surfaces of section for this system are: (i)
@@ -555,13 +555,13 @@ and a the profile of the surface for $r=6$ with details of the fractal
 structure. Short isomerisation times are shown in light purple, long
 isomerisation times in dark purple, short dissociation times in light
 green and long dissociation times in dark
-green.[]{label="fig:thetaescape"}](figure6a.jpg){#fig:thetaescape
+green.[]{label="fig:thetaescape"}](figures/figure6a.jpg){#fig:thetaescape
 width="49%"} ![Escape times for initial conditions on $\theta=0$,
 $\dot{\theta}>0$ and a the profile of the surface for $r=6$ with details
 of the fractal structure. Short isomerisation times are shown in light
 purple, long isomerisation times in dark purple, short dissociation
 times in light green and long dissociation times in dark
-green.[]{label="fig:thetaescape"}](figure6b.jpg){#fig:thetaescape
+green.[]{label="fig:thetaescape"}](figures/figure6b.jpg){#fig:thetaescape
 width="49%"}
 
 The boundary between dissociating and isomerising trajectories, as well
@@ -594,7 +594,7 @@ structures of complicated dynamics on the inner DS correspond to roaming
 trajectories.
 
 ![Representative trajectories for different classes along $\theta=0$,
-$\dot{\theta}>0$, $r=6$.[]{label="fig:timetraj"}](figure7.jpg){#fig:timetraj
+$\dot{\theta}>0$, $r=6$.[]{label="fig:timetraj"}](figures/figure7.jpg){#fig:timetraj
 width="90%"}
 
 The bands of isomerizing and dissociating trajectories form a fractal
@@ -635,13 +635,13 @@ reference="eq:ld05"} (left) and
 [\[eq:ldr\]](#eq:ldr){reference-type="eqref" reference="eq:ldr"} (right)
 for initial conditions on $\theta=0$, $\dot{\theta}>0$ and their
 profiles for
-$r=6$.[]{label="fig:thetald"}](figure8a.jpg){#fig:thetald
+$r=6$.[]{label="fig:thetald"}](figures/figure8a.jpg){#fig:thetald
 width="49%"} ![Lagrangian descriptors
 [\[eq:ld05\]](#eq:ld05){reference-type="eqref" reference="eq:ld05"}
 (left) and [\[eq:ldr\]](#eq:ldr){reference-type="eqref"
 reference="eq:ldr"} (right) for initial conditions on $\theta=0$,
 $\dot{\theta}>0$ and their profiles for
-$r=6$.[]{label="fig:thetald"}](figure8b.jpg){#fig:thetald
+$r=6$.[]{label="fig:thetald"}](figures/figure8b.jpg){#fig:thetald
 width="49%"}
 
 It is important to note that the same results can be obtained using

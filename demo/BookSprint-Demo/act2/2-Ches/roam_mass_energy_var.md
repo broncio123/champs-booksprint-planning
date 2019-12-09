@@ -199,12 +199,12 @@ for $-\pi\leq\theta<0$.
   $q_1^+$, $q_2^+$ and $\widetilde{q}_1^+$ varies with $a$ and is shown
   graphically in Figure [\[fig:thpi2\]](#fig:thpi2).
 
-   Energy (kcal mol$^{-1}$)   $r$ (Å)   $\theta$ (radians)       Significance              Label
-  -------------------------- --------- -------------------- ---------------------- ---------------------
-            $-47$              $1.1$           $0$              potential well            $q_0^+$
-             $>0$             $<1.1$         $\pi/2$         isomerisation saddle         $q_1^+$
-             $>0$             $>1.1$         $\pi/2$            local maximum             $q_2^+$
-             $<0$             $>1.1$         $\pi/2$         isomerisation saddle   $\widetilde{q}_1^+$
+ |  Energy (kcal mol$^{-1}$) |  $r$ (Å) |  $\theta$ (radians)  |     Significance    |          Label   |
+ | --------------------------| ---------| --------------------| ----------------------| ---------------------|
+ |           $-47$           |   $1.1$   |        $0$         |     potential well      |      $q_0^+$|
+ |            $>0$           |  $<1.1$  |       $\pi/2$    |     isomerisation saddle   |      $q_1^+$|
+ |            $>0$           |  $>1.1$  |       $\pi/2$    |        local maximum       |      $q_2^+$|
+ |            $<0$           |  $>1.1$  |       $\pi/2$    |     isomerisation saddle |  $\widetilde{q}_1^+$|
 
 We remark that $q_1^+$ and $q_2^+$ are energetically inaccessible at
 energies considered in this work. Four more critical points $q_0^-$,

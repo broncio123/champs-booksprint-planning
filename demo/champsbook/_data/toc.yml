@@ -75,7 +75,24 @@
       title: Four-well potential
     - url: /act2/double_morse/prueba
       title: Double-Morse oscillator
-        
+    - url: /act2/1-Ches/roam
+      title: Chesnavich Model Part 1
+    - url: /act2/2-Ches/roam_mass_energy_var
+      title: Chesnavich Model Part 2
+    - url: /act2/3-Ches/roamiso
+      title: Chesnavich Model Part 3
+
+- url: /act3/intro_act3
+  title: Act 3 Title
+  expand_sections: true
+  sections:
+    - url: /act3/barbanis_3dof/barbanis_3dof
+      title: Three degree-of-freedom Barbanis system
+    - url: /act3/system_bath2/system_bath
+      title: N-Degree-of-Freedom System-Bath Model
+    - url: /act3/system_bath1/main
+      title: Lagrangian Descriptors for a System-Bath Model
+
 - url: https://github.com/broncio123/champs-booksprint-planning
   title: GitHub repository
   external: true
