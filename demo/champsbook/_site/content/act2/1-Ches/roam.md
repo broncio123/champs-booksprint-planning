@@ -549,7 +549,7 @@ description of the evolution of $\Gamma^o$ and $\Gamma^a$ and its
 bifurcations may hint at qualitative changes of structures formed by
 invariant manifolds.
 
-
+ 
 ![Bifurcation diagrams showing $\Gamma^i_\pm$ (blue), $\Gamma^o_\pm$
 (black), $\Gamma^a_\pm$ (red) and orbits of the family $\Gamma^b$
 (magenta) in the energy-action ($E,S$)
@@ -591,7 +591,7 @@ of orbits in the families. The Greene residue, due to J. M. Greene
 [@Greene68] is a quantity characterizing the stability of the orbits. It
 is derived from the monodromy matrix, a matrix that describes the
 behaviour of solutions in the neighbourhood of a periodic orbit.
-
+ 
 
 ![Bifurcation diagrams showing $\Gamma^i_\pm$ (blue), $\Gamma^o_\pm$
 (black), $\Gamma^a_\pm$ (red) and orbits of the family $\Gamma^b$
@@ -727,7 +727,7 @@ $\theta=0$, $p_r<0$, $p_\theta=0$ and/or $\theta=\pi$, $p_r<0$,
 $p_\theta=0$
 
 ### Division of energy surface {#subsec:divide energy surface}
-
+ 
 
 Using the inner and outer DSs we can define regions on the energy
 surface and formulate roaming as a transport problem.

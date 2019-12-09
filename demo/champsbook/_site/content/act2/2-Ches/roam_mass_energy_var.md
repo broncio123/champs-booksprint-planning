@@ -199,12 +199,12 @@ for $-\pi\leq\theta<0$.
   $q_1^+$, $q_2^+$ and $\widetilde{q}_1^+$ varies with $a$ and is shown
   graphically in Figure [\[fig:thpi2\]](#fig:thpi2).
 
-  | Energy (kcal mol$^{-1}$)  | $r$ (Å)  | $\theta$ (radians)  |     Significance      |        Label       |
-  :--------------------------: --------- :-------------------- :----------------------: ---------------------:
-            $-47$              $1.1$           $0$              potential well            $q_0^+$
-             $>0$             $<1.1$         $\pi/2$         isomerisation saddle         $q_1^+$
-             $>0$             $>1.1$         $\pi/2$            local maximum             $q_2^+$
-             $<0$             $>1.1$         $\pi/2$         isomerisation saddle   $\widetilde{q}_1^+$
+ |  Energy (kcal mol$^{-1}$) |  $r$ (Å) |  $\theta$ (radians)  |     Significance    |          Label   |
+ | --------------------------| ---------| --------------------| ----------------------| ---------------------|
+ |           $-47$           |   $1.1$   |        $0$         |     potential well      |      $q_0^+$|
+ |            $>0$           |  $<1.1$  |       $\pi/2$    |     isomerisation saddle   |      $q_1^+$|
+ |            $>0$           |  $>1.1$  |       $\pi/2$    |        local maximum       |      $q_2^+$|
+ |            $<0$           |  $>1.1$  |       $\pi/2$    |     isomerisation saddle |  $\widetilde{q}_1^+$|
 
 We remark that $q_1^+$ and $q_2^+$ are energetically inaccessible at
 energies considered in this work. Four more critical points $q_0^-$,
@@ -755,30 +755,28 @@ To understand the influence of $m$ on the periodic orbit, let us first
 establish the relationship between $r_{po}$ and $p^\pm_\theta$ and
 incorporate the dependence on $\mu_m$ subsequently. Combining
 $H(r_{po}, 0, \theta, p^\pm_\theta)=E$, i.e. 
-
 \begin{equation}
-E=\frac{p^{\pm 2}_\theta}{2I}+\frac{p^{\pm 2}_\theta}{2\mu_m r_{po}^2}+U(r_{po}),
+\label{eq:Epr0}
+   E=\frac{p^{\pm 2}_\theta}{2I}+\frac{p^{\pm 2}_\theta}{2\mu_m r_{po}^2}+U(r_{po}),
 \end{equation}
-
 with ([\[eq:pr\]](#eq:pr){reference-type="ref" reference="eq:pr"})
 yields 
-
 $$E=\frac{p^{\pm 2}_\theta}{2I}+\frac{1}{2}r_{po} U'(r_{po})+U(r_{po}).$$
 
 If $\frac{1}{2}r U'(r)+U(r)$ is monotonic in $r$ (for $r$ sufficiently
 large), then we find that $r_{po}$ increases or decreases with
-${p^\pm_\theta}^2$. In case of Chesnavich's CH$_4^+$ model,
+$p^{\pm 2}_\theta$. In case of Chesnavich's CH$_4^+$ model,
 $\frac{1}{2}r U'(r)+U(r)$ is positive and monotonically decreasing. This
 is due to the leading term of $U$ for large $r$ being $-cr^{-4}$, where
 $c>0$, while that of $\frac{1}{2}r U'(r)$ must be $2cr^{-4}$. It is
 sufficient that $U(r)<0$ and $U\in o(r^{-2})$ as $r\rightarrow\infty$.
-Consequently we see that an increase in ${p^\pm_\theta}^2$ must lead to
+Consequently we see that an increase in $p^{\pm 2}_\theta$ must lead to
 an increase in $r_{po}$ and vice versa for every fixed energy $E$.
 
 To gain insight on the influence of $m$, we rewrite
 ([\[eq:pr\]](#eq:pr){reference-type="ref" reference="eq:pr"}) as
 
-$${p^\pm_\theta}^2 =\mu_m r_{po}^3 U'(r_{po}),$$
+$$p^{\pm 2}_\theta =\mu_m r_{po}^3 U'(r_{po}),$$
 and plug it into ([\[eq:Epr0\]](#eq:Epr0){reference-type="ref" reference="eq:Epr0"}) to obtain
 $$E=\frac{\mu_m r_{po}^3 U'(r_{po})}{2I}+\frac{\mu_m r_{po}^3 U'(r_{po})}{2\mu_m r_{po}^2}+U(r_{po})=\frac{\mu_m r_{po}^3 U'(r_{po})}{2I}+\frac{1}{2}r_{po}U'(r_{po})+U(r_{po}).$$
 
@@ -790,7 +788,7 @@ decreasing, provided $U\in o(r^{-3})$ which is the case for Chesnavich's
 potential. Therefore to maintain a fixed energy $E$ and increase in
 $\mu_m$ must be compensated by an increase in $r_{po}$.
 
-We see that $r_{po}$ and ${p^\pm_\theta}^2$ increase with $m$. Note that
+We see that $r_{po}$ and $p^{\pm 2}_\theta$ increase with $m$. Note that
 the reasoning remains true any potential that is rotationally symmetric,
 monotonic and in the class $o(r^{-3})$ for $r$ sufficiently large and
 can be extended to systems with non-zero total angular momentum.
@@ -806,7 +804,7 @@ Implications for $\gamma^{s-}_{o}$:
 
 
 As justified in Section [7](#sec:outer){reference-type="ref"
-reference="sec:outer"}, $r_{po}$ and ${p^\pm_\theta}^2$ increase with
+reference="sec:outer"}, $r_{po}$ and $p^{\pm 2}_\theta$ increase with
 $m$. Therefore for $m<m_H$ we see that $\Gamma^o_\pm$ moves inward and
 $p_\theta$ along $\gamma^{s-}_{o}$ decreases. This alone does not
 suffice to make conclusions regarding roaming, because we know that
@@ -947,19 +945,19 @@ transition between spherical and toric local geometries. Such an
 estimate is outside of the scope of this work.
 
 
- $E=0.5$                                           
---------------------------------------------------------------------------------------------------------
-            $0.7$   $0.8$   $0.9$   $m_H$    $2$     $3$     $4$     $5$     $6$     $7$     $8$    $m$
----------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- -----
-   $1$      0.203   0.214   0.222   0.229   0.257   0.260   0.259
-   $2$      0.270   0.264   0.259   0.254   0.218   0.196   0.180
-   $3$      0.200   0.196   0.192   0.189   0.162   0.145   0.132
-   $4$      0.166   0.163   0.161   0.158   0.138   0.124   0.113
-   $5$      0.154   0.152   0.150   0.148   0.132   0.119   0.110
-   $6$      0.154   0.153   0.152   0.150   0.137   0.125   0.116
-   $7$      0.163   0.162   0.162   0.161   0.148   0.137   0.127
-   $8$      0.183   0.182   0.180   0.178   0.163   0.151   0.141
-   $a$
+ $E=0.5$                                          
+
+|     \      | $0.7$  | $0.8$  | $0.9$ |  $m_H$  |  $2$  |   $3$  |   $4$   |  $5$  |   $6$  |   $7$  |   $8$  |  $m$ |
+|----------| ------- |------- |------- |------- |------- |------- |------- |------- |------- |------- |------- |-----|
+|   $1$   |  0.203 |  0.214 |  0.222 | 0.229 | 0.257 | 0.260 | 0.259 |
+|   $2$   |  0.270 |  0.264 |  0.259 | 0.254 | 0.218 | 0.196 | 0.180 |
+|   $3$   |  0.200 |  0.196 |  0.192 | 0.189 | 0.162 | 0.145 | 0.132 |
+|   $4$   |  0.166 |  0.163 |  0.161 | 0.158 | 0.138 | 0.124 | 0.113 |
+|   $5$   |  0.154 |  0.152 |  0.150 | 0.148 | 0.132 | 0.119 | 0.110 |
+|   $6$   |  0.154 |  0.153 |  0.152 | 0.150 | 0.137 | 0.125 | 0.116 |
+|   $7$   |  0.163 |  0.162 |  0.162 | 0.161 | 0.148 | 0.137 | 0.127 |
+|   $8$   |  0.183 |  0.182 |  0.180 | 0.178 | 0.163 | 0.151 | 0.141 |
+|   $a$   | - | - | -  | - | - | - | - |
 
 : []{label="tab:1"} Ratio of the minimum of the areas
 $\gamma^{u+}_{i}\setminus\gamma^{s-}_{o}$ and
@@ -967,32 +965,32 @@ $\gamma^{s-}_{o}\setminus\gamma^{u+}_{i}$ to the measure of all
 trajectories in the system (for details see text) for $E=0.5,1,2$ and
 various values of $m$ and $a$.
 
- $E=1$                                           
---------------------------------------------------------------------------------------------------------
-            $0.7$   $0.8$   $0.9$   $m_H$    $2$     $3$     $4$     $5$     $6$     $7$     $8$    $m$
----------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- -----
-   $1$      0.063   0.069   0.074   0.078   0.091   0.091   0.087   0.084   0.080   0.077   0.074
-   $2$      0.274   0.269   0.264   0.258   0.222   0.200   0.184   0.171   0.162   0.155   0.148
-   $3$      0.205   0.200   0.196   0.192   0.163   0.145   0.132   0.122   0.115   0.108   0.103
-   $4$      0.172   0.168   0.165   0.161   0.138   0.123   0.112   0.103   0.096   0.091   0.086
-   $5$      0.161   0.158   0.155   0.152   0.132   0.118   0.108   0.100   0.094   0.089   0.084
-   $6$      0.163   0.160   0.157   0.155   0.137   0.124   0.114   0.106   0.100   0.095   0.091
-   $7$      0.173   0.170   0.168   0.165   0.147   0.135   0.125   0.117   0.111   0.106   0.102
-   $8$                      0.185   0.181   0.161   0.148   0.139   0.131   0.125   0.120   0.116
-   $a$
+$E=1$                                           
+
+|       \    | $0.7$  | $0.8$  | $0.9$ |  $m_H$  |  $2$  |   $3$  |   $4$   |  $5$  |   $6$  |   $7$  |   $8$  |  $m$ |
+|----------| ------- |------- |------- |------- |------- |------- |------- |------- |------- |------- |------- |-----|
+|   $1$    | 0.063 | 0.069 | 0.074 | 0.078 | 0.091 | 0.091 | 0.087 | 0.084 | 0.080 | 0.077 | 0.074|
+|   $2$    | 0.274 | 0.269 | 0.264 | 0.258 | 0.222 | 0.200 | 0.184 | 0.171 | 0.162 | 0.155 | 0.148|
+|   $3$    | 0.205 | 0.200 | 0.196 | 0.192 | 0.163 | 0.145 | 0.132 | 0.122 | 0.115 | 0.108 | 0.103|
+|   $4$    | 0.172 | 0.168 | 0.165 | 0.161 | 0.138 | 0.123 | 0.112 | 0.103 | 0.096 | 0.091 | 0.086|
+|   $5$    | 0.161 | 0.158 | 0.155 | 0.152 | 0.132 | 0.118 | 0.108 | 0.100 | 0.094 | 0.089 | 0.084|
+|   $6$    | 0.163 | 0.160 | 0.157 | 0.155 | 0.137 | 0.124 | 0.114 | 0.106 | 0.100 | 0.095 | 0.091|
+|   $7$    | 0.173 | 0.170 | 0.168 | 0.165 | 0.147 | 0.135 | 0.125 | 0.117 | 0.111 | 0.106 | 0.102|
+|   $8$    |   -     |   -    | 0.185 | 0.181 | 0.161 | 0.148 | 0.139 | 0.131 | 0.125 | 0.120 | 0.116|
+|   $a$   | - | - | - | - | - | - | - | - |
 
 $E=2$                                           
---------------------------------------------------------------------------------------------------------
-            $0.7$   $0.8$   $0.9$   $m_H$    $2$     $3$     $4$     $5$     $6$     $7$     $8$    $m$
----------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- -----
-   $1$      0.000   0.001   0.003   0.004   0.008   0.007   0.005   0.003   0.002   0.001   0.000
-   $2$      0.160   0.177   0.192   0.205   0.224   0.202   0.186   0.174   0.164   0.157   0.151
-   $3$      0.206   0.201   0.197   0.192   0.162   0.143   0.129   0.119   0.112   0.105   0.100
-   $4$      0.173   0.169   0.165   0.162   0.135   0.119   0.107   0.098   0.092   0.086   0.081
-   $5$      0.163   0.160   0.156   0.152   0.129   0.113   0.103   0.095   0.088   0.083   0.079
-   $6$      0.166   0.163   0.159   0.156   0.133   0.119   0.108   0.100   0.094   0.089   0.085
-   $7$      0.177   0.173   0.170   0.166   0.144   0.129   0.119   0.111   0.105   0.100   0.096
-   $a$
+
+|       \    | $0.7$  | $0.8$  | $0.9$ |  $m_H$  |  $2$  |   $3$  |   $4$   |  $5$  |   $6$  |   $7$  |   $8$  |  $m$ |
+|----------| ------- |------- |------- |------- |------- |------- |------- |------- |------- |------- |------- |-----|
+|   $1$    | 0.000 | 0.001 | 0.003 | 0.004 | 0.008 | 0.007 | 0.005 | 0.003 | 0.002 | 0.001 | 0.000|
+|   $2$    | 0.160 | 0.177 | 0.192 | 0.205 | 0.224 | 0.202 | 0.186 | 0.174 | 0.164 | 0.157 | 0.151|
+|   $3$    | 0.206 | 0.201 | 0.197 | 0.192 | 0.162 | 0.143 | 0.129 | 0.119 | 0.112 | 0.105 | 0.100|
+|   $4$    | 0.173 | 0.169 | 0.165 | 0.162 | 0.135 | 0.119 | 0.107 | 0.098 | 0.092 | 0.086 | 0.081|
+|   $5$    | 0.163 | 0.160 | 0.156 | 0.152 | 0.129 | 0.113 | 0.103 | 0.095 | 0.088 | 0.083 | 0.079|
+|   $6$    | 0.166 | 0.163 | 0.159 | 0.156 | 0.133 | 0.119 | 0.108 | 0.100 | 0.094 | 0.089 | 0.085|
+|   $7$    | 0.177 | 0.173 | 0.170 | 0.166 | 0.144 | 0.129 | 0.119 | 0.111 | 0.105 | 0.100 | 0.096|
+|   $a$   | - | - | - | - | - | - | - | - |
 
 
 

@@ -266,12 +266,12 @@ reference="eq:sym"}, as listed in Tab.
 reference="table:equil"} and shown in Fig.
 [\[fig:pot\]](#fig:pot){reference-type="ref" reference="fig:pot"}.
 
-   Energy (kcal mol$^{-1}$)   $r$ (Å)   $\theta$ (radians)       Significance              Label
-  -------------------------- --------- -------------------- ---------------------- ---------------------
-            $-47$              $1.1$           $0$              potential well            $q_0^+$
-           $-0.63$            $3.45$         $\pi/2$         isomerisation saddle         $q_1^+$
-             $8$               $1.1$         $\pi/2$         isomerisation saddle   $\widetilde{q}_1^+$
-           $22.27$            $1.63$         $\pi/2$            local maximum             $q_2^+$
+ |  Energy (kcal mol$^{-1}$) |  $r$ (Å) |  $\theta$ (radians)  |     Significance    |          Label   |
+ | --------------------------| ---------| --------------------| ----------------------| ---------------------|
+ |           $-47$           |   $1.1$   |        $0$         |     potential well      |      $q_0^+$|
+ |            $-0.63$           |  $3.45$  |       $\pi/2$    |     isomerisation saddle   |      $q_1^+$|
+ |            $22.27$           |  $1.63$  |       $\pi/2$    |        local maximum       |      $q_2^+$|
+ |            $8$           |  $1.1$  |       $\pi/2$    |     isomerisation saddle |  $\widetilde{q}_1^+$|
 
   : Equilibrium points of the potential
   $U(r, \theta)$.[]{label="table:equil"}
@@ -906,7 +906,7 @@ reference="fig:manifsI_r36"} and $LD_o$ for $\tau=20$ shown in Fig
 [\[fig:manifsO\_r36\]](#fig:manifsO_r36){reference-type="ref"
 reference="fig:manifsO_r36"} that separate different classes of
 dynamics. For details see
-text.[]{label="fig:intersection"}](manif_intersection400_labels.png){#fig:intersection}
+text.[]{label="fig:intersection"}](figures/manif_intersection400_labels.png){#fig:intersection}
 
 Fig. [\[fig:intersection\]](#fig:intersection){reference-type="ref"
 reference="fig:intersection"} shows superposed manifolds approximated

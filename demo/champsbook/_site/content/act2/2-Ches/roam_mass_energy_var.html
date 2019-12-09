@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://localhost:4448/content/act2/2-Ches/roam_mass_energy_var.html",
   "headline": "Influence of Mass and Energy Surface Geometry in Chesnavich’s Model",
-  "datePublished": "2019-12-09T10:38:29+00:00",
-  "dateModified": "2019-12-09T10:38:29+00:00",
+  "datePublished": "2019-12-09T13:49:12+00:00",
+  "dateModified": "2019-12-09T13:49:12+00:00",
   "description": "# Influence of Mass and Energy Surface Geometry in Chesnavich's Model## IntroductionFollowing recent developments in the understanding of the roamingmechanis...",
   "author": {
     "@type": "Person",
@@ -1084,9 +1084,9 @@ initFunction(initPrint)
             
             
 
-            <li class="c-sidebar__section" data-url="/act2/2-Ches/roam_mass_energy_var">
+            <li class="c-sidebar__section" data-url="/act2/2-Ches/roam_mass_energy_var_new3">
               <a class="c-sidebar__entry"
-                href="/act2/2-Ches/roam_mass_energy_var.html"
+                href="/act2/2-Ches/roam_mass_energy_var_new3.html"
               >
                 
                   4.9
@@ -1195,7 +1195,7 @@ initFunction(initPrint)
                 
                   5.2
                 
-                Three degree-of-freedom Barbanis system
+                N-Degree-of-Freedom System-Bath Model 1
               </a>
             </li>
             
@@ -1216,7 +1216,7 @@ initFunction(initPrint)
                 
                   5.3
                 
-                Lagrangian Descriptors for a System-Bath Model
+                N-Degree-of-Freedom System-Bath Model 2
               </a>
             </li>
             
@@ -1510,12 +1510,47 @@ the wells and areas of high potential are symmetric.</p>
   </dd>
 </dl>
 
-<p>| Energy (kcal mol$^{-1}$)  | $r$ (Å)  | $\theta$ (radians)  |     Significance      |        Label       |
-  :————————–: ——— :——————– :———————-: ———————:
-            $-47$              $1.1$           $0$              potential well            $q_0^+$
-             $&gt;0$             $&lt;1.1$         $\pi/2$         isomerisation saddle         $q_1^+$
-             $&gt;0$             $&gt;1.1$         $\pi/2$            local maximum             $q_2^+$
-             $&lt;0$             $&gt;1.1$         $\pi/2$         isomerisation saddle   $\widetilde{q}_1^+$</p>
+<table>
+  <thead>
+    <tr>
+      <th>Energy (kcal mol$^{-1}$)</th>
+      <th>$r$ (Å)</th>
+      <th>$\theta$ (radians)</th>
+      <th>Significance</th>
+      <th>Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$-47$</td>
+      <td>$1.1$</td>
+      <td>$0$</td>
+      <td>potential well</td>
+      <td>$q_0^+$</td>
+    </tr>
+    <tr>
+      <td>$&gt;0$</td>
+      <td>$&lt;1.1$</td>
+      <td>$\pi/2$</td>
+      <td>isomerisation saddle</td>
+      <td>$q_1^+$</td>
+    </tr>
+    <tr>
+      <td>$&gt;0$</td>
+      <td>$&gt;1.1$</td>
+      <td>$\pi/2$</td>
+      <td>local maximum</td>
+      <td>$q_2^+$</td>
+    </tr>
+    <tr>
+      <td>$&lt;0$</td>
+      <td>$&gt;1.1$</td>
+      <td>$\pi/2$</td>
+      <td>isomerisation saddle</td>
+      <td>$\widetilde{q}_1^+$</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>We remark that $q_1^+$ and $q_2^+$ are energetically inaccessible at
 energies considered in this work. Four more critical points $q_0^-$,
@@ -2067,31 +2102,29 @@ $p^\pm_\theta$ such that $H(r_{po}, 0, \theta, p^\pm_\theta)=E$.</p>
 <p>To understand the influence of $m$ on the periodic orbit, let us first
 establish the relationship between $r_{po}$ and $p^\pm_\theta$ and
 incorporate the dependence on $\mu_m$ subsequently. Combining
-$H(r_{po}, 0, \theta, p^\pm_\theta)=E$, i.e.</p>
-
-<p>\begin{equation}
-E=\frac{p^{\pm 2}<em>\theta}{2I}+\frac{p^{\pm 2}</em>\theta}{2\mu_m r_{po}^2}+U(r_{po}),
-\end{equation}</p>
-
-<p>with (<a href="#eq:pr">[eq:pr]</a>{reference-type=”ref” reference=”eq:pr”})
-yields</p>
-
-<script type="math/tex; mode=display">E=\frac{p^{\pm 2}_\theta}{2I}+\frac{1}{2}r_{po} U'(r_{po})+U(r_{po}).</script>
+$H(r_{po}, 0, \theta, p^\pm_\theta)=E$, i.e. 
+\begin{equation}
+\label{eq:Epr0}
+   E=\frac{p^{\pm 2}<em>\theta}{2I}+\frac{p^{\pm 2}</em>\theta}{2\mu_m r_{po}^2}+U(r_{po}),
+\end{equation}
+with (<a href="#eq:pr">[eq:pr]</a>{reference-type=”ref” reference=”eq:pr”})
+yields 
+<script type="math/tex">E=\frac{p^{\pm 2}_\theta}{2I}+\frac{1}{2}r_{po} U'(r_{po})+U(r_{po}).</script></p>
 
 <p>If $\frac{1}{2}r U’(r)+U(r)$ is monotonic in $r$ (for $r$ sufficiently
 large), then we find that $r_{po}$ increases or decreases with
-${p^\pm_\theta}^2$. In case of Chesnavich’s CH$<em>4^+$ model,
+$p^{\pm 2}<em>\theta$. In case of Chesnavich’s CH$_4^+$ model,
 $\frac{1}{2}r U’(r)+U(r)$ is positive and monotonically decreasing. This
 is due to the leading term of $U$ for large $r$ being $-cr^{-4}$, where
 $c&gt;0$, while that of $\frac{1}{2}r U’(r)$ must be $2cr^{-4}$. It is
 sufficient that $U(r)&lt;0$ and $U\in o(r^{-2})$ as $r\rightarrow\infty$.
-Consequently we see that an increase in ${p^\pm</em>\theta}^2$ must lead to
+Consequently we see that an increase in $p^{\pm 2}</em>\theta$ must lead to
 an increase in $r_{po}$ and vice versa for every fixed energy $E$.</p>
 
 <p>To gain insight on the influence of $m$, we rewrite
 (<a href="#eq:pr">[eq:pr]</a>{reference-type=”ref” reference=”eq:pr”}) as</p>
 
-<p><script type="math/tex">{p^\pm_\theta}^2 =\mu_m r_{po}^3 U'(r_{po}),</script>
+<p><script type="math/tex">p^{\pm 2}_\theta =\mu_m r_{po}^3 U'(r_{po}),</script>
 and plug it into (<a href="#eq:Epr0">[eq:Epr0]</a>{reference-type=”ref” reference=”eq:Epr0”}) to obtain
 <script type="math/tex">E=\frac{\mu_m r_{po}^3 U'(r_{po})}{2I}+\frac{\mu_m r_{po}^3 U'(r_{po})}{2\mu_m r_{po}^2}+U(r_{po})=\frac{\mu_m r_{po}^3 U'(r_{po})}{2I}+\frac{1}{2}r_{po}U'(r_{po})+U(r_{po}).</script></p>
 
@@ -2103,7 +2136,7 @@ decreasing, provided $U\in o(r^{-3})$ which is the case for Chesnavich’s
 potential. Therefore to maintain a fixed energy $E$ and increase in
 $\mu_m$ must be compensated by an increase in $r_{po}$.</p>
 
-<p>We see that $r_{po}$ and ${p^\pm_\theta}^2$ increase with $m$. Note that
+<p>We see that $r_{po}$ and $p^{\pm 2}_\theta$ increase with $m$. Note that
 the reasoning remains true any potential that is rotationally symmetric,
 monotonic and in the class $o(r^{-3})$ for $r$ sufficiently large and
 can be extended to systems with non-zero total angular momentum.</p>
@@ -2123,8 +2156,8 @@ influenced by the radial degree of freedom.</p>
 <h3 id="sec:small">Small masses</h3>
 
 <p>As justified in Section <a href="#sec:outer">7</a>{reference-type=”ref”
-reference=”sec:outer”}, $r_{po}$ and ${p^\pm_\theta}^2$ increase with
-$m$. Therefore for $m&lt;m_H$ we see that $\Gamma^o_\pm$ moves inward and
+reference=”sec:outer”}, $r_{po}$ and $p^{\pm 2}<em>\theta$ increase with
+$m$. Therefore for $m&lt;m_H$ we see that $\Gamma^o</em>\pm$ moves inward and
 $p_\theta$ along $\gamma^{s-}_{o}$ decreases. This alone does not
 suffice to make conclusions regarding roaming, because we know that
 roaming does not exist for atoms with very small masses as suggested by
@@ -2259,9 +2292,164 @@ manifolds with a surface $\theta=const$ that does not suffer from
 transition between spherical and toric local geometries. Such an
 estimate is outside of the scope of this work.</p>
 
-<h2 id="e05">$E=0.5$</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        $0.7$   $0.8$   $0.9$   $m_H$    $2$     $3$     $4$     $5$     $6$     $7$     $8$    $m$ ---------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- -----    $1$      0.203   0.214   0.222   0.229   0.257   0.260   0.259    $2$      0.270   0.264   0.259   0.254   0.218   0.196   0.180    $3$      0.200   0.196   0.192   0.189   0.162   0.145   0.132    $4$      0.166   0.163   0.161   0.158   0.138   0.124   0.113    $5$      0.154   0.152   0.150   0.148   0.132   0.119   0.110    $6$      0.154   0.153   0.152   0.150   0.137   0.125   0.116    $7$      0.163   0.162   0.162   0.161   0.148   0.137   0.127    $8$      0.183   0.182   0.180   0.178   0.163   0.151   0.141    $a$
-</code></pre></div></div>
+<p>$E=0.5$</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>\</th>
+      <th>$0.7$</th>
+      <th>$0.8$</th>
+      <th>$0.9$</th>
+      <th>$m_H$</th>
+      <th>$2$</th>
+      <th>$3$</th>
+      <th>$4$</th>
+      <th>$5$</th>
+      <th>$6$</th>
+      <th>$7$</th>
+      <th>$8$</th>
+      <th>$m$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$1$</td>
+      <td>0.203</td>
+      <td>0.214</td>
+      <td>0.222</td>
+      <td>0.229</td>
+      <td>0.257</td>
+      <td>0.260</td>
+      <td>0.259</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$2$</td>
+      <td>0.270</td>
+      <td>0.264</td>
+      <td>0.259</td>
+      <td>0.254</td>
+      <td>0.218</td>
+      <td>0.196</td>
+      <td>0.180</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$3$</td>
+      <td>0.200</td>
+      <td>0.196</td>
+      <td>0.192</td>
+      <td>0.189</td>
+      <td>0.162</td>
+      <td>0.145</td>
+      <td>0.132</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$4$</td>
+      <td>0.166</td>
+      <td>0.163</td>
+      <td>0.161</td>
+      <td>0.158</td>
+      <td>0.138</td>
+      <td>0.124</td>
+      <td>0.113</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$5$</td>
+      <td>0.154</td>
+      <td>0.152</td>
+      <td>0.150</td>
+      <td>0.148</td>
+      <td>0.132</td>
+      <td>0.119</td>
+      <td>0.110</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$6$</td>
+      <td>0.154</td>
+      <td>0.153</td>
+      <td>0.152</td>
+      <td>0.150</td>
+      <td>0.137</td>
+      <td>0.125</td>
+      <td>0.116</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$7$</td>
+      <td>0.163</td>
+      <td>0.162</td>
+      <td>0.162</td>
+      <td>0.161</td>
+      <td>0.148</td>
+      <td>0.137</td>
+      <td>0.127</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$8$</td>
+      <td>0.183</td>
+      <td>0.182</td>
+      <td>0.180</td>
+      <td>0.178</td>
+      <td>0.163</td>
+      <td>0.151</td>
+      <td>0.141</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$a$</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 <p>: []{label=”tab:1”} Ratio of the minimum of the areas
 $\gamma^{u+}<em>{i}\setminus\gamma^{s-}</em>{o}$ and
@@ -2269,13 +2457,308 @@ $\gamma^{s-}<em>{o}\setminus\gamma^{u+}</em>{i}$ to the measure of all
 trajectories in the system (for details see text) for $E=0.5,1,2$ and
 various values of $m$ and $a$.</p>
 
-<h2 id="e1">$E=1$</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        $0.7$   $0.8$   $0.9$   $m_H$    $2$     $3$     $4$     $5$     $6$     $7$     $8$    $m$ ---------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- -----    $1$      0.063   0.069   0.074   0.078   0.091   0.091   0.087   0.084   0.080   0.077   0.074    $2$      0.274   0.269   0.264   0.258   0.222   0.200   0.184   0.171   0.162   0.155   0.148    $3$      0.205   0.200   0.196   0.192   0.163   0.145   0.132   0.122   0.115   0.108   0.103    $4$      0.172   0.168   0.165   0.161   0.138   0.123   0.112   0.103   0.096   0.091   0.086    $5$      0.161   0.158   0.155   0.152   0.132   0.118   0.108   0.100   0.094   0.089   0.084    $6$      0.163   0.160   0.157   0.155   0.137   0.124   0.114   0.106   0.100   0.095   0.091    $7$      0.173   0.170   0.168   0.165   0.147   0.135   0.125   0.117   0.111   0.106   0.102    $8$                      0.185   0.181   0.161   0.148   0.139   0.131   0.125   0.120   0.116    $a$
-</code></pre></div></div>
+<p>$E=1$</p>
 
-<h2 id="e2">$E=2$</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        $0.7$   $0.8$   $0.9$   $m_H$    $2$     $3$     $4$     $5$     $6$     $7$     $8$    $m$ ---------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- ------- -----    $1$      0.000   0.001   0.003   0.004   0.008   0.007   0.005   0.003   0.002   0.001   0.000    $2$      0.160   0.177   0.192   0.205   0.224   0.202   0.186   0.174   0.164   0.157   0.151    $3$      0.206   0.201   0.197   0.192   0.162   0.143   0.129   0.119   0.112   0.105   0.100    $4$      0.173   0.169   0.165   0.162   0.135   0.119   0.107   0.098   0.092   0.086   0.081    $5$      0.163   0.160   0.156   0.152   0.129   0.113   0.103   0.095   0.088   0.083   0.079    $6$      0.166   0.163   0.159   0.156   0.133   0.119   0.108   0.100   0.094   0.089   0.085    $7$      0.177   0.173   0.170   0.166   0.144   0.129   0.119   0.111   0.105   0.100   0.096    $a$
-</code></pre></div></div>
+<table>
+  <thead>
+    <tr>
+      <th>\</th>
+      <th>$0.7$</th>
+      <th>$0.8$</th>
+      <th>$0.9$</th>
+      <th>$m_H$</th>
+      <th>$2$</th>
+      <th>$3$</th>
+      <th>$4$</th>
+      <th>$5$</th>
+      <th>$6$</th>
+      <th>$7$</th>
+      <th>$8$</th>
+      <th>$m$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$1$</td>
+      <td>0.063</td>
+      <td>0.069</td>
+      <td>0.074</td>
+      <td>0.078</td>
+      <td>0.091</td>
+      <td>0.091</td>
+      <td>0.087</td>
+      <td>0.084</td>
+      <td>0.080</td>
+      <td>0.077</td>
+      <td>0.074</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$2$</td>
+      <td>0.274</td>
+      <td>0.269</td>
+      <td>0.264</td>
+      <td>0.258</td>
+      <td>0.222</td>
+      <td>0.200</td>
+      <td>0.184</td>
+      <td>0.171</td>
+      <td>0.162</td>
+      <td>0.155</td>
+      <td>0.148</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$3$</td>
+      <td>0.205</td>
+      <td>0.200</td>
+      <td>0.196</td>
+      <td>0.192</td>
+      <td>0.163</td>
+      <td>0.145</td>
+      <td>0.132</td>
+      <td>0.122</td>
+      <td>0.115</td>
+      <td>0.108</td>
+      <td>0.103</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$4$</td>
+      <td>0.172</td>
+      <td>0.168</td>
+      <td>0.165</td>
+      <td>0.161</td>
+      <td>0.138</td>
+      <td>0.123</td>
+      <td>0.112</td>
+      <td>0.103</td>
+      <td>0.096</td>
+      <td>0.091</td>
+      <td>0.086</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$5$</td>
+      <td>0.161</td>
+      <td>0.158</td>
+      <td>0.155</td>
+      <td>0.152</td>
+      <td>0.132</td>
+      <td>0.118</td>
+      <td>0.108</td>
+      <td>0.100</td>
+      <td>0.094</td>
+      <td>0.089</td>
+      <td>0.084</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$6$</td>
+      <td>0.163</td>
+      <td>0.160</td>
+      <td>0.157</td>
+      <td>0.155</td>
+      <td>0.137</td>
+      <td>0.124</td>
+      <td>0.114</td>
+      <td>0.106</td>
+      <td>0.100</td>
+      <td>0.095</td>
+      <td>0.091</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$7$</td>
+      <td>0.173</td>
+      <td>0.170</td>
+      <td>0.168</td>
+      <td>0.165</td>
+      <td>0.147</td>
+      <td>0.135</td>
+      <td>0.125</td>
+      <td>0.117</td>
+      <td>0.111</td>
+      <td>0.106</td>
+      <td>0.102</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$8$</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.185</td>
+      <td>0.181</td>
+      <td>0.161</td>
+      <td>0.148</td>
+      <td>0.139</td>
+      <td>0.131</td>
+      <td>0.125</td>
+      <td>0.120</td>
+      <td>0.116</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$a$</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>$E=2$</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>\</th>
+      <th>$0.7$</th>
+      <th>$0.8$</th>
+      <th>$0.9$</th>
+      <th>$m_H$</th>
+      <th>$2$</th>
+      <th>$3$</th>
+      <th>$4$</th>
+      <th>$5$</th>
+      <th>$6$</th>
+      <th>$7$</th>
+      <th>$8$</th>
+      <th>$m$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$1$</td>
+      <td>0.000</td>
+      <td>0.001</td>
+      <td>0.003</td>
+      <td>0.004</td>
+      <td>0.008</td>
+      <td>0.007</td>
+      <td>0.005</td>
+      <td>0.003</td>
+      <td>0.002</td>
+      <td>0.001</td>
+      <td>0.000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$2$</td>
+      <td>0.160</td>
+      <td>0.177</td>
+      <td>0.192</td>
+      <td>0.205</td>
+      <td>0.224</td>
+      <td>0.202</td>
+      <td>0.186</td>
+      <td>0.174</td>
+      <td>0.164</td>
+      <td>0.157</td>
+      <td>0.151</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$3$</td>
+      <td>0.206</td>
+      <td>0.201</td>
+      <td>0.197</td>
+      <td>0.192</td>
+      <td>0.162</td>
+      <td>0.143</td>
+      <td>0.129</td>
+      <td>0.119</td>
+      <td>0.112</td>
+      <td>0.105</td>
+      <td>0.100</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$4$</td>
+      <td>0.173</td>
+      <td>0.169</td>
+      <td>0.165</td>
+      <td>0.162</td>
+      <td>0.135</td>
+      <td>0.119</td>
+      <td>0.107</td>
+      <td>0.098</td>
+      <td>0.092</td>
+      <td>0.086</td>
+      <td>0.081</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$5$</td>
+      <td>0.163</td>
+      <td>0.160</td>
+      <td>0.156</td>
+      <td>0.152</td>
+      <td>0.129</td>
+      <td>0.113</td>
+      <td>0.103</td>
+      <td>0.095</td>
+      <td>0.088</td>
+      <td>0.083</td>
+      <td>0.079</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$6$</td>
+      <td>0.166</td>
+      <td>0.163</td>
+      <td>0.159</td>
+      <td>0.156</td>
+      <td>0.133</td>
+      <td>0.119</td>
+      <td>0.108</td>
+      <td>0.100</td>
+      <td>0.094</td>
+      <td>0.089</td>
+      <td>0.085</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$7$</td>
+      <td>0.177</td>
+      <td>0.173</td>
+      <td>0.170</td>
+      <td>0.166</td>
+      <td>0.144</td>
+      <td>0.129</td>
+      <td>0.119</td>
+      <td>0.111</td>
+      <td>0.105</td>
+      <td>0.100</td>
+      <td>0.096</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$a$</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 <p><img src="figures/figure9a.jpg" alt="Upper bound on roaming for energies
 $E=0.5,1,2$.[]{label=&quot;fig:corrroam&quot;} " title="fig:" />{#fig:corrroam

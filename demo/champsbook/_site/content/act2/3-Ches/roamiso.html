@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://localhost:4448/content/act2/3-Ches/roamiso.html",
   "headline": "Two Degree-of-Freedom Chesnavich Model with Isokinetic thermostat",
-  "datePublished": "2019-12-09T10:38:29+00:00",
-  "dateModified": "2019-12-09T10:38:29+00:00",
+  "datePublished": "2019-12-09T13:49:12+00:00",
+  "dateModified": "2019-12-09T13:49:12+00:00",
   "description": "# Two Degree-of-Freedom Chesnavich Model with Isokinetic thermostat## Introduction {#sec:intro}The roaming mechanism for chemical reactions was introduced in...",
   "author": {
     "@type": "Person",
@@ -1084,9 +1084,9 @@ initFunction(initPrint)
             
             
 
-            <li class="c-sidebar__section" data-url="/act2/2-Ches/roam_mass_energy_var">
+            <li class="c-sidebar__section" data-url="/act2/2-Ches/roam_mass_energy_var_new3">
               <a class="c-sidebar__entry"
-                href="/act2/2-Ches/roam_mass_energy_var.html"
+                href="/act2/2-Ches/roam_mass_energy_var_new3.html"
               >
                 
                   4.9
@@ -1195,7 +1195,7 @@ initFunction(initPrint)
                 
                   5.2
                 
-                Three degree-of-freedom Barbanis system
+                N-Degree-of-Freedom System-Bath Model 1
               </a>
             </li>
             
@@ -1216,7 +1216,7 @@ initFunction(initPrint)
                 
                   5.3
                 
-                Lagrangian Descriptors for a System-Bath Model
+                N-Degree-of-Freedom System-Bath Model 2
               </a>
             </li>
             
@@ -1567,18 +1567,50 @@ reference=”eq:sym”}, as listed in Tab.
 reference=”table:equil”} and shown in Fig.
 <a href="#fig:pot">[fig:pot]</a>{reference-type=”ref” reference=”fig:pot”}.</p>
 
-<dl>
-  <dt>Energy (kcal mol$^{-1}$)   $r$ (Å)   $\theta$ (radians)       Significance              Label</dt>
-  <dt>  ————————– ——— ——————– ———————- ———————</dt>
-  <dt>            $-47$              $1.1$           $0$              potential well            $q_0^+$</dt>
-  <dt>           $-0.63$            $3.45$         $\pi/2$         isomerisation saddle         $q_1^+$</dt>
-  <dt>             $8$               $1.1$         $\pi/2$         isomerisation saddle   $\widetilde{q}_1^+$</dt>
-  <dt>           $22.27$            $1.63$         $\pi/2$            local maximum             $q_2^+$</dt>
-  <dd>
-    <p>Equilibrium points of the potential
+<table>
+  <thead>
+    <tr>
+      <th>Energy (kcal mol$^{-1}$)</th>
+      <th>$r$ (Å)</th>
+      <th>$\theta$ (radians)</th>
+      <th>Significance</th>
+      <th>Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$-47$</td>
+      <td>$1.1$</td>
+      <td>$0$</td>
+      <td>potential well</td>
+      <td>$q_0^+$</td>
+    </tr>
+    <tr>
+      <td>$-0.63$</td>
+      <td>$3.45$</td>
+      <td>$\pi/2$</td>
+      <td>isomerisation saddle</td>
+      <td>$q_1^+$</td>
+    </tr>
+    <tr>
+      <td>$22.27$</td>
+      <td>$1.63$</td>
+      <td>$\pi/2$</td>
+      <td>local maximum</td>
+      <td>$q_2^+$</td>
+    </tr>
+    <tr>
+      <td>$8$</td>
+      <td>$1.1$</td>
+      <td>$\pi/2$</td>
+      <td>isomerisation saddle</td>
+      <td>$\widetilde{q}_1^+$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>: Equilibrium points of the potential
   $U(r, \theta)$.[]{label=”table:equil”}</p>
-  </dd>
-</dl>
 
 <h2 id="revealing-phase-space-structures">Revealing Phase Space Structures</h2>
 <h3 id="sec:roamingChes">Roaming in Chesnavich’s Model</h3>
@@ -2209,7 +2241,7 @@ inner periodic orbit with $p_\theta&gt;0$. The S-shape closest to
 $\theta=-1$, $p_\theta=0$ corresponds to the inner periodic orbit with
 $p_\theta&lt;0$. The other S-shapes are related by symmetry.</p>
 
-<p><img src="manif_intersection400_labels.png" alt="Approximations of invariant manifolds on $r=3.6$, $\dot{r}&gt;0$
+<p><img src="/content/act2/3-Ches/figures/manif_intersection400_labels.png" alt="Approximations of invariant manifolds on $r=3.6$, $\dot{r}&gt;0$
 extracted from $LD_i$ for $\tau=6$ shown in Fig.
 [[fig:manifsI_r36]](#fig:manifsI_r36){reference-type=&quot;ref&quot;
 reference=&quot;fig:manifsI_r36&quot;} and $LD_o$ for $\tau=20$ shown in Fig
