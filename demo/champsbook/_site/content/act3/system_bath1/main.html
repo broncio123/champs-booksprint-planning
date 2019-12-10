@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>CHAMPS Dynamical Systems Book</title>
+  <title>Lagrangian Descriptors for a System-Bath Model</title>
   <meta name="description" content="# Lagrangian Descriptors for a System-Bath Model## IntroductionLocating the Dividing Surface (DS) in chemical reactions has been the focus of many rate const...">
 
   <link rel="canonical" href="https://jupyterbook.org/content/act3/system_bath1/main.html">
@@ -13,7 +13,7 @@
 
   <meta property="og:url"         content="https://jupyterbook.org/content/act3/system_bath1/main.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="CHAMPS Dynamical Systems Book" />
+<meta property="og:title"       content="Lagrangian Descriptors for a System-Bath Model" />
 <meta property="og:description" content="# Lagrangian Descriptors for a System-Bath Model## IntroductionLocating the Dividing Surface (DS) in chemical reactions has been the focus of many rate const..." />
 <meta property="og:image"       content="https://jupyterbook.org/images/logo/champs_logo.jpg" />
 
@@ -25,9 +25,9 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://jupyterbook.org/content/act3/system_bath1/main.html",
-  "headline": "CHAMPS Dynamical Systems Book",
-  "datePublished": "2019-12-10T14:51:31+00:00",
-  "dateModified": "2019-12-10T14:51:31+00:00",
+  "headline": "Lagrangian Descriptors for a System-Bath Model",
+  "datePublished": "2019-12-10T15:27:10+00:00",
+  "dateModified": "2019-12-10T15:27:10+00:00",
   "description": "# Lagrangian Descriptors for a System-Bath Model## IntroductionLocating the Dividing Surface (DS) in chemical reactions has been the focus of many rate const...",
   "author": {
     "@type": "Person",
@@ -1307,7 +1307,7 @@ initFunction(initPrint)
 
 <p>Locating the Dividing Surface (DS) in chemical reactions has been the focus of many rate constant calculations both for reactions in solution and in vacuum thanks to the Transition State Theory; a classical theory developed by Wigner, Eyring, Gwynne Evans and Polanyi;[@Wigner1932;@Eyring1935;@Polanyi1935;@Eyring1941] that calculates the rate of the reaction as the equilibrium flux of reactive trajectories through that DS.</p>
 
-<p>In this chapter, we take a different point of view on the two supposed assumptions of <a href="../../prologe/TST.md">TST</a>. By treating the locally non-recrossing criterion for the dividing surface as an approximation, one is implying that there exists some other criterion of higher priority for locating the TS. However, in our view the location of the TS is defined solely by the satisfaction of the locally non-recrossing criterion. Hence, if one finds a putative TS whose associated dividing surface suffers recrossing (leading to a reduction in the TST transmission coefficient), then the TS is, strictly speaking, in the wrong place.
+<p>In this chapter, we take a different point of view on the two supposed assumptions of <a href="/content/prologe/TST.html">TST</a>. By treating the locally non-recrossing criterion for the dividing surface as an approximation, one is implying that there exists some other criterion of higher priority for locating the TS. However, in our view the location of the TS is defined solely by the satisfaction of the locally non-recrossing criterion. Hence, if one finds a putative TS whose associated dividing surface suffers recrossing (leading to a reduction in the TST transmission coefficient), then the TS is, strictly speaking, in the wrong place.
 It has been argued that there can be circumstances in which no dividing surface exists that would satisfy the locally non-recrossing criterion. However, this argument is based on reactive and recrossing trajectories passing through a common point. That is possible only in configuration space, because every point in phase space is unique. The original definition of the dividing surface used by Wigner was in phase space, and that is the definition we adopt here.[@MullenPeters2014] That said, there may be no problem with using such an approximate TS, as done by Grote Hynes Theory, for the computation of the overall rate constant of a single-step reaction.[@GroteHynes1980;@Hynes2002;@Hynes1985;@Hynes1982] However, as discussed in [@GarciaMeseguerTST2019], not every effect can be explained with configuration-space models. One of these effects, which we have called the inertial barrier, arises when changes in shape of a reacting solute are resisted by the solvent because of a timescale mismatch between the solute dynamics (typically ~100 fs for transit from a PES saddle point to the next local minimum, in vacuo) and solvent dynamics (typically 1 - 10 ps, and sometimes much longer, for relocation of solvent molecules in the first shell around the reacting solute).[@Bunker1972;@Maroncelli1995;@Peters1995;@WuTenMing2000;@Larregaray2005;@Kubarych2010;@Lanzani2012;@Kowalewski2014;@Carpenter2015] Another potential problem arises, for example, when one is concerned with branching to several products after a rate-determining TS. The supposed equilibrium assumption of TST is not really an assumption either, because it can be shown to be a consequence of the locally non-recrossing requirement.[@SteinfeldHase1989] Of course, finding the exact DS is not an easy task for reactions of polyatomic molecules and could even be technically impossible for reactions in solutions.</p>
 
 <p>However, the construction of the DS for 2 DoF systems using the Lyapunov family of unstable POs was presented in a series of papers by Pollak, Pechukas, and Child in the late 1970’s to early 1980’s.[@PechukasPollak1977;@PollakPechukas1978;@PechukasPollak1979;@PollakChild1980;@Pechukas1982] The resulting Periodic Orbit Dividing Surface (PODS) is a hypersurface in phase space arising from the unstable PO. It has been shown to have the required no-recrossing properties described above. Of particular interest was the recognition that as the total energy of trajectories increased, the location of the PODS would change, and that, in general, its projection onto the PES did not need to pass through the index one saddle point that is considered to be the location of the Transition Structure in many chemical models. In the present chapter, we emphasize that it is not only energy which can cause the PODS to move, but at least in some models, its location may also be mass dependent. This feature is of particular relevance to the solvent-derived inertial barrier mentioned above.</p>
@@ -1404,7 +1404,7 @@ As in our previous study the mass of the reactive system ($\mu_1$) is set to a v
 
 <p>The images shown in @fig:LDFirst where obtained by the above mentioned grid methodology. In those figures, for each point in the plot, the momenta of the bath DoF was equal to 0. The location of the saddle point (blue line) and the PO associated to it (red line) were included in the plots to better understanding of the information obtained. Of significant relevance are the plots obtained for the position and momenta of the reactive DoF (a plots in @fig:LDFirst). In those plots we can see how the invariant manifolds converge at the PO that encloses the DS forming a crossing point that indicates its location.</p>
 
-<p><img src="figures/LDFirst.png" alt="LD plots for the different reduced masses of the bath for (a) the position and momenta of the reactive DoF and (b) the position of both DoF, each with a close up of on the saddle point area. The blue straigth line in the first line of plots indicates the position of the saddle point and the red line in the close ups represents the PO enclosing the DS. " />{#fig:LDFirst width=”96%”}</p>
+<p><img src="/content/act3/system_bath1/figures/LDFirst.png" alt="LD plots for the different reduced masses of the bath for (a) the position and momenta of the reactive DoF and (b) the position of both DoF, each with a close up of on the saddle point area. The blue straigth line in the first line of plots indicates the position of the saddle point and the red line in the close ups represents the PO enclosing the DS. " />{#fig:LDFirst width=”96%”}</p>
 
 <p>It is important to note that this plots represent a section of the full phase space in which all the kinetic energy is in the reactive DoF. Thus, all we can expect to see from the PODS is the intersection with this section. Of course this is not a big problem, as it is very easy to change the value of the momenta of the bath at which the LD is calculated. <font color="red">(...)</font></p>
 
@@ -1414,15 +1414,15 @@ As in our previous study the mass of the reactive system ($\mu_1$) is set to a v
 
 <p>In @fig:LDSecondSec we can see how the plots are very similar to those obtained in @fig:LDFirst. The main difference appears as we increase the mass of the bath where this effect reduces the ergodicity of the system. Even in those cases, there are similarities between plots in the places visited by the trajectories.</p>
 
-<p><img src="figures/LDSecondSection.png" alt="Equivalent plots from @fig:LDFirst obtained with the second methodology " />{#fig:LDSecondSec width=”100%”}</p>
+<p><img src="/content/act3/system_bath1/figures/LDSecondSection.png" alt="Equivalent plots from @fig:LDFirst obtained with the second methodology " />{#fig:LDSecondSec width=”100%”}</p>
 
 <p>But this is just a small amount of information that we have obtained from the calculations. The full set of values that this method produces can be projected into a single plot. Obviously these projections have so many dynamical structures depicted in them that it is very difficult to see anything. But with a bit of <em>cleaning</em> we can obtain a nice picture of the dynamical structure of the system. The plots shown in @fig:LDProject where obtained by projecting in configurational space all the values obtained from the calculations. However, for each value proyected in the same point only the minimum value was represented. This is because the value of the LD is expected to be a minimum in the vicinity of the PODS. These plots show a clear picture of the behaviour of the trajectories after crossing the DS but also they have a clear definition of the projection of the PODS in configurational space.</p>
 
-<p><img src="figures/LDSecondProjection.png" alt="(a) LD plots for the different reduced masses of the bath in configurational space and (b) their respective close up. The value of LD was obtained by selecting the minimum value between all the values that share the same point in configurational space. The red line in the close ups represents the PO enclosing the DS.  " />{#fig:LDProject width=”100%”}</p>
+<p><img src="/content/act3/system_bath1/figures/LDSecondProjection.png" alt="(a) LD plots for the different reduced masses of the bath in configurational space and (b) their respective close up. The value of LD was obtained by selecting the minimum value between all the values that share the same point in configurational space. The red line in the close ups represents the PO enclosing the DS.  " />{#fig:LDProject width=”100%”}</p>
 
 <p>Moreover, if take a slice of the plots in @fig:LDProject we can visualize the effect of the DS in the value of the LD (see @fig:LDSlice). This is quite obvious in @fig:LDProject but it will be very useful in multiples degrees of freedom where there will be much more noise.</p>
 
-<p><img src="figures/LDSecondSlice.png" alt="Slice at bath position of 2.2 of the LD values along the reactive coordinate. " />{#fig:LDSlice width=”100%”}</p>
+<p><img src="/content/act3/system_bath1/figures/LDSecondSlice.png" alt="Slice at bath position of 2.2 of the LD values along the reactive coordinate. " />{#fig:LDSlice width=”100%”}</p>
 
 <p>We have shown that the DS can be easily identified by the calculation of LD, not only with the grid methodology, but also with our version of the method. It is expected that for multidimensional problems the results will not be as clear and sharp as with this simple model. After all, we are including a significant amount of DoF that will introduce a lot of noise in the calculations. However, if we can identify the DS signal in the LD calculation, then we can begin to understand the dynamical properties that make the system behave as it does, like in the former case, the coupling between the bath and the reactive system.</p>
 
