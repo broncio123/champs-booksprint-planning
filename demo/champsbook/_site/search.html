@@ -8,14 +8,14 @@
   <title>Search the site</title>
   <meta name="description" content="        ">
 
-  <link rel="canonical" href="https://jupyterbook.org/search">
-  <link rel="alternate" type="application/rss+xml" title="CHAMPS Dynamical Systems Book" href="https://jupyterbook.org/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/search">
+  <link rel="alternate" type="application/rss+xml" title="CHAMPS Dynamical Systems Book" href="http://localhost:4000/feed.xml">
 
-  <meta property="og:url"         content="https://jupyterbook.org/search" />
+  <meta property="og:url"         content="http://localhost:4000/search" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Search the site" />
 <meta property="og:description" content="        " />
-<meta property="og:image"       content="https://jupyterbook.org/images/logo/champs_logo.jpg" />
+<meta property="og:image"       content="http://localhost:4000/images/logo/champs_logo.jpg" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://jupyterbook.org/search",
+  "mainEntityOfPage": "http://localhost:4000/search",
   "headline": "Search the site",
-  "datePublished": "2019-12-10T15:27:10+00:00",
-  "dateModified": "2019-12-10T15:27:10+00:00",
+  "datePublished": "2019-12-11T08:49:45+00:00",
+  "dateModified": "2019-12-11T08:49:45+00:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jupyterbook.org",
+      "url": "http://localhost:4000",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://jupyterbook.org",
+    "url": "http://localhost:4000",
     "height": 60,
     "width": 60
   }
@@ -350,7 +350,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://jupyterbook.org") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -584,14 +584,14 @@ initFunction(initPrint)
 
       
       
-      <li class="c-sidebar__chapter" data-url="/prologe/Prologue_new">
+      <li class="c-sidebar__chapter" data-url="../docs/dedication">
         <a class="c-sidebar__entry"
-          href="/prologe/Prologue_new.html"
+          href="/docs/dedication.html"
         >
           
             1.
           
-          Introduction and Background
+          
         </a>
       </li>
 
@@ -604,70 +604,137 @@ initFunction(initPrint)
       
 
       
-        
 
-        
+      
+    
+      
+      
 
-        <ul class="c-sidebar__sections">
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="../docs/acknowledgements">
+        <a class="c-sidebar__entry"
+          href="/docs/acknowledgements.html"
+        >
           
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/prologe/LDs/LDs_victor_new">
-              <a class="c-sidebar__entry"
-                href="/prologe/LDs/LDs_victor_new.html"
-              >
-                
-                Lagrangian Descriptors (LDs)
-              </a>
-            </li>
-            
-            
+            2.
           
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/prologe/Definition_of_the_index_of_a_saddle/saddle_index_definition_new">
-              <a class="c-sidebar__entry"
-                href="/prologe/Definition_of_the_index_of_a_saddle/saddle_index_definition_new.html"
-              >
-                
-                Definition of Index of a Saddle
-              </a>
-            </li>
-            
-            
           
-            
-            
+        </a>
+      </li>
 
-            
-            
-            
-            
+      
+      
 
-            <li class="c-sidebar__section" data-url="/prologe/TST">
-              <a class="c-sidebar__entry"
-                href="/prologe/TST.html"
-              >
-                
-                Transition State Theory
-              </a>
-            </li>
-            
-            
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="../docs/preface">
+        <a class="c-sidebar__entry"
+          href="/docs/preface.html"
+        >
           
-        </ul>
+            3.
+          
+          
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/prologue/prologue">
+        <a class="c-sidebar__entry"
+          href="/prologue/prologue.html"
+        >
+          
+            4.
+          
+          Prologue
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/prologue/LDs/LDs_victor">
+        <a class="c-sidebar__entry"
+          href="/prologue/LDs/LDs_victor.html"
+        >
+          
+            5.
+          
+          Lagrangian Descriptors
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
       
 
       
@@ -687,7 +754,7 @@ initFunction(initPrint)
           href="/fundamental_models/fundamental_models.html"
         >
           
-            2.
+            6.
           
           Fundamental Models
         </a>
@@ -702,90 +769,6 @@ initFunction(initPrint)
       
 
       
-        
-
-        
-
-        <ul class="c-sidebar__sections">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/fundamental_models/1_DoF_saddle/1_DOF_saddle_new">
-              <a class="c-sidebar__entry"
-                href="/fundamental_models/1_DoF_saddle/1_DOF_saddle_new.html"
-              >
-                
-                One DoF Quadratic Normal Form
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/fundamental_models/2_DoF_index_1_saddle/2_dof_index_1_saddle_new">
-              <a class="c-sidebar__entry"
-                href="/fundamental_models/2_DoF_index_1_saddle/2_dof_index_1_saddle_new.html"
-              >
-                
-                Two DoF Quadratic Normal Form
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/fundamental_models/2_DoF_index_2_saddle/index_2_saddle_new">
-              <a class="c-sidebar__entry"
-                href="/fundamental_models/2_DoF_index_2_saddle/index_2_saddle_new.html"
-              >
-                
-                Three DoF Index 2
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/fundamental_models/3_DoF_index_1_saddle/3_dof_index_1_saddle_new">
-              <a class="c-sidebar__entry"
-                href="/fundamental_models/3_DoF_index_1_saddle/3_dof_index_1_saddle_new.html"
-              >
-                
-                Three DoF Index 1 Quadratic Normal Form
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
 
       
     
@@ -799,14 +782,14 @@ initFunction(initPrint)
 
       
       
-      <li class="c-sidebar__chapter" data-url="/act1/intro_act1">
+      <li class="c-sidebar__chapter" data-url="/act1/Morse/Morse">
         <a class="c-sidebar__entry"
-          href="/act1/intro_act1.html"
+          href="/act1/Morse/Morse.html"
         >
           
-            3.
+            7.
           
-          Act1 Title
+          Morse Oscillator
         </a>
       </li>
 
@@ -819,56 +802,6 @@ initFunction(initPrint)
       
 
       
-        
-
-        
-
-        <ul class="c-sidebar__sections">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act1/Morse/Morse_new">
-              <a class="c-sidebar__entry"
-                href="/act1/Morse/Morse_new.html"
-              >
-                
-                  3.1
-                
-                Morse Oscillator
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act1/Hamiltonian_bifurcation/ham_bif_new">
-              <a class="c-sidebar__entry"
-                href="/act1/Hamiltonian_bifurcation/ham_bif_new.html"
-              >
-                
-                  3.2
-                
-                Hamiltonian Bifurcations
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
 
       
     
@@ -882,14 +815,14 @@ initFunction(initPrint)
 
       
       
-      <li class="c-sidebar__chapter" data-url="/act2/intro_act2">
+      <li class="c-sidebar__chapter" data-url="/act2/hamiltonian_sn/HSN_victor">
         <a class="c-sidebar__entry"
-          href="/act2/intro_act2.html"
+          href="/act2/hamiltonian_sn/HSN_victor.html"
         >
           
-            4.
+            8.
           
-          Act2 Title
+          Saddle-Node Hamiltonian
         </a>
       </li>
 
@@ -902,224 +835,6 @@ initFunction(initPrint)
       
 
       
-        
-
-        
-
-        <ul class="c-sidebar__sections">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/hamiltonian_sn/HSN_victor_new3">
-              <a class="c-sidebar__entry"
-                href="/act2/hamiltonian_sn/HSN_victor_new3.html"
-              >
-                
-                  4.1
-                
-                Saddle-Node Hamiltonian
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/barbanis2D/barbanis2d">
-              <a class="c-sidebar__entry"
-                href="/act2/barbanis2D/barbanis2d.html"
-              >
-                
-                  4.2
-                
-                Finding NHIM using LD: 2 and 3 DoF nonlinear Hamiltonian
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/caldera/caldera-1_new">
-              <a class="c-sidebar__entry"
-                href="/act2/caldera/caldera-1_new.html"
-              >
-                
-                  4.3
-                
-                Caldera model
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/deLeon_Berne/deleon_berne">
-              <a class="c-sidebar__entry"
-                href="/act2/deLeon_Berne/deleon_berne.html"
-              >
-                
-                  4.4
-                
-                De Leon model
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/system_bath1/system_bath1">
-              <a class="c-sidebar__entry"
-                href="/act2/system_bath1/system_bath1.html"
-              >
-                
-                  4.5
-                
-                System Bath 1
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/four_well_morse/booksprinttest_makrina_new">
-              <a class="c-sidebar__entry"
-                href="/act2/four_well_morse/booksprinttest_makrina_new.html"
-              >
-                
-                  4.6
-                
-                Four-well potential
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/double_morse/prueba">
-              <a class="c-sidebar__entry"
-                href="/act2/double_morse/prueba.html"
-              >
-                
-                  4.7
-                
-                Double-Morse oscillator
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/1-Ches/roam">
-              <a class="c-sidebar__entry"
-                href="/act2/1-Ches/roam.html"
-              >
-                
-                  4.8
-                
-                Chesnavich Model Part 1
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/2-Ches/roam_mass_energy_var_new3">
-              <a class="c-sidebar__entry"
-                href="/act2/2-Ches/roam_mass_energy_var_new3.html"
-              >
-                
-                  4.9
-                
-                Chesnavich Model Part 2
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act2/3-Ches/roamiso">
-              <a class="c-sidebar__entry"
-                href="/act2/3-Ches/roamiso.html"
-              >
-                
-                  4.10
-                
-                Chesnavich Model Part 3
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
 
       
     
@@ -1133,14 +848,14 @@ initFunction(initPrint)
 
       
       
-      <li class="c-sidebar__chapter" data-url="/act3/intro_act3">
+      <li class="c-sidebar__chapter" data-url="/act2/barbanis2D/barbanis2d">
         <a class="c-sidebar__entry"
-          href="/act3/intro_act3.html"
+          href="/act2/barbanis2D/barbanis2d.html"
         >
           
-            5.
+            9.
           
-          Act 3 Title
+          Finding NHIM using LD: 2 and 3 DoF nonlinear Hamiltonian
         </a>
       </li>
 
@@ -1153,76 +868,38 @@ initFunction(initPrint)
       
 
       
-        
 
-        
+      
+    
+      
+      
 
-        <ul class="c-sidebar__sections">
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act2/caldera/caldera-1">
+        <a class="c-sidebar__entry"
+          href="/act2/caldera/caldera-1.html"
+        >
           
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/act3/barbanis_3dof/barbanis_3dof">
-              <a class="c-sidebar__entry"
-                href="/act3/barbanis_3dof/barbanis_3dof.html"
-              >
-                
-                  5.1
-                
-                Three degree-of-freedom Barbanis system
-              </a>
-            </li>
-            
-            
+            10.
           
-            
-            
+          Caldera model
+        </a>
+      </li>
 
-            
-            
-            
-            
+      
+      
 
-            <li class="c-sidebar__section" data-url="/act3/system_bath2/system_bath">
-              <a class="c-sidebar__entry"
-                href="/act3/system_bath2/system_bath.html"
-              >
-                
-                  5.2
-                
-                N-Degree-of-Freedom System-Bath Model 1
-              </a>
-            </li>
-            
-            
-          
-            
-            
+      
 
-            
-            
-            
-            
+      
+      
 
-            <li class="c-sidebar__section" data-url="/act3/system_bath1/main">
-              <a class="c-sidebar__entry"
-                href="/act3/system_bath1/main.html"
-              >
-                
-                  5.3
-                
-                N-Degree-of-Freedom System-Bath Model 2
-              </a>
-            </li>
-            
-            
-          
-        </ul>
       
 
       
@@ -1237,9 +914,339 @@ initFunction(initPrint)
 
       
       
-      <li class="c-sidebar__chapter" data-url="https://github.com/broncio123/champs-booksprint-planning">
+      <li class="c-sidebar__chapter" data-url="/act2/deLeon_Berne/deleon_berne">
         <a class="c-sidebar__entry"
-          href="https://github.com/broncio123/champs-booksprint-planning"
+          href="/act2/deLeon_Berne/deleon_berne.html"
+        >
+          
+            11.
+          
+          De Leon model
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act2/system_bath1/system_bath1">
+        <a class="c-sidebar__entry"
+          href="/act2/system_bath1/system_bath1.html"
+        >
+          
+            12.
+          
+          System Bath 1
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act2/four_well_morse/booksprinttest_makrina">
+        <a class="c-sidebar__entry"
+          href="/act2/four_well_morse/booksprinttest_makrina.html"
+        >
+          
+            13.
+          
+          Four-well potential
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act2/double_morse/prueba">
+        <a class="c-sidebar__entry"
+          href="/act2/double_morse/prueba.html"
+        >
+          
+            14.
+          
+          Double-Morse oscillator
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act2/1-Ches/roam">
+        <a class="c-sidebar__entry"
+          href="/act2/1-Ches/roam.html"
+        >
+          
+            15.
+          
+          Chesnavich Model Part 1
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act2/2-Ches/roam_mass_energy_var">
+        <a class="c-sidebar__entry"
+          href="/act2/2-Ches/roam_mass_energy_var.html"
+        >
+          
+            16.
+          
+          Chesnavich Model Part 2
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act2/3-Ches/roamiso">
+        <a class="c-sidebar__entry"
+          href="/act2/3-Ches/roamiso.html"
+        >
+          
+            17.
+          
+          Chesnavich Model Part 3
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act3/barbanis_3dof/barbanis_3dof">
+        <a class="c-sidebar__entry"
+          href="/act3/barbanis_3dof/barbanis_3dof.html"
+        >
+          
+            18.
+          
+          Three degree-of-freedom Barbanis system
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act3/system_bath1/main">
+        <a class="c-sidebar__entry"
+          href="/act3/system_bath1/main.html"
+        >
+          
+            19.
+          
+          N-Degree-of-Freedom System-Bath Model 1
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/act3/system_bath2/system_bath">
+        <a class="c-sidebar__entry"
+          href="/act3/system_bath2/system_bath.html"
+        >
+          
+            20.
+          
+          N-Degree-of-Freedom System-Bath Model 1
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="https://github.com/champsproject/chem_react_dyn">
+        <a class="c-sidebar__entry"
+          href="https://github.com/champsproject/chem_react_dyn"
         >
           
           GitHub repository
@@ -1308,194 +1315,117 @@ initFunction(initPrint)
 <script>
     // Add the lunr store since we will now search it
     var store = [{
-        "title": "Hamiltonian Bifurcations",
-        
-        "excerpt": "q lambda p equation hamiltonian begin end eq hamapp fixed frac bifurcation partial points fig sqrt saddle h label phase node pitchfork eqnarray dot eqref pm array eigenvalues portraits appcfig consider equilibria where considered parameter varied derive hamiltons equations nonumber revealing space structures implications reaction dynamics follows point scenario next examine stability jacobian given j left cc right matrix hence center zero shown img width height src figures png id figcaption style text align centerfont size pxbfig bem em figcaptionhr degree freedom dof add introductory language problem development examples dimensional system particular bifurcations quad mathbb r hamsn leq three centers",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/act1/Hamiltonian_bifurcation/ham_bif_new.html",
-        "teaser":null},{
         "title": "Morse Oscillator",
         
-        "excerpt": "q frac equation d alpha eq t h m sqrt p begin end e label left right eqref omega hamiltonian file actionangle cite bib point infty periodic homoclinic morse function orbit level action melnikov tp int energy eqnarray using dq phi pi obtain varepsilon oscillator potential system trajectories dot partial orbits period expression dt integral angle set where phase nonumber fig po consider perturbation well given dynamics pm log sin chaos systems approach obtained j equilibrium turning le cos degree freedom form coordinates position standard such following points rightarrow parabolic unbounded limits considered perturbed smale defined width closed transformation not",
+        "excerpt": "q frac equation d alpha eq t h m sqrt p begin end e label left right eqref omega hamiltonian cite point infty periodic homoclinic morse function orbit level action melnikov tp int energy eqnarray using dq phi pi obtain varepsilon oscillator potential system trajectories dot partial orbits period expression dt integral angle set where nonumber po consider perturbation well phase given dynamics pm log sin chaos systems approach obtained j equilibrium turning le cos degree freedom form coordinates position standard such following points rightarrow parabolic unbounded limits considered perturbed smale defined width closed transformation not ham equilibria energies shown",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act1/Morse/Morse_new.html",
-        "teaser":null},{
-        "title": "Act1 Title",
-        
-        "excerpt": "intro act hello edit me add text pretty picture",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/act1/intro_act1.html",
+        "url": "http://localhost:4000/act1/Morse/Morse.html",
         "teaser":null},{
         "title": "Chesnavich Model Part 1",
         
         "excerpt": "u w theta fig r ds gammao e reference orbits gammai p surface energy s invariant periodic roaming gammaa gamma manifolds trajectories type ref subsec pm section inner not b frac dissociation sec potential transition energies middle ch h m lambda pr where o residence system space times between annulus dynamics points left right width initial outer outward orbit family unstable region also conditions roaminit due rotation therefore note contained gammab through associated above because slow corresponding state well red c trajectory study dividing intersection t figure blue hill black bifurcations rot transport potentialcontour return molecule into surfaces such intersections",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/1-Ches/roam.html",
+        "url": "http://localhost:4000/act2/1-Ches/roam.html",
         "teaser":null},{
         "title": "Chesnavich Model Part 2",
         
-        "excerpt": "u r fig theta reference m potential gamma roaming p frac ref e s w type q sec trajectories dsa energy o gammai gammao eq annulus outward surface label po file roammassenergyvar orbits pr figures cite values ch space jpg setminus phase correspond width not table well mu points indicated region wells intersection figure system outer gammaa mass masses periodic critical therefore right mum dot introduced h inner lines dissociation section between manifolds pi interaction shown configuration due isomerisation pm corrroam dynamics into where invariant small area note equil poconfig mh such cross middlesec wiincr atom freedom unstable hamm widetilde",
+        "excerpt": "u r fig theta reference m gamma potential roaming p frac ref e s w type sec trajectories dsa o gammai energy gammao eq q annulus outward label po surface orbits pr figures ch space jpg setminus phase width values not well mu region wells intersection figure system outer gammaa mass masses periodic points therefore mum dot h inner correspond dissociation section between manifolds pi critical table interaction right configuration due isomerisation pm indicated corrroam dynamics into where invariant small area note poconfig mh such cross middlesec wiincr atom freedom introduced unstable hamm thpi also dso must orange blue parameter",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/2-Ches/roam_mass_energy_var_new3.html",
+        "url": "http://localhost:4000/act2/2-Ches/roam_mass_energy_var.html",
         "teaser":null},{
         "title": "Chesnavich Model Part 3",
         
         "excerpt": "theta fig reference eq r frac type pi partial p q dot u trajectories equation e t roaming label ref periodic ldi model potential invariant phi eqref times manifolds ch begin end orbits ldo left isokinetic energy right orbit lagrangian sec surface hamiltonian pr inner dsa mathcal k tau dynamics c chesnavichs space well intersection dissociation system section using mu escape thermostat d shown initial constant not width descriptors conditions h phase ds values outward region where kinetic dissociating figures thetaescape chesnavich same dt isomerisation annulus descriptor wiu wos structure note defined short jpg outer timetraj due equations eqkham s",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/3-Ches/roamiso.html",
+        "url": "http://localhost:4000/act2/3-Ches/roamiso.html",
         "teaser":null},{
         "title": "Finding NHIM using LD: 2 and 3 DoF nonlinear Hamiltonian",
         
-        "excerpt": "dimensional reference fig surface eqn space y energy x type phase delta e manifolds ld section nhim hamiltonian invariant unstable py periodic trajectories px potential method also poincar dof escape structures high shown barbanis system left right index ref orbit motion systems eqref using saddle figures png width u such region trajectory lagrangian frac ssect coordinate points contour regions well model label omegay sosuxpx barbanisdofmxe used low where along diagnostic its initial plots not coupled harmonic aligned omegax hamiltonianbarbanis ec positive d integration physics nonlinear dynamics dynamical show methods configuration numerical sections our qquad excess pescontbarbanis hills intersection xpx maps",
+        "excerpt": "dimensional reference fig surface eqn space y energy x type phase delta e manifolds ld section nhim hamiltonian invariant unstable py periodic trajectories px potential method also poincar dof escape structures high shown barbanis system left right index ref orbit motion systems eqref using region saddle figures png width u such trajectory lagrangian frac ssect coordinate points contour regions well model label omegay sosuxpx barbanisdofmxe used low where along diagnostic its initial plots not coupled harmonic aligned omegax hamiltonianbarbanis ec positive d integration physics nonlinear dynamics dynamical show methods configuration numerical sections our qquad excess pescontbarbanis hills intersection xpx maps",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/barbanis2D/barbanis2d.html",
+        "url": "http://localhost:4000/act2/barbanis2D/barbanis2d.html",
         "teaser":null},{
         "title": "Caldera model",
         
-        "excerpt": "caldera fig upper lambda index dynamical saddle region central y matching x manifold minimum potential left right space file calderac phase heteroclinic unstable cite bib energy stable structures upo pes trajectories saddles c panel periodic lower figpanel connection values equation eq partial parameter trajectory mechanism px py stretching model between sec critical dfrac phenomenon points describe section orbit id surface begin end h dot e lh rh chemical shallow center dof work hamiltonian chapter show existence described equilibrium point referred label hand equi mx orbits manifolds forward towards formation middle value organic reactions doubleday its walls symmetry exit entering exits",
+        "excerpt": "caldera upper lambda index dynamical saddle region central y matching x potential manifold minimum ref left right space energy phase heteroclinic unstable cite trajectories stable structures fig upo pes label saddles c panel periodic lower figpanel connection values equation eq partial parameter trajectory mechanism px py stretching model between critical surface equi dfrac row phenomenon points describe section chapter orbit begin end h dot e rh lh forward chemical shallow center dof work hamiltonian show existence described equilibrium point referred hand mx respectively caption orbits manifolds towards formation middle value inside backward second organic reactions doubleday its walls symmetry exit",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/caldera/caldera-1_new.html",
+        "url": "http://localhost:4000/act2/caldera/caldera-1.html",
         "teaser":null},{
         "title": "De Leon model",
         
         "excerpt": "x y mathbf t lambda aligned width figures rm energy bar png partial mathcal delta periodic begin frac end eqn e v yw eq orbit subfigure includegraphics textwidth unstable zeta equilibrium h pxtau py point px figc reference exp fig correction db initial backwardlagdescdeleonbernee phi forwardlagdescdeleonbernee q u label dx manifolds epsilon p where ddagger overline small guess g stable saddle s using procedure epsilons total numerical transition right dot pm mu trajectories differential hamiltonian given potential left sqrt denote omega reactive islands condition figa b isomerization type vector c d reaction matrix ms obtained section space orbits manifold order",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/deLeon_Berne/deleon_berne.html",
+        "url": "http://localhost:4000/act2/deLeon_Berne/deleon_berne.html",
         "teaser":null},{
         "title": "Double-Morse oscillator",
         
-        "excerpt": "gamma fig periodic trajectories lagrangian unstable orbits space x surface manifolds stable region label dividing cite energy phase ref potential y regions roaming between orbit descriptor tau figures descriptors img src jpg width height initial t three different fate system set e m map caption projection alt title dynamics well configuration morse conditions asymptotic point evaluated mathbf p hamiltonian manifold double where associated consider poincar lambda points v rightarrow dissociation sec structure b plots cross wells behaviour surfaces trajectory not transport lines saddle structures equation px chaotic intersection carpenterdynamics method invariant value section show constant line intersections close simeq times",
+        "excerpt": "gamma fig trajectories periodic lagrangian unstable surface space orbits manifolds x stable region cite dividing label energy ref potential phase between regions roaming orbit y descriptor descriptors tau initial figures three t img src jpg width height different fate e system m projection map dynamics well set conditions asymptotic mathbf morse hamiltonian configuration alt title where associated poincar lambda double caption point evaluated manifold rightarrow structure consider b p sec wells points behaviour trajectory not v lines cross dissociation structures surfaces transport equation px plots chaotic intersection carpenterdynamics method saddle value section constant intersections close simeq times freedom flat using",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/double_morse/prueba.html",
+        "url": "http://localhost:4000/act2/double_morse/prueba.html",
         "teaser":null},{
         "title": "Four-well potential",
         
-        "excerpt": "x y right energy h left index equation fig phase space delta well py px wells saddle begin frac end pes sqrt system points trajectory potential dfrac quad uncoupled img width height src figures upper trajectories dynamics dof alpha case symmetric saddles sign lower jpg mathcal inside critical since xs hamiltonian isomerization surface cylinder v p s mathbb r structures reaction point pm different initial label where eq partial three between change spherical separatrix asymmetric below bottleneck d b plane deltac equilibrium energies trapped lds move region c e moreover through bigg corresponding mu four condition text w given not",
+        "excerpt": "x y right energy h left index equation space phase delta well py wells px saddle fig begin frac end pes sqrt system points trajectory potential dfrac quad uncoupled img width height src figures upper label trajectories dynamics dof alpha case symmetric saddles sign ref lower jpg mathcal inside critical since xs hamiltonian isomerization surface v p s mathbb r structures reaction point pm cylinder different initial eq partial three between separatrix where asymmetric below bottleneck d b plane spherical deltac equilibrium energies trapped change lds condition move region c e moreover through bigg corresponding mu four configuration w given",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/four_well_morse/booksprinttest_makrina_new.html",
+        "url": "http://localhost:4000/act2/four_well_morse/booksprinttest_makrina.html",
         "teaser":null},{
         "title": "Saddle-Node Hamiltonian",
         
-        "excerpt": "varepsilon space energy q phase x omega equation fig h manifolds surface saddle mathcal reaction system begin left p right end dynamics px sqrt file hamsn cite bib mu eq e trajectories potential unstable well invariant lds hamiltonian ds dof stable section lambda u point barrier index coupling alpha region dfrac frac geometry nhim given where c strength bottleneck dimensional equilibrium using reactive quad pm mathbb poincar ld b label origin d r regions structures pes configuration chemical motion text cm mathbf node between products therefore model systems shown align total curve map its reactants upo uncoupled tau dynamical ref",
+        "excerpt": "varepsilon space energy q fig phase x omega equation h manifolds surface saddle mathcal reaction system begin left p right end dynamics px sqrt cite mu eq e trajectories potential unstable well invariant lds label hamiltonian ds dof ref stable section lambda u point barrier index coupling alpha region dfrac frac geometry nhim given where c strength bottleneck dimensional equilibrium using reactive quad pm mathbb poincar ld b origin d r regions structures pes configuration chemical motion cm mathbf node between products therefore model systems shown total curve map its reactants upo uncoupled tau dynamical boundary high escape img src",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/hamiltonian_sn/HSN_victor_new3.html",
-        "teaser":null},{
-        "title": "Act2 Title",
-        
-        "excerpt": "intro act hello edit me add text pretty picture",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/act2/intro_act2.html",
+        "url": "http://localhost:4000/act2/hamiltonian_sn/HSN_victor.html",
         "teaser":null},{
         "title": "System Bath 1",
         
-        "excerpt": "r ds p fig point space v dividing surface potential trajectories recrossing po transit saddle energy system equation configuration phase pes pods mu product points xi yi dsclosefig line times reaction reactive ts not solvent projection well c where location approximate minimum mass model bath x frac e px reactions locally non however only because solute between family red j reduced reactant circles perp rate solution transition different tst criterion our hynes shown unstable periodic above its structure oscillator figures png width h momenta max py parameter coordinate irc blue increases transitfig chapter state theory wigner eyring through take defined",
+        "excerpt": "r ds p fig point space v dividing surface potential system trajectories recrossing po transit saddle energy equation configuration phase pes pods mu product points xi yi dsclosefig line times bath model reaction reactive ts not solvent projection well c where location approximate minimum mass x frac e px reactions locally non however only because solute between family j reduced reactant circles perp rate solution transition different tst criterion our hynes shown unstable periodic above its structure oscillator figures png width h momenta max py parameter coordinate irc blue increases transitfig state theory wigner eyring through chapter take defined definition",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act2/system_bath1/system_bath1.html",
+        "url": "http://localhost:4000/act2/system_bath1/system_bath1.html",
         "teaser":null},{
         "title": "Three degree-of-freedom Barbanis system",
         
         "excerpt": "dimensional space phase eqn energy z structures x hamiltonian manifolds dof y fig nhim reference potential surface systems invariant px frac type py omegay omegaz e pz rm system such method lagrangian label omegax epsilon eta eqref eq three escape high its left right using surfaces region trajectory points u well physics present diagnostic configuration initial conditions total equilibrium coordinates figures png width mathbb freedom barbanis used rates ionization transport motion low nonlinear trajectories methods also saddle stable descriptor ld section align hamiltonianbcdof point barbaniscontopoulosdof excess delta r four isoenergetic barbanisdofuxpx n chemical mechanics applied article dynamics underlying hnon heiles",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act3/barbanis_3dof/barbanis_3dof.html",
-        "teaser":null},{
-        "title": "Act 3 Title",
-        
-        "excerpt": "intro act hello edit me add text pretty picture",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/act3/intro_act3.html",
-        "teaser":null},{
-        "title": "N-Degree-of-Freedom System-Bath Model 2",
-        
-        "excerpt": "system r point space fig t ld ds reactive not tau dof initial plots bath mathbf our phase potential x v method value model left right obtained trajectories however problem saddle conditions surface between minimum equation where recrossing location shown energy figures mu c position momenta dividing chemical different ts only systems pods also red png width p values those configurational ldfirst line reaction non because using solvent po mass font begin frac sum reduced int full dt trajectory methodology close reactions rate calculations tst locally criterion every definition hynes single effect solute much after described its represents studied j",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/act3/system_bath1/main.html",
+        "url": "http://localhost:4000/act3/barbanis_3dof/barbanis_3dof.html",
         "teaser":null},{
         "title": "N-Degree-of-Freedom System-Bath Model 1",
         
-        "excerpt": "x frac j bath nb eqn y reference c omega cdots system space partial omegaj phase label type p quad reaction model omegac xj reactive begin aligned trajectories modes end width dynamics ldots subfigure includegraphics textwidth figures slicedbackwardlagdescsystembathe pxtaunb png dimensional energy given right where sum h yj left eta xi freedom coupled surface coupling omegai isomerization using ds equilibrium high eqref text rm ns omegae solvent v hamiltonian degrees log ref cv tau coordinates systems points nhim dof pi e reactions mathcal chemical configuration gives density hameqsysbath overline well dividing db py dot q pmatrix hspace arraycolsep m thus",
+        "excerpt": "system r fig t point ld space tau ds reactive dof initial plots bath mathbf not x v method value left right obtained model phase our potential conditions trajectories saddle equation where energy problem figures mu c position momenta minimum chemical however pods shown location also png width p values those configurational ldfirst line systems po mass begin frac sum reduced between int full dt trajectory different methodology close surface calculations reaction using described its represents j label end second action n case following rc coordinates length very ldproject both eyring required above general only mentioned modelfig oscillator study hamiltonian",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/act3/system_bath2/system_bath.html",
-        "teaser":null},{
-        "title": "One DoF Quadratic Normal Form",
-        
-        "excerpt": "q h lambda frac p fig energy dof saddle equation point begin end partial dofsaddle trajectories nhim ds surface trivial potential b reaction reacting stable unstable manifolds sqrt case ideas hamiltonian given underbrace stackrel label ham associated eqnarray dot show v phase space system only coordinate simple non its line fixed points dividing reactions degree freedom always useful start basics fix linear left right kinetic quad hamiltons equations nonumber hameq graph portrait corresponding eqref img width height src figdofsaddle png id figcaption style text align centerfont size pxbfig bem em figcaptionhr archetypical modelling dynamics configuration corresponds change sign requires shown",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/fundamental_models/1_DoF_saddle/1_DOF_saddle_new.html",
-        "teaser":null},{
-        "title": "Two DoF Quadratic Normal Form",
-        
-        "excerpt": "h q p frac equation lambda omega left right energy partial saddle begin end fig dof surface quad corresponding dot ds label phase mbox ge sqrt orbit equilibrium given nonumber hameq type dofsaddle eqref since sign space trajectories reaction dimensional forward backward nhim index center point underbrace ham where reactive bath equations eqnarray show contours potential b v defined note system changes therefore four its particular intersection also mode must clear form periodic normal coordinates degree freedom consider quadratic hamiltonian represents corresponds associated hamiltons origin portrait hamiltonians uncoupled sketch portraits separately discuss distribution total between simple manner img width height",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/fundamental_models/2_DoF_index_1_saddle/2_dof_index_1_saddle_new.html",
-        "teaser":null},{
-        "title": "Three DoF Index 2",
-        
-        "excerpt": "q frac index fig p partial saddle dividing surface energy h points globalds equation mbox file begin end cite reactiondynamics bib saddles potential dot total dynamics given associated structure examples uncoupled well systems label nonumber pot critical reactants products region example global reaction collins such geometrical type give above system consider img width height src png id figcaption style text align centerfont size pxbfig bem em figcaptionhr hamiltonian underbrace eqnarray array minima illustrate eqref denotes particular corresponded sign coordinate influence studied ezraphase haller mauguiere construction general k however section describe point constructed analyzing isomerization buckled nanobeam collinsisomerization intriguingly similar arose",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/fundamental_models/2_DoF_index_2_saddle/index_2_saddle_new.html",
-        "teaser":null},{
-        "title": "Three DoF Index 1 Quadratic Normal Form",
-        
-        "excerpt": "h p q frac omega left right equation partial lambda dot begin quad end saddle label nonumber surface center dimensional ge ds equilibrium dof underbrace given trajectories reaction energy forward backward mbox nhimd invariant eqref index point corresponding equations eqnarray hameq phase hence example space its intersection must form therefore sphere normally hyperbolic always remain three degree freedom consider quadratic hamiltonian ham hamiltons type origin since hamiltonians uncoupled analyze portraits separately previous examples corresponds reactive mode become unbounded bath modes bounded system occurs coordinate trajectory changes sign natural dividing five six want examine structure closely particular fixed note occur also",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/fundamental_models/3_DoF_index_1_saddle/3_dof_index_1_saddle_new.html",
+        "url": "http://localhost:4000/act3/system_bath1/main.html",
         "teaser":null},{
         "title": "Fundamental Models",
         
-        "excerpt": "q h p frac equation partial lambda energy omega saddle begin left right end dof surface space dot label fig phase reaction mbox index system dimensional quad ds nonumber given trajectories potential dynamics dividing underbrace corresponding eqref eqnarray nhim points ge hamiltonian point sign ref dofsaddle sqrt forward backward associated configuration coordinate b hameq total its must type globalds ham equations v structures example reactions bath uncoupled structure particular degree freedom problem development reactants products reacting show img width height src figures png caption revealing implications unstable consider also fixed coordinates four equilibrium since therefore three intersection form orbit examples",
+        "excerpt": "q p h frac right left omega space lambda equation saddle phase fig end energy begin surface dot toc dof dimensional partial reaction mathcal dynamics index align qp u span label class eqref nhim structures ref ds sqrt degree freedom development implications t revealing given nonumber href data modified id item system hamiltonian quad trajectories stable unstable problem ldsqhdofqp manifolds mbox points cap potential point figures png dividing intersection eqn num nbspnbsp lagrangian underbrace corresponding origin coordinates dfrac lbrace rbrace m vert three coordinate eqnarray lines caption isoenergetic backward form s w lilispana sign b equations hameq total img width",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/fundamental_models/fundamental_models.html",
+        "url": "http://localhost:4000/fundamental_models/fundamental_models.html",
         "teaser":null},{
-        "title": "Definition of Index of a Saddle",
+        "title": "Lagrangian Descriptors",
         
-        "excerpt": "n q partial equation times eqref point bar eigenvalues begin end ldots rm hessian lambda frac v equations saddle mathbb r qi matrix id following p quad hamiltons dot hameqint k right m label critical potential energy qj equilibrium index where denote function given stability left array denoted center hamiltonian form evaluated hence sigmak e jacobian det points negative positive pi space variables corresponding gives rise differential eqnarray want second derivative referred symmetric eivhess hand linearized calculation file hamldreaction cc eivm pairs lambdak kn must eigenvalue terms rest zero cdots consider degree freedom h sum hamint configuration conjugate momentum just",
+        "excerpt": "x t tau lds mathbf phase space p eq manifolds equation y system unstable fig stable h begin m dynamical initial end px points integration structures cite label where method mathcal trajectories dfrac eqref right field b left invariant conditions py e r energy dot dynamics also given hamiltonian value scalar definition lagrangian using saddle region origin potential quad c nhim fixed ld mp variable ref descriptors v non arclength moreover values norm geometrical forward backward along function therefore minimum lambda systems nonlinear since dt point local differentiable w u order omega cases portrait its analysis tool behavior means vector",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/prologe/Definition_of_the_index_of_a_saddle/saddle_index_definition_new.html",
+        "url": "http://localhost:4000/prologue/LDs/LDs_victor.html",
         "teaser":null},{
-        "title": "Lagrangian Descriptors (LDs)",
+        "title": "Prologue",
         
-        "excerpt": "x lds t tau mathbf phase space manifolds p eq fig equation y system unstable stable dynamical begin integration h end initial m field points method where px cite file trajectories structures also b mathcal dfrac scalar invariant eqref right e left conditions definition py dynamics given r label dot mp energy hamiltonian saddle function lagrangian its forward backward value ld v region fixed moreover origin descriptors geometrical since tool using quad c norm nhim variable dt vector order arclength systems means non along int f values point therefore lambda minimum nonlinear provide template transport potential behavior condition result hyperbolic",
+        "excerpt": "n surface energy q partial point equation times reaction space dividing equilibrium eqref ds begin coordinates bar eigenvalues state end phase hamiltonian ldots rm tst equations saddle hessian lambda theory following configuration rate recrossing frac v transition potential referred coordinate function hamiltons mathbb r qi matrix id ts bond p quad dot hameqint k right m described dimension flux any trajectory where label critical qj reactive concepts into dynamics literature not hence momentum system give through locally property crosses truhlarvtst product second constant form index denote given stability left array denoted center periodic invariant dynamical book describe field commonly terms",
         "categories": [],
         "tags": [],
-        "url": "https://jupyterbook.org/prologe/LDs/LDs_victor_new.html",
-        "teaser":null},{
-        "title": "Introduction and Background",
-        
-        "excerpt": "energy reaction coordinates ds space hamiltonian n surface configuration bond coordinate phase described referred dimension concepts system dynamical into describe bonds breaking molecule s function momentum flux systems such invariant manifolds chemical dynamics literature example file booksprintbib references book arise field common definition molecules collection atoms following set dof independent particular total scalar valued dimensional codimension regions reactants products trajectories locally recrossing property point our rate introduction arising nonlinear theory periodic orbits normally hyperbolic nhims stable unstable introduced study perspective fairly substantial developed topic recent years cite wigginsrole waalkensgeometrical waalkenswigner wigginsnormally therein fair say mathematical flavour not surprising since originated",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/prologe/Prologue_new.html",
-        "teaser":null},{
-        "title": "Transition State Theory",
-        
-        "excerpt": "surface dividing state tst equilibrium phase rate truhlarvtst space ts energy transition reaction reactions product constant vtst theory reactant garrettruhlargtst usually any trajectory path point its although quantum mechanics give not commonly claimed conventional assumption means because enough jbanderson however cross second reach without recrossing flux through reactive crosses found located saddle maximum truhlargarretvtst garrettruhlarjcp keck horiuti wigner configuration branch chemistry concerned computation chemical rates much discussion mechanical analogs pechukas briefly discuss book original version based classical since concept incompatible overview supposed review vast literature exists area connect mathematical study geometrical structures characterize dynamics makes main assumptions mahan called requires",
-        "categories": [],
-        "tags": [],
-        "url": "https://jupyterbook.org/prologe/TST.html",
+        "url": "http://localhost:4000/prologue/prologue.html",
         "teaser":null},]
 </script>
             </div>

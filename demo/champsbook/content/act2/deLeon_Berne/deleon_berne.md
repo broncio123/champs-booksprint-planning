@@ -643,6 +643,3 @@ U_{yp_y}^- &= \left\{(x,y,p_x,p_y) \; | \; x = 0, \; p_x(x,y,p_y;E) < 0 \right\}
 \begingroup
 \bibliographystyle{rsc}
 \endgroup
-
-
-# References

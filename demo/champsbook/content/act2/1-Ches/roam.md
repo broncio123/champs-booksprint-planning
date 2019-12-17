@@ -196,7 +196,9 @@ $\theta_2$ is the angle representing the orientation of CH$_3^+$ with
 respect to the fixed axis.
 
 In these coordinates the kinetic energy has the form
+
 $$T = \frac{1}{2 m} \left( p_r^2 + \frac{1}{r^2} p_2^2 \right) + \frac{1}{2 I} p_1^2,$$
+
 where $m$ is the reduced mass of the system, and $I$ is the moment of
 inertia of the rigid body CH$_3^+$. The system has a rotational $SO(2)$
 symmetry, which can be reduced giving a family of systems parametrised
@@ -204,12 +206,18 @@ by the (conserved) angular momentum.
 
 This reduction can be obtained from the following canonical
 transformation:
+
 $$\theta_1 = \theta + \psi, \quad \theta_2 = \psi, \quad p_1 = p_\theta, \quad p_2 = p_\psi - p_\theta.$$
+
 Then $p_\psi = p_1 + p_2=:\lambda$ is the total angular momentum and it
-is conserved. It follows that $$\begin{aligned}
+is conserved. It follows that 
+
+$$\begin{aligned}
   H(r,\theta,p_r, p_\theta;\lambda) &= \frac{1}{2 m} p_r^2 + \frac{1}{2 I} p_\theta^2  + \frac{1}{2 m r^2} (p_\theta - \lambda)^2  + U(r,\theta) \\
   &= \frac{1}{2 m} p_r^2 + \frac{1}{2} \left(\frac{1}{I} + \frac{1}{m r^2} \right) p_\theta^2  - \frac{\lambda}{m r^2} p_\theta + \frac{\lambda^2}{2 m r^2} + U(r,\theta),
-  \end{aligned}$$ where $U(r,\theta)$ is the potential energy from
+  \end{aligned}$$ 
+  
+where $U(r,\theta)$ is the potential energy from
 [@Chesnavich1986] that we will discuss later in Section
 [\[subsec:ch4potential\]](#subsec:ch4potential){reference-type="ref"
 reference="subsec:ch4potential"}. In the last expression the term
@@ -238,7 +246,9 @@ therefore assume for a moment that $r$ is sufficiently large, so that
 $U$ is rotationally symmetric and we can drop $\theta$ in the argument
 of $U$. The system reduced by the rotational symmetry then has the
 effective potential
+
 $$V_{red}(r;\lambda)=\frac{(p_\theta-\lambda)^2}{2 m r^2} + U(r),$$
+
 where $p_\theta$ becomes a constant of motion. The reduced system admits
 a relative equilibrium, provided $U(r)$ is monotonous, $U(r)<0$ and
 $U\in o(r^{-2})$ as $r\rightarrow\infty$. Potentials of most chemical
@@ -246,6 +256,7 @@ reactions, including
 $\text{CH}_4^+ \rightarrow \text{CH}_3^+ + \text{H}$, meet this
 condition. The relative equilibrium is given by $r=r_{p_\theta}$,
 $p_r=0$, where $r_{p_\theta}$ is the solution of
+
 $$\dot {p}_r = -\frac{\partial H}{\partial r} = \frac{1}{m r^3} (p_\theta - \lambda )^2 - \frac{\mathrm{d} U}{\mathrm{d} r} = 0.$$
 
 For the class of potentials $U= -c r^{-(2+\epsilon)}$ with
@@ -254,7 +265,12 @@ $c,\epsilon>0$, the relative equilibrium is unstable (Fig.
 reference="fig:centrifugalTS"}). This follows from the reduced
 $1$-degree-of-freedom Hamiltonian having a saddle at this equilibrium as
 can be seen from computing the Hessian matrix which is diagonal with the
-elements $$\frac{\partial^2 H}{\partial p_r^2}=\frac{1}{m},$$ and
+elements 
+
+$$\frac{\partial^2 H}{\partial p_r^2}=\frac{1}{m},$$ 
+
+and
+
 $$\begin{gathered}
    \frac{\partial^2 H}{\partial r^2}=\frac{3}{m r^4} (p_\theta - \lambda )^2 + \frac{\mathrm{d^2} U}{\mathrm{d} r^2} = \frac{3}{r} \frac{\mathrm{d} U}{\mathrm{d} r}+ \frac{\mathrm{d^2} U}{\mathrm{d} r^2}
    \\=c\frac{3(2+\epsilon)}{r^{4+\epsilon}}-c\frac{(3+\epsilon)(2+\epsilon)}{r^{4+\epsilon}}=-c\frac{\epsilon(2+\epsilon)}{r^{4+\epsilon}}.
@@ -279,22 +295,27 @@ The condition $U\in o(r^{-2})$ as $r\rightarrow\infty$ is reminiscent of
 the assumption made by the authors of [@Chesnavich1980]. However, they
 consider a growth restriction near the origin, namely that for all
 $\theta$
+
 $$\left(\frac{\lambda^2}{2 m r^2} + U(r,\theta)\right)\in o(r^{-2}) \quad \text{as}\quad r\rightarrow0,$$
-and additionally require
-$\left(\frac{\lambda^2}{2 m r^2}  + U(r,\theta)\right)$ to have at most
-one maximum for each $\theta$. We do not impose restrictions on $U$ near
-$r=0$ and admit several maxima.
+
+and additionally require $\left(\frac{\lambda^2}{2 m r^2}  + U(r,\theta)\right)$ to have at most
+one maximum for each $\theta$. We do not impose restrictions on $U$ near $r=0$ and admit several maxima.
 
 ### Potential energy {#subsec:ch4potential}
 
 The potential as suggested by Chesnavich [@Chesnavich1986] is the sum
-$$U(r,\theta ) = U_{CH} (r) + U_{*} (r,\theta),$$ where $U_{CH}$ is a
+
+$$U(r,\theta ) = U_{CH} (r) + U_{*} (r,\theta),$$
+
+where $U_{CH}$ is a
 radial long range potential and $U_{*}$ a short range "hindered rotor"
 potential that represents the anisotropy of the rigid molecule CH$_3^+$
 ([@Jordan1991], [@Chesnavich1980]).
 
 The long range potential is defined by
+
 $$U_{CH} (r) =  \frac{D_e}{c_1 - 6} \left( 2 (3-c_2) e^{c_1 (1-x)}  - \left( 4 c_2 - c_1 c_2 + c_1 \right) x^{-6} - (c_1 - 6) c_2 x^{-4} \right),$$
+
 where $x = \frac{r}{r_e}$. The constants $D_e=47$ kcal/mol and $r_e=1.1$
 Å represent the C-H dissociation energy and equilibrium bond length
 respectively. $c_1=7.37$ and $c_2=1.61$ result in a harmonic oscillator
@@ -321,8 +342,14 @@ $a = 1$ versus $r$.[]{#fig:ChesnavichCH4pR}]
 
 
 The short range potential has the form
-$$U_{*} (r,\theta) = \frac{U_0(r)}{2} (1 - \cos 2 \theta ),$$ where
-$$U_0(r) = U_e e^{-a(r-r_e)^2},$$ is the rotor barrier, which is a
+
+$$U_{*} (r,\theta) = \frac{U_0(r)}{2} (1 - \cos 2 \theta ),$$
+
+where
+
+$$U_0(r) = U_e e^{-a(r-r_e)^2},$$
+
+is the rotor barrier, which is a
 smoothly decreasing function of the distance $r$, and $U_e=55$ kcal/mol
 is the barrier height, see Figure
 [\[fig:ChesnavichCH4pR\]](#fig:ChesnavichCH4pR){reference-type="ref"
@@ -352,8 +379,15 @@ transition.[]{#fig:potentialcontour1}]
 Note that the angular dependence $(1 - \cos 2\theta)$ in $U_{*}$ is
 $\pi$-periodic and even. These properties induce a reflection symmetry
 of $U$ with respect to the $x$ and $y$ axes, because
-$$U(r,\theta)=U(r,-\theta),$$ corresponds to the reflection about the
-$x$ axis and $$U(r,\theta)=U(r,-\theta+\pi),$$ corresponds to the
+
+$$U(r,\theta)=U(r,-\theta),$$
+
+corresponds to the reflection about the
+$x$ axis and 
+
+$$U(r,\theta)=U(r,-\theta+\pi),$$ 
+
+corresponds to the
 reflection about the $y$ axis.
 
 
@@ -403,7 +437,9 @@ points of $H$ are given by $z_i^\pm = ( q_i^\pm, 0)$ and
 $\widetilde{z}_1^\pm = (\widetilde{q}_1^\pm, 0)$.
 
 The critical energies are ordered as
+
 $$E_0 < E_1 < 0 < \widetilde{E}_1 < E_2,$$
+
 and all critical points can
 be found in the contour plot in Figure
 [\[fig:potentialcontour1\]](#fig:potentialcontour1){reference-type="ref"
@@ -454,9 +490,15 @@ dynamical behaviour of our system.
 Similarly to critical points, periodic orbits also come in pairs because
 of the symmetry of the potential. The periodic orbits are then related
 by the discrete rotational symmetry
-$$(r,\theta,p_r,p_\theta) \mapsto(r,\theta+\pi,p_r,p_\theta),$$ or the
+
+$$(r,\theta,p_r,p_\theta) \mapsto(r,\theta+\pi,p_r,p_\theta),$$
+
+or the
 discrete reflection symmetry
-$$(r,\theta,p_r,p_\theta) \mapsto(r,-\theta,p_r,-p_\theta).$$ In
+
+$$(r,\theta,p_r,p_\theta) \mapsto(r,-\theta,p_r,-p_\theta).$$ 
+
+In
 contrast to critical points, non-degenerate periodic orbits persist in
 energy intervals forming one-parameter families. As periodic orbits
 evolve with varying energy, they occasionally bifurcate with other
@@ -549,7 +591,7 @@ description of the evolution of $\Gamma^o$ and $\Gamma^a$ and its
 bifurcations may hint at qualitative changes of structures formed by
 invariant manifolds.
 
- 
+
 ![Bifurcation diagrams showing $\Gamma^i_\pm$ (blue), $\Gamma^o_\pm$
 (black), $\Gamma^a_\pm$ (red) and orbits of the family $\Gamma^b$
 (magenta) in the energy-action ($E,S$)
@@ -591,7 +633,7 @@ of orbits in the families. The Greene residue, due to J. M. Greene
 [@Greene68] is a quantity characterizing the stability of the orbits. It
 is derived from the monodromy matrix, a matrix that describes the
 behaviour of solutions in the neighbourhood of a periodic orbit.
- 
+
 
 ![Bifurcation diagrams showing $\Gamma^i_\pm$ (blue), $\Gamma^o_\pm$
 (black), $\Gamma^a_\pm$ (red) and orbits of the family $\Gamma^b$
@@ -727,7 +769,7 @@ $\theta=0$, $p_r<0$, $p_\theta=0$ and/or $\theta=\pi$, $p_r<0$,
 $p_\theta=0$
 
 ### Division of energy surface {#subsec:divide energy surface}
- 
+
 
 Using the inner and outer DSs we can define regions on the energy
 surface and formulate roaming as a transport problem.
@@ -998,11 +1040,17 @@ configuration space projection of $\Gamma^i_+$, similarly to
 [@Jaffe1999]. Due to the symmetry of the system, $\Gamma^i_+$ can be
 very well approximated by a quadratic polynomial for every energy. Next
 we use the generating function (type 2 in [@Arnold76])
+
 $$G(r,\theta,p_\rho,p_\sigma)=(r-\bar{r}(\theta))p_\rho+\theta p_\sigma.$$
-From that we obtain $$\begin{aligned}
+
+From that we obtain 
+
+$$\begin{aligned}
   p_r=\frac{\partial G}{\partial r}&=&p_\rho,\\
   p_\theta=\frac{\partial G}{\partial \theta}&=&p_\sigma-\bar{r}'(\theta) p_\rho,\\
-  \end{aligned}$$ and therefore
+  \end{aligned}$$ 
+  
+and therefore
 $p_\sigma=p_\theta+\bar{r}'(\theta) p_\rho$. The surface of section is
 now defined by $\rho=0$, $\dot{\rho}>0$, i.e. the outward hemisphere of
 the inner DS corresponding to transport in the direction from $B_1^+$ to
@@ -1343,7 +1391,10 @@ annulus of the middle DS by $P$. By our findings all trajectories
 originating in $B_1^+$ and all trajectories that cross the inward
 annulus of the outer DS reach the middle DS.
 
-By definition we have that $$\gamma^{u+}_{i}\cap\gamma^{s-}_{o},$$
+By definition we have that 
+
+$$\gamma^{u+}_{i}\cap\gamma^{s-}_{o},$$
+
 contains trajectories that dissociate quickly. This is due to the fact
 that $\gamma^{u+}_{i}$ contains trajectories that just escaped from
 $B_1^+$ and $\gamma^{s-}_{o}$ contains those that reach the outer DS and
@@ -1478,3 +1529,7 @@ expect proportionally fewer roaming trajectories to enter $B_1^+$
 multiple times at $E=2$ than at $E=1$. Instead it is probable to find
 roaming trajectories spending the majority of their residence time in
 $B_2$ at $E=2$.
+
+```python
+
+```

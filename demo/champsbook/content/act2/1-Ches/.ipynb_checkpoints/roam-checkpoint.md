@@ -1,9 +1,6 @@
 # Chesnavich Model
 
-## Introduction {#sec:introch4}
-
-
-## Roaming
+## Introduction{#sec:introch4}
 
 For a long time it was believed that dissociation of molecules can only
 happen in two ways. Firstly, the original molecule can dissociate into
@@ -45,8 +42,6 @@ Bowman and Shelper [@Bowman2011] have studied the dynamics of H$_2$CO
 and CH$_3$CHO to find evidence that roaming is more connected to the
 radical rather than the molecular channel. At the same time, roaming was
 observed at energies below the radical threshold.
-
-## Known results
 
 In recent years dynamical systems theory has made an impact in chemistry
 by providing the means to understand the classical phase space
@@ -138,16 +133,12 @@ definition involves technical conditions on H$_2$ vibrational energy,
 time spent at a certain minimal distance from CO with low kinetic energy
 and large H-H bond length.
 
-## Objectives and outline of this paper
-
-
 Because there is no single generally accepted definition of roaming,
 there is a clear need for a deeper understanding of the mechanisms
 behind dissociations.
 
 In this work we present a detailed study of dissociation in the CH$_4^+$
-model by [@Chesnavich1986]. We discuss all types of dynamics present in
-this model and explain their connection to the underlying phase space
+model by [@Chesnavich1986]. We discuss all types of dynamics present in this model and explain their connection to the underlying phase space
 geometry and invariant structures. We construct various surfaces of
 section and from the dynamics on these surfaces we deduce the role of
 invariant manifolds in slow dissociation and ultimately show a certain
@@ -169,7 +160,7 @@ the Conley-McGehee representation
 [@Conley1968; @McGehee1969; @MacKay1990] and study the dynamics on the
 energy surface in full $3$ dimensions.
 
-The paper is organized as follows. In
+The chapter is organized as follows. In
 Sec. [\[sec:setup\]](#sec:setup){reference-type="ref" reference="sec:setup"} we
 introduce the Chesnavich's CH$_4^+$ model. In
 Sec. [\[sec:dynamics\]](#sec:dynamics){reference-type="ref" reference="sec:dynamics"}
@@ -187,10 +178,7 @@ reference="sec:representation"}. Conclusions are given in
 Sec. [\[sec:conclusions\]](#sec:conclusions){reference-type="ref"
 reference="sec:conclusions"}
 
-# Set-up {#sec:setup}
-
-## Chesnavich's CH$_4^+$ dissociation model {#subsec:system}
-
+# Development of the Problem: Chesnavich's CH$_4^+$ dissociation model{#sec:setup}
 
 Like [@Mauguiere2014] and [@Mauguiere2014b], we use the model for the
 $\text{CH}_4^+ \rightarrow \text{CH}_3^+ + \text{H}$ dissociation
@@ -208,7 +196,9 @@ $\theta_2$ is the angle representing the orientation of CH$_3^+$ with
 respect to the fixed axis.
 
 In these coordinates the kinetic energy has the form
+
 $$T = \frac{1}{2 m} \left( p_r^2 + \frac{1}{r^2} p_2^2 \right) + \frac{1}{2 I} p_1^2,$$
+
 where $m$ is the reduced mass of the system, and $I$ is the moment of
 inertia of the rigid body CH$_3^+$. The system has a rotational $SO(2)$
 symmetry, which can be reduced giving a family of systems parametrised
@@ -216,19 +206,23 @@ by the (conserved) angular momentum.
 
 This reduction can be obtained from the following canonical
 transformation:
+
 $$\theta_1 = \theta + \psi, \quad \theta_2 = \psi, \quad p_1 = p_\theta, \quad p_2 = p_\psi - p_\theta.$$
+
 Then $p_\psi = p_1 + p_2=:\lambda$ is the total angular momentum and it
-is conserved. It follows that $$\begin{aligned}
+is conserved. It follows that 
+
+$$\begin{aligned}
   H(r,\theta,p_r, p_\theta;\lambda) &= \frac{1}{2 m} p_r^2 + \frac{1}{2 I} p_\theta^2  + \frac{1}{2 m r^2} (p_\theta - \lambda)^2  + U(r,\theta) \\
   &= \frac{1}{2 m} p_r^2 + \frac{1}{2} \left(\frac{1}{I} + \frac{1}{m r^2} \right) p_\theta^2  - \frac{\lambda}{m r^2} p_\theta + \frac{\lambda^2}{2 m r^2} + U(r,\theta),
-  \end{aligned}$$ where $U(r,\theta)$ is the potential energy from
+  \end{aligned}$$ 
+  
+where $U(r,\theta)$ is the potential energy from
 [@Chesnavich1986] that we will discuss later in Section
 [\[subsec:ch4potential\]](#subsec:ch4potential){reference-type="ref"
 reference="subsec:ch4potential"}. In the last expression the term
 $\frac{\lambda}{m r^2} p_\theta$ gives rise to a Coriolis force in the
 equations of motion.
-
-## General setting {#subsec:general setting}
 
 As explained by [@Bowman2014], systems exhibiting roaming have a
 potential well for a small radius, representing the stable molecule, and
@@ -252,7 +246,9 @@ therefore assume for a moment that $r$ is sufficiently large, so that
 $U$ is rotationally symmetric and we can drop $\theta$ in the argument
 of $U$. The system reduced by the rotational symmetry then has the
 effective potential
+
 $$V_{red}(r;\lambda)=\frac{(p_\theta-\lambda)^2}{2 m r^2} + U(r),$$
+
 where $p_\theta$ becomes a constant of motion. The reduced system admits
 a relative equilibrium, provided $U(r)$ is monotonous, $U(r)<0$ and
 $U\in o(r^{-2})$ as $r\rightarrow\infty$. Potentials of most chemical
@@ -260,6 +256,7 @@ reactions, including
 $\text{CH}_4^+ \rightarrow \text{CH}_3^+ + \text{H}$, meet this
 condition. The relative equilibrium is given by $r=r_{p_\theta}$,
 $p_r=0$, where $r_{p_\theta}$ is the solution of
+
 $$\dot {p}_r = -\frac{\partial H}{\partial r} = \frac{1}{m r^3} (p_\theta - \lambda )^2 - \frac{\mathrm{d} U}{\mathrm{d} r} = 0.$$
 
 For the class of potentials $U= -c r^{-(2+\epsilon)}$ with
@@ -268,7 +265,12 @@ $c,\epsilon>0$, the relative equilibrium is unstable (Fig.
 reference="fig:centrifugalTS"}). This follows from the reduced
 $1$-degree-of-freedom Hamiltonian having a saddle at this equilibrium as
 can be seen from computing the Hessian matrix which is diagonal with the
-elements $$\frac{\partial^2 H}{\partial p_r^2}=\frac{1}{m},$$ and
+elements 
+
+$$\frac{\partial^2 H}{\partial p_r^2}=\frac{1}{m},$$ 
+
+and
+
 $$\begin{gathered}
    \frac{\partial^2 H}{\partial r^2}=\frac{3}{m r^4} (p_\theta - \lambda )^2 + \frac{\mathrm{d^2} U}{\mathrm{d} r^2} = \frac{3}{r} \frac{\mathrm{d} U}{\mathrm{d} r}+ \frac{\mathrm{d^2} U}{\mathrm{d} r^2}
    \\=c\frac{3(2+\epsilon)}{r^{4+\epsilon}}-c\frac{(3+\epsilon)(2+\epsilon)}{r^{4+\epsilon}}=-c\frac{\epsilon(2+\epsilon)}{r^{4+\epsilon}}.
@@ -277,7 +279,7 @@ $$\begin{gathered}
 
 ![Schematic representation of the dominant long range potential and the
 "centrifugal term" over $r$ (left), and of $r_1$ over $p_\theta$
-(right).[]{label="fig:centrifugalTS"}](longrangepot.png){#fig:centrifugalTS
+(right).[]{label="fig:centrifugalTS"}](figures/longrangepot.png){#fig:centrifugalTS
 width="100%"}
 
 In the full system, the relative equilibrium is manifested as the
@@ -293,23 +295,27 @@ The condition $U\in o(r^{-2})$ as $r\rightarrow\infty$ is reminiscent of
 the assumption made by the authors of [@Chesnavich1980]. However, they
 consider a growth restriction near the origin, namely that for all
 $\theta$
+
 $$\left(\frac{\lambda^2}{2 m r^2} + U(r,\theta)\right)\in o(r^{-2}) \quad \text{as}\quad r\rightarrow0,$$
-and additionally require
-$\left(\frac{\lambda^2}{2 m r^2}  + U(r,\theta)\right)$ to have at most
-one maximum for each $\theta$. We do not impose restrictions on $U$ near
-$r=0$ and admit several maxima.
 
-## Potential energy {#subsec:ch4potential}
+and additionally require $\left(\frac{\lambda^2}{2 m r^2}  + U(r,\theta)\right)$ to have at most
+one maximum for each $\theta$. We do not impose restrictions on $U$ near $r=0$ and admit several maxima.
 
+### Potential energy {#subsec:ch4potential}
 
 The potential as suggested by Chesnavich [@Chesnavich1986] is the sum
-$$U(r,\theta ) = U_{CH} (r) + U_{*} (r,\theta),$$ where $U_{CH}$ is a
+
+$$U(r,\theta ) = U_{CH} (r) + U_{*} (r,\theta),$$
+
+where $U_{CH}$ is a
 radial long range potential and $U_{*}$ a short range "hindered rotor"
 potential that represents the anisotropy of the rigid molecule CH$_3^+$
 ([@Jordan1991], [@Chesnavich1980]).
 
 The long range potential is defined by
+
 $$U_{CH} (r) =  \frac{D_e}{c_1 - 6} \left( 2 (3-c_2) e^{c_1 (1-x)}  - \left( 4 c_2 - c_1 c_2 + c_1 \right) x^{-6} - (c_1 - 6) c_2 x^{-4} \right),$$
+
 where $x = \frac{r}{r_e}$. The constants $D_e=47$ kcal/mol and $r_e=1.1$
 Å represent the C-H dissociation energy and equilibrium bond length
 respectively. $c_1=7.37$ and $c_2=1.61$ result in a harmonic oscillator
@@ -325,13 +331,6 @@ the neighbourhood of $r=0$, Chesnavich suggest a cut-off at $r=0.9$. The
 cut-off is not near the region of interest in our study of roaming, nor
 does it have any significant implications.
 
-<!--
-<div id="fig">
-![Left: Graph of $U_{CH}$ versus $r$. Right: Graph of $U_{0}$ with $a = 1$ versus $r$.](potentialChesnavichPartVCH.png ){width=50%}
-![](potentialChesnavichPartVcoup.png){ width=50%}
-[\[fig:ChesnavichCH4pR\]]{#fig:ChesnavichCH4pR}
-</div>
--->
 
 ![Left: Graph of $U_{CH}$ versus $r$. Right: Graph of $U_{0}$ with
 $a = 1$ versus $r$.](potentialChesnavichPartVCH.png){width="50%"}
@@ -343,8 +342,14 @@ $a = 1$ versus $r$.[]{#fig:ChesnavichCH4pR}]
 
 
 The short range potential has the form
-$$U_{*} (r,\theta) = \frac{U_0(r)}{2} (1 - \cos 2 \theta ),$$ where
-$$U_0(r) = U_e e^{-a(r-r_e)^2},$$ is the rotor barrier, which is a
+
+$$U_{*} (r,\theta) = \frac{U_0(r)}{2} (1 - \cos 2 \theta ),$$
+
+where
+
+$$U_0(r) = U_e e^{-a(r-r_e)^2},$$
+
+is the rotor barrier, which is a
 smoothly decreasing function of the distance $r$, and $U_e=55$ kcal/mol
 is the barrier height, see Figure
 [\[fig:ChesnavichCH4pR\]](#fig:ChesnavichCH4pR){reference-type="ref"
@@ -374,11 +379,16 @@ transition.[]{#fig:potentialcontour1}]
 Note that the angular dependence $(1 - \cos 2\theta)$ in $U_{*}$ is
 $\pi$-periodic and even. These properties induce a reflection symmetry
 of $U$ with respect to the $x$ and $y$ axes, because
-$$U(r,\theta)=U(r,-\theta),$$ corresponds to the reflection about the
-$x$ axis and $$U(r,\theta)=U(r,-\theta+\pi),$$ corresponds to the
-reflection about the $y$ axis.
 
-# Setting up the transport problem {#sec:dynamics}
+$$U(r,\theta)=U(r,-\theta),$$
+
+corresponds to the reflection about the
+$x$ axis and 
+
+$$U(r,\theta)=U(r,-\theta+\pi),$$ 
+
+corresponds to the
+reflection about the $y$ axis.
 
 
 We follow [@Mauguiere2014] and set $a = 1$ for a slow transition from
@@ -388,7 +398,9 @@ potential relevant to finding periodic orbits, defining dividing
 surfaces and formulating roaming in terms of transport between regions
 on the energy surface.
 
-## Energy levels and Hill regions {#subsec:hill}
+## Revealing Phase Space Structures
+
+### Energy levels and Hill regions {#subsec:hill}
 
 Here we give details about the features of the potential relevant to the
 dynamics of the system. Being the most basic characteristic of the
@@ -425,7 +437,9 @@ points of $H$ are given by $z_i^\pm = ( q_i^\pm, 0)$ and
 $\widetilde{z}_1^\pm = (\widetilde{q}_1^\pm, 0)$.
 
 The critical energies are ordered as
+
 $$E_0 < E_1 < 0 < \widetilde{E}_1 < E_2,$$
+
 and all critical points can
 be found in the contour plot in Figure
 [\[fig:potentialcontour1\]](#fig:potentialcontour1){reference-type="ref"
@@ -462,7 +476,7 @@ to rotation occurs earlier. Although energy levels remain topologically
 equivalent, note the larger potential well and the smaller energy
 interval where the boundary of Hill region consists of three circles.
 
-## Relevant periodic orbits {#subsec:PO}
+### Periodic orbits {#subsec:PO}
 
 
 Next we study the invariant structures that can be found in the system
@@ -476,9 +490,15 @@ dynamical behaviour of our system.
 Similarly to critical points, periodic orbits also come in pairs because
 of the symmetry of the potential. The periodic orbits are then related
 by the discrete rotational symmetry
-$$(r,\theta,p_r,p_\theta) \mapsto(r,\theta+\pi,p_r,p_\theta),$$ or the
+
+$$(r,\theta,p_r,p_\theta) \mapsto(r,\theta+\pi,p_r,p_\theta),$$
+
+or the
 discrete reflection symmetry
-$$(r,\theta,p_r,p_\theta) \mapsto(r,-\theta,p_r,-p_\theta).$$ In
+
+$$(r,\theta,p_r,p_\theta) \mapsto(r,-\theta,p_r,-p_\theta).$$ 
+
+In
 contrast to critical points, non-degenerate periodic orbits persist in
 energy intervals forming one-parameter families. As periodic orbits
 evolve with varying energy, they occasionally bifurcate with other
@@ -506,7 +526,7 @@ Fig. [\[fig:po2\]](#fig:po2){reference-type="ref" reference="fig:po2"}.
 ![Configuration space projections of $\Gamma^i_\pm$ (blue),
 $\Gamma^o_\pm$ (black), $\Gamma^a_\pm$ (red) and one orbit of the family
 $\Gamma^b$ (magenta) at energy
-$E=2$.[]{label="fig:po2"}](po2.png){#fig:po2}
+$E=2$.[]{label="fig:po2"}](figures/po2.png){#fig:po2}
 
 -   $\Gamma^i$: The family of periodic orbits $\Gamma^i$ is born in a
     saddle-centre bifurcation at energy $E = -.29$. Until a host of
@@ -575,8 +595,12 @@ invariant manifolds.
 ![Bifurcation diagrams showing $\Gamma^i_\pm$ (blue), $\Gamma^o_\pm$
 (black), $\Gamma^a_\pm$ (red) and orbits of the family $\Gamma^b$
 (magenta) in the energy-action ($E,S$)
-plane.[]{label="fig:bifurcationS"}](BifEnergyAction_abio.png){#fig:bifurcationS
+plane.[]{label="fig:bifurcationS"}](figures/BifEnergyAction_abio.png){#fig:bifurcationS
 width="70%"}
+
+\caption{ energy-action ($E,S$) bifurcation diagram }
+
+
 
 There are various other periodic orbits, most notably ones corresponding
 to stable vibrations of the bound CH$_4^+$ molecule, Lyapunov orbits
@@ -614,20 +638,29 @@ behaviour of solutions in the neighbourhood of a periodic orbit.
 ![Bifurcation diagrams showing $\Gamma^i_\pm$ (blue), $\Gamma^o_\pm$
 (black), $\Gamma^a_\pm$ (red) and orbits of the family $\Gamma^b$
 (magenta) in the energy-residue ($E,R$)
-plane.[]{label="fig:bifurcationR"}](BifEnergyRes_abio.png){#fig:bifurcationR
+plane.[]{label="fig:bifurcationR"}](figures/BifEnergyRes_abio.png){#fig:bifurcationR
 width="70%"}
+
 
 The monodromy matrix and the Greene residue are defined as follows. For
 a periodic orbit $\Gamma$ with the parametrisation $\gamma(t)$ and
 period $T$, let $M(t)$ be the matrix satisfying the variational equation
-$$\dot{M}(t)=JD^2 H(\gamma(t))M(t),$$ where
-$J=\begin{pmatrix} 0 & Id\\ -Id & 0\end{pmatrix}$, with the initial
-condition $$M(0)=Id.$$ The monodromy matrix is defined by $M=M(T)$. It
+
+$$\dot{M}(t)=JD^2 H(\gamma(t))M(t),$$ 
+
+where $J=\begin{pmatrix} 0 & Id\\ -Id & 0\end{pmatrix}$, with the initial
+condition
+
+$$M(0)=Id.$$
+
+The monodromy matrix is defined by $M=M(T)$. It
 describes how an initial deviation $\delta$ from $\gamma(0)$ changes
 after a full period $T$. For $\delta$ sufficiently small the
 relationship is
-$$\Phi_H^T(\gamma(0)+\delta)=\gamma(T)+M\delta+O(\delta^2),$$ where
-$\Phi_H^t$ is the Hamiltonian flow.
+
+$$\Phi_H^T(\gamma(0)+\delta)=\gamma(T)+M\delta+O(\delta^2),$$
+
+where $\Phi_H^t$ is the Hamiltonian flow.
 
 If $\delta$ is an initial displacement along the periodic orbit
 $\delta\parallel J\nabla H$, then by periodicity $\delta$ is preserved
@@ -645,16 +678,22 @@ write them as $\lambda$ and $\frac{1}{\lambda}$. $\Gamma$ is hyperbolic
 if $\lambda>1$, it is elliptic if $|\lambda|=1$ and it is inverse
 hyperbolic if $\lambda<-1$.
 
-The Greene residue of $\Gamma$ is defined as $$R=\frac{1}{4}(4-Tr M),$$
+The Greene residue of $\Gamma$ is defined as 
+
+$$R=\frac{1}{4}(4-Tr M),$$
+
 where $M$ is the monodromy matrix corresponding to the periodic orbit
 $\Gamma$.
 
 Knowing that $\lambda_1=\lambda_2=1$, we can write $R$ as
-$$R=\frac{1}{4}\left(2-\lambda-\frac{1}{\lambda}\right).$$ By definition
+
+$$R=\frac{1}{4}\left(2-\lambda-\frac{1}{\lambda}\right).$$ 
+
+By definition
 $R<0$ if $\Gamma$ is hyperbolic, $0<R<1$ if it is elliptic and $R>1$ if
 it is inverse hyperbolic.
 
-## Transition states and dividing surfaces {#subsec:DS}
+## Implications for Reaction Dynamics {#subsec:DS}
 
 In this section we discuss dividing surfaces associated with transition
 states, the backbone of Transition State Theory. Following
@@ -687,7 +726,9 @@ For a fixed energy $E$, let $(r_\Gamma,\theta_\Gamma)$ be the projection
 of the periodic orbit $\Gamma$ onto configuration space, then the DS is
 the surface $(r_\Gamma,\theta_\Gamma,p_r,p_\theta)$, where
 $(p_r,p_\theta)$ are given implicitly by the energy equation
+
 $$E= \frac{1}{2 m} p_r^2 + \frac{1}{2 I} p_\theta^2  + \frac{1}{2 m r^2} (p_\theta - \lambda)^2+U(r,\theta).$$
+
 This construction also works for stable periodic orbits, but the
 resulting DS admits local recrossings. In the following a DS associated
 with a TS is always the surface constructed this way.
@@ -727,7 +768,7 @@ $p_\theta=0$. The inward hemisphere or annulus is then intersected by
 $\theta=0$, $p_r<0$, $p_\theta=0$ and/or $\theta=\pi$, $p_r<0$,
 $p_\theta=0$
 
-## Division of energy surface {#subsec:divide energy surface}
+### Division of energy surface {#subsec:divide energy surface}
 
 
 Using the inner and outer DSs we can define regions on the energy
@@ -786,7 +827,7 @@ is twice the action of $\Gamma^i_+$. We see that for $E\leq.32$, the
 outer DS has the lowest flux, while for higher energies it is the inner
 DS.
 
-# Dynamics of the Chesnavich model {#sec:observations}
+### Residence times and rotation numbers {#sec:observations}
 
 
 Before we proceed to the discussion of how invariant manifolds cause
@@ -799,9 +840,6 @@ increasing energy. We use this knowledge to establish a link between
 invariant manifolds and slow dissociation on which we further elaborate
 in Section [\[sec:discussion\]](#sec:discussion){reference-type="ref"
 reference="sec:discussion"} in the context of roaming.
-
-## Residence times and rotation numbers {#subsec:res th0}
-
 
 For various energies $0<E<6.13$ where $\Gamma^o$ exists, we investigate
 trajectories starting in $B_1^+$, $B_2$ and $B_3$ on the surface
@@ -945,7 +983,7 @@ reference="fig:rot_num"}. Due to the increase in kinetic energy in the
 angular degree of freedom, the dissociating trajectories are naturally
 not becoming more direct with increasing energy.
 
-## Residence times on the inner DS {#subsec:res inner DS}
+#### Residence times on the inner DS {#subsec:res inner DS}
 
 Similarly to the surface $\theta=0, p_\theta>0$, we can study residence
 times and rotation numbers for trajectories starting on a DS. In Section
@@ -1002,11 +1040,17 @@ configuration space projection of $\Gamma^i_+$, similarly to
 [@Jaffe1999]. Due to the symmetry of the system, $\Gamma^i_+$ can be
 very well approximated by a quadratic polynomial for every energy. Next
 we use the generating function (type 2 in [@Arnold76])
+
 $$G(r,\theta,p_\rho,p_\sigma)=(r-\bar{r}(\theta))p_\rho+\theta p_\sigma.$$
-From that we obtain $$\begin{aligned}
+
+From that we obtain 
+
+$$\begin{aligned}
   p_r=\frac{\partial G}{\partial r}&=&p_\rho,\\
   p_\theta=\frac{\partial G}{\partial \theta}&=&p_\sigma-\bar{r}'(\theta) p_\rho,\\
-  \end{aligned}$$ and therefore
+  \end{aligned}$$ 
+  
+and therefore
 $p_\sigma=p_\theta+\bar{r}'(\theta) p_\rho$. The surface of section is
 now defined by $\rho=0$, $\dot{\rho}>0$, i.e. the outward hemisphere of
 the inner DS corresponding to transport in the direction from $B_1^+$ to
@@ -1035,7 +1079,7 @@ structures that are caused by invariant manifolds, proof of which will
 be given in Section [\[subsec:sec manifs\]](#subsec:sec manifs){reference-type="ref"
 reference="subsec:sec manifs"}.
 
-## Sections of manifolds {#subsec:sec manifs}
+### Reactive Islands {#subsec:sec manifs}
 
 Let us now have a closer look at manifolds on the two surfaces of
 section presented above and establish a link between invariant
@@ -1145,15 +1189,13 @@ heteroclinic points that cause tongues, but we need to keep local
 recrossings in mind. In the next section we present a detailed view on
 the dynamics on the middle DS.
 
-# The observed dynamics and roaming {#sec:discussion}
+### Roaming {#sec:discussion}
 
 In this section we recall possible definitions of roaming used in
 previous works. We then elaborate on the observations above and analyse
 invariant manifolds on the middle DS with the aim to thoroughly explain
 how exactly roaming is linked to the heteroclinic tangles. Based on the
 explanation, a natural definition of roaming follows.
-
-## Roaming
 
 Roaming in the chemistry literature refers to a kind of dissociation
 that is longer or more complicated than the usual dissociation with a
@@ -1175,7 +1217,7 @@ that roaming trajectories have to spend a certain amount of time at a
 minimum radius, have low average kinetic energy and have on average a
 certain number of bonds over time.
 
-## The mechanism of roaming {#subsec:roaming mech}
+#### The Roaming mechanism {#subsec:roaming mech}
 
 Based on intersections of invariant manifolds, we would like to report
 on the types of trajectories in this dissociation problem and explain
@@ -1279,7 +1321,7 @@ The definition of Mauguière et al. admits nondissociating roaming
 trajectories. These are contained in $W_{\Gamma^i_\pm}^{u+}$ and
 $W_{\Gamma^a}^{s+}$, but not in $W_{\Gamma^o}^{s-}$.
 
-## Roaming on the middle DS {#subsec:roaming middle DS}
+#### Roaming on the middle DS {#subsec:roaming middle DS}
 
 ![First and last intersections of invariant manifolds with the outward
 annulus of the middle DS for $E=1$. $W_{\Gamma^i_+}^{u+}$ (green) forms
@@ -1349,7 +1391,10 @@ annulus of the middle DS by $P$. By our findings all trajectories
 originating in $B_1^+$ and all trajectories that cross the inward
 annulus of the outer DS reach the middle DS.
 
-By definition we have that $$\gamma^{u+}_{i}\cap\gamma^{s-}_{o},$$
+By definition we have that 
+
+$$\gamma^{u+}_{i}\cap\gamma^{s-}_{o},$$
+
 contains trajectories that dissociate quickly. This is due to the fact
 that $\gamma^{u+}_{i}$ contains trajectories that just escaped from
 $B_1^+$ and $\gamma^{s-}_{o}$ contains those that reach the outer DS and
@@ -1485,443 +1530,6 @@ multiple times at $E=2$ than at $E=1$. Instead it is probable to find
 roaming trajectories spending the majority of their residence time in
 $B_2$ at $E=2$.
 
-# Global study of the invariant manifolds that govern the dynamics {#sec:representation}
+```python
 
-In this section we discuss an alternative way of studying dynamics on a
-$3$-dimensional energy surface using the so called Conley-McGehee
-representation [@Conley1968], [@McGehee1969], [@MacKay1990], described
-along with other alternatives in [@Waalkens2010]. This is a very useful
-way of studying dynamics in full $3$ dimensions, but to date has only
-been defined for subsets of energy surfaces that are locally a spherical
-shell. Since the Conley-McGehee representation does only works in
-$B_1^\pm$ of Chesnavich's CH$_4^+$ model studied here, we introduce an
-extension of the Conley-McGehee representation that enables us to study
-energy surfaces with other geometry than in the Conley-McGehee case.
-
-## Conley-McGehee representation
-
-The dynamics on the energy surface can be visualized in many ways. Just
-as it was done above, it can be viewed on various surfaces of section,
-most notably ones constructed around TSs. It is also possible to study
-the system locally using normal form approximations. The Williamson
-normal form [@Williamson36] of the Hamiltonian in the neighbourhood of
-an index-$1$ critical point is
-$$H_2(q_1,p_1,q_2,p_2)=\frac{1}{2}\lambda (p_1^2-q_1^2)+\frac{1}{2}\omega (p_2^2+q_2^2),$$
-for some $\lambda, \omega>0$. We found that for a fixed energy
-$H_2(q_1,p_1,q_2,p_2)=h_2$, the energy surface can be locally viewed as
-a continuum of spheres parametrized by $q_1$.
-
-In the Conley-McGehee representation [@Conley1968], [@McGehee1969], is
-based on the spherical local geometry of an energy surface. While the
-normal form perspective above only applies locally, in the
-Conley-McGehee representation the whole energy surface is represented as
-a nested set of spheres parametrised in the radial direction by the
-reaction coordinate.
-
-Advantages are immediate - the representation gives a global model of
-the energy surface and by construction reveals the spherical structure
-of the energy surface. For $2$ degrees of freedom it enables us to study
-the $3$-dimensional energy surface in the full $3$ dimensions. Moreover,
-it enables to visualise the DSs as spheres that separate the energy
-surface into two disjoint components. It is also very natural that the
-flux through the hemispheres of the DSs is unidirectional and
-trajectories have to cross a particular hemisphere of the DS to pass
-from one component to the other.
-
-Apart from DSs the Conley-McGehee representation enables us to visualise
-and therefore study TSs and their invariant manifolds that are spherical
-cylinders in a natural environment.
-
-## Toric extension of the Conley-McGehee representation
-
-The Conley-McGehee representation in its original form applies to
-spherical geometries. The energy surface of the CH$_4^+$ model, on the
-other hand, has a partially spherical and partially toric geometry,
-where many periodic orbits come in pairs and several DSs are tori. We
-therefore adapt the Conley-McGehee representation for the energy surface
-as follows.
-
-The energy surface is defined by
-$$M_E = \Big\lbrace (r,\theta,p_r,p_\theta) \in \mathbb{R}^4 \Big\vert H(r,\theta,p_r,p_\theta)=\frac{1}{2 m} p_r^2 + \frac{1}{2} \left(\frac{1}{I} + \frac{1}{m r^2} \right) p_\theta^2 + U(r,\theta) = E \Big\rbrace.$$
-For very high energies, $E>E_2$, where only $r<0.9$ is energetically
-inaccessible due to the cut-off of the potential and $E > U(r,\theta)$
-for all $r\geq0.9$, the whole energy surface has a toric local geometry.
-For any fixed radius $r_0$ and a fixed $\theta_0$,
-$$M_E(r_0,\theta_0)= \Big\lbrace (p_r,p_\theta) \in \mathbb{R}^2 \Big\vert \frac{1}{2 m} p_r^2 + \frac{1}{2} \left(\frac{1}{I} + \frac{1}{m r_0^2} \right) p_\theta^2 = E-U(r_0,\theta_0)\Big\rbrace,$$
-is a $\mathbb{S}^1$. If $\theta$ is not fixed, $M_E(r_0,\theta)$ defines
-a $\mathbb{S}^1\times\mathbb{S}^1=\mathbb{T}^2$ and therefore the whole
-energy surface $M_E$ is a $\mathbb{T}^2\times \mathbb{R}^+$.
-
-The radii of the concentric circles $M_E(r_0,\theta_0)$ on the
-$(p_r,p_\theta)$-plane depend on $r_0$ and $\theta_0$ through
-$U(r_0,\theta_0)$. The potential energy is not monotonous in $r$ nor in
-$\theta$. Recall from Section [\[subsec:hill\]](#subsec:hill){reference-type="ref"
-reference="subsec:hill"} that
-
--   the two wells $q_0^\pm$ are located at $(1.1, 0)$ and $(1.1, \pi)$
-    with $U(q_0^\pm)=E_0\approx -47$,
-
--   the two index-$2$ saddles $q_2^\pm$ are located at
-    $(1.63, \frac{\pi}{2})$ and $(1.63, \frac{3\pi}{2})$ with
-    $U(q_2^\pm)=E_2\approx 22.27$.
-
-Further recall from Section
-[\[subsec:general setting\]](#subsec:general setting){reference-type="ref"
-reference="subsec:general setting"} that for $r$ sufficiently large
-$U(r,\theta)$ is essentially independent of $\theta$ and
-$r^{2}U(r,\theta)\rightarrow0$ as $r\rightarrow\infty$ for all $\theta$.
-
-It follows that the tori corresponding to $r_0=1.1$ and $r_0=r_{large}$,
-for some $r_{large}$ sufficiently large, intersect. This is because the
-circle $M_E(1.1,0)$ has a larger radius than $M_E(r_{large},0)$, while
-$M_E(1.1,\frac{\pi}{2})$ has a smaller radius than
-$M_E(r_{large},\frac{\pi}{2})$.
-
-The tori will always intersect if the radius is not a monotonous in $r$.
-In order to extend the Conley-McGehee representation, we need to
-reparametrise these tori so that their radii are monotonous in $r$ for
-every $\theta$.
-
-Define $$P_r = \frac{r}{\sqrt{2 m (E - U(r,\theta)) } } p_r,$$ and
-$$P_\theta = \frac{r \sqrt{\frac{1}{I} + \frac{1}{m r^2} }}{\sqrt{2  (E - U(r,\theta)) } } p_\theta.$$
-Now we have
-$$P_r^2+P_\theta^2 = r^2\frac{1}{E - U(r,\theta)} \Big(\frac{1}{2 m} p_r^2+\frac{1}{2}\left(\frac{1}{I} + \frac{1}{m r^2}\right) p_\theta^2 \Big)=r^2.$$
-
-The radius of the tori is monotonous in $r$ and independent of $\theta$
-and therefore the tori $P_r^2+P_\theta^2=r^2$ foliating the energy
-surface are, unlike before the reparametrisation, disjoint in
-$(\theta,P_r,P_\theta)$-space.
-
-Note that a section of the tori with a plane of section
-$\theta=\theta_0$ shows concentric circles, where the smallest one has
-the radius $r=0.9$ due to the cut-off of the system. This is due to the
-fact that the boundary of the energy surface corresponds to a torus.
-Should it be desirable to have the whole $(\theta,P_r,P_\theta)$-space
-foliated by tori, it can be done by replacing $r$ by $r-0.9$ in the
-definitions of $P_r$ and $P_\theta$.
-
-## Extension to non-constant geometries
-
-We remark that the construction above relies on the fact that at $E>E_2$
-the energy surface has a purely toric geometry. We can slightly amend
-the construction to work for lower energies $E\leq E_2$, where the
-energy surface is not purely toric.
-
-$E = U(r,\theta)$ does not pose a problem for the definition of $P_r$
-and $P_\theta$ as it may seem on first sight. $P_r$ and $P_\theta$ are
-only normalized conjugate momenta and by definition
-$$|P_r|,|P_\theta|\leq r.$$ The momenta are therefore well defined on
-the whole energy surface.
-
-Points on $E = U(r,\theta)$ are degenerate circles with radius $0$ on
-the energy surface, but due to normalization correspond to circles in
-$(P_r,P_\theta)$. Such a representation of the energy surface for lower
-energies is clearly flawed. For $r$ large, we still have tori, but for
-smaller $r$, e.g. near $\Gamma^i$, we do not see the spherical geometry
-we expect.
-
-To solve this issue, we introduce different momenta in which the radius
-$P_r^2+P_\theta^2\rightarrow 0$ as $U(r,\theta)\rightarrow E$. We remark
-that the following only works for $E\leq \widetilde{E}_1$. In the
-interval $\widetilde{E}_1<E<E_2$, the projection of the energy surface
-on configuration space is the whole plane minus three discs, see Figure
-[\[fig:potentialcontour1\]](#fig:potentialcontour1){reference-type="ref"
-reference="fig:potentialcontour1"}. One is the potential energy cut-off
-and the other two are areas of high potential around index-$2$ critical
-points $q_2^\pm$. Spherical and toric geometry cannot accurately
-represent a genus $3$ surface.
-
-Since for energies $E<0$ the standard Conley-McGehee representation
-applies, we will restrict ourselves to the more interesting case
-$0\leq E\leq \widetilde{E}_1$. For the sake of simplicity, we retain the
-notation $P_r$ and $P_\theta$, making clear that we are discussing
-different momenta in a different energy interval than before.
-
-
-![Contour plot of $r^6 \left( E - U(r,\theta) \right)$ for $E=0$. The
-black circle corresponds to the radius $r_E$ defined in the
-text.[]{label="fig:ConleyContour"}](ConleyContour.jpg){#fig:ConleyContour
-width="50%"}
-
-Let $$P_r = \frac{r^3}{\sqrt{2 m} } p_r,$$ and
-$$P_\theta = r^3 \sqrt{\frac{1}{2}\left(\frac{1}{I} + \frac{1}{m r^2}\right) } p_\theta.$$
-It follows that
-$$P_r^2+P_\theta^2 = r^6 \Big(\frac{1}{2 m} p_r^2+\frac{1}{2}\left(\frac{1}{I} + \frac{1}{m r^2}\right) p_\theta^2 \Big)=r^6 (E - U(r,\theta)).$$
-
-While $E - U(r,\theta)$ makes sure that zero kinetic energy corresponds
-to $P_r=P_\theta=0$, the term $r^6$ seems perhaps less obvious. In the
-previous section we showed that it is important for $P_r^2+P_\theta^2$
-to be monotonous in $r$ for every $\theta$. This is however not
-possible, because for some fixed angles $\theta=const$ the term
-$(E - U(r,\theta))$ vanishes for several values of $r$. This is only
-possible in coordinates in which $E = U(r,\theta)$ correspond to
-coordinate lines for all $E$.
-
-Let $r_E$ be the smallest $r$ such that $E = U(r,\theta)$ has at most
-one solution for every $\theta$ for $r_E\leq r$. The term $r^6$ is the
-smallest even power of $r$ such that $r^6 (E - U(r,\theta))$ is
-monotonous in $r$ on $r_E\leq r$ for $0\leq E\leq \widetilde{E}_1$.
-
-As a consequence of restricting the radius, the representation omits a
-significant part of $B_1^\pm$. Since we formulated roaming as a
-transport problem from the inner DS to the outer DS, dynamics inside
-$B_1^\pm$ does not play a significant role in our study. All significant
-periodic orbits and DSs are well defined in the Conley-McGehee
-representation as presented here.
-
-Figure [\[fig:ConleyContour\]](#fig:ConleyContour){reference-type="ref"
-reference="fig:ConleyContour"} shows the contour plot of
-$r^6 (E - U(r,\theta))$ with a highlighted circle marking $r_0$, the
-boundary of the representation defined above.
-
-## Consequences of the extension
-
-In the representation as defined above, the geometry of the energy
-surface is preserved. For a fixed radius $r_0$, we can see that the
-surfaces have the following topologies:
-
--   $\mathbb{T}^2$ if $U(r_0,\theta) < E$ for all $\theta$,
-
--   a pinched torus if $U(r_0,\theta) \leq E$ for all $\theta$ and
-    $U(r_0,\theta_0) = E$ for some $\theta_0$,
-
--   $\mathbb{S}^2 \cup \mathbb{S}^2$ if $U(r_0,\theta_0) > E$ for some
-    $\theta_0$.
-
-For $E=0$, an example of each is shown in Figure
-[\[fig:representation\]](#fig:representation){reference-type="ref"
-reference="fig:representation"} in the canonical phase space coordinates
-$(\theta,p_r,p_\theta)$ and in the proposed extension of Conley-McGehee
-representation $(\theta,P_r,P_\theta)$. Note indeed in the latter that
-the surfaces are disjoint and present part of a foliation of the energy
-surface. We added an additional value of $r=4$ to the extended
-Conley-McGehee representation to illustrate that the radius of the tori
-diverges for $r\rightarrow\infty$, whereas it converges in the canonical
-phase space coordinates.
-
-![Comparison of energy surface geometry representation for $E=0$ in
-$(\theta,p_r,p_\theta)$, left, and $(\theta,P_r,P_\theta)$, right. The
-surfaces shown correspond to selected fixed values of $r$. The value
-$r=r_0=2.0267$ corresponds to the spheres, $r=2.802$ defines the pinched
-torus and $r=3.5$ is a regular torus. Additionally, the right figure
-also shows
-$r=4$.](rlevelspolar0.jpg "fig:"){#fig:representation
-width="50%"} ![Comparison of energy surface geometry
-representation for $E=0$ in $(\theta,p_r,p_\theta)$, left, and
-$(\theta,P_r,P_\theta)$, right. The surfaces shown correspond to
-selected fixed values of $r$. The value $r=r_0=2.0267$ corresponds to
-the spheres, $r=2.802$ defines the pinched torus and $r=3.5$ is a
-regular torus. Additionally, the right figure also shows
-$r=4$.](rlevelsnew0.jpg "fig:"){#fig:representation
-width="50%"}
-[Comparison of energy surface geometry representation for $E=0$ in
-$(\theta,p_r,p_\theta)$, left, and $(\theta,P_r,P_\theta)$, right. The
-surfaces shown correspond to selected fixed values of $r$. The value
-$r=r_0=2.0267$ corresponds to the spheres, $r=2.802$ defines the pinched
-torus and $r=3.5$ is a regular torus. Additionally, the right figure
-also shows
-$r=4$.[]{#fig:representation}]
-
-Due to the properties of the extended Conley-McGehee representation, we
-may study invariant structures and the aforementioned DSs globally on
-the energy surface. All techniques used to date either relied on
-surfaces of section or local approximations of the energy surface. In
-what follows, we study the structures on the energy surface in full
-three dimensions.
-
-In Figure [\[fig:ConTS25\]](#fig:ConTS25){reference-type="ref"
-reference="fig:ConTS25"} we present the periodic orbits $\Gamma^i_+$,
-$\Gamma^a_\pm$ and $\Gamma^o_\pm$, all of which are TSs, and the
-associated DSs at energy $E=2.5$. The construction of the DSs was
-discussed in Section [\[subsec:DS\]](#subsec:DS){reference-type="ref"
-reference="subsec:DS"}. We remark that from a qualitative perspective
-Figure [\[fig:ConTS25\]](#fig:ConTS25){reference-type="ref"
-reference="fig:ConTS25"} can be thought to represent the whole energy
-interval $0<E< 2.72$, where $\Gamma^a_\pm$ are unstable. The difference
-at higher energies is that $\Gamma^a_\pm$ is not a TS and the associated
-torus is not a DS.
-
-We have used some of the DSs mentioned above in previous sections to
-study residence times, rotation numbers, and most importantly, the
-intersections of stable and unstable invariant manifolds of TSs. For the
-sake of clarity, in the following we left out the $\Gamma^i_-$ and all
-associated structures, but everything said about $\Gamma^i_+$ also holds
-for $\Gamma^i_-$. In the figures one can easily imagine another sphere
-just like the inner DS but shifted by $\pi$ in the angular direction.
-
-Note that here we take full advantage of the proposed extension of the
-Conley-McGehee representation to present structures on the energy
-surface with different local geometries - the inner DS is a sphere
-whereas the middle and the outer DSs are tori. This has to our knowledge
-not been done before.
-
-
-![TSs and DSs in the Conley-McGehee representation for $E=2.5$. The
-inner DS is shown in green, middle DS in red, outer DS in blue.
-$\Gamma^i_+$, $\Gamma^a_\pm$ and $\Gamma^o_\pm$ are the thick lines on
-the corresponding DSs shown in darker green, red and blue,
-respectively.[]{label="fig:ConTS25"}](E25.jpg){#fig:ConTS25
-width="70%"}
-
-On the DSs we highlighted the respective TSs. Note that the inner DS is
-defined using one periodic orbit whereas the middle and the outer are
-defined using two. The individual orbits in the families $\Gamma^a$ and
-$\Gamma^o$ can be distinguished by the sign of $P_\theta$ as they run in
-opposite directions.
-
-The inner DS is divided by $\Gamma^i_+$ into two hemispheres and the
-surfaces of unidirectional flux from the definition of a TS. Flux from
-$B_1^+$ to $B_2$ crosses the hemisphere where predominantly $P_r>0$. The
-situation is similar for the annuli of the middle and outer DS. The two
-orbits divide the torus into two annuli, where the outward annulus is
-the one with larger $P_r$.
-
-
-![TSs, corresponding DSs and invariant manifolds in the Conley-McGehee
-representation at $E=5$. The inner DS is shown in green, middle DS in
-red and outer DS in blue. $\Gamma^i_+$, $\Gamma^a_\pm$ and
-$\Gamma^o_\pm$ are the thick lines on the corresponding DSs shown in
-darker green, red and blue respectively. Note that $\Gamma^a_\pm$ are
-stable at this energy. The invariant manifolds $W_{\Gamma^i_+}$ (green)
-are only a sketch based on the computed sections on the surface
-$\theta=0$ shown in thick
-green.[]{label="fig:ConManifFull"}](manif5.jpg){#fig:ConManifFull
-width="70%"}
-
-The mechanism behind energy surface volume transport across DSs is
-governed by invariant manifolds of the corresponding TSs as discussed in
-the Sections [\[subsec:sec manifs\]](#subsec:sec manifs){reference-type="ref"
-reference="subsec:sec manifs"} and
-[\[sec:discussion\]](#sec:discussion){reference-type="ref" reference="sec:discussion"}.
-Here we present a new perspective for the study of invariant manifolds.
-In the following we use $E=5$, because at this energy the TSs are evenly
-spaced and the lack of heteroclinic intersections facilitates
-understanding of this new perspective. Everything we say is applicable
-to the whole interval $0<E<6.13$ relevant to roaming.
-
-Figure [\[fig:ConManifFull\]](#fig:ConManifFull){reference-type="ref"
-reference="fig:ConManifFull"} displays the invariant manifolds of
-$\Gamma^i_+$ and $\Gamma^o_\pm$ in full $3$ dimensions. Note that the
-manifolds $W_{\Gamma^i_+}$ are only a sketch based on computed sections
-on the surface $\theta=0$. Computing the whole invariant manifold
-numerically is in this case relatively straight-forward, but for the
-sole purpose of illustration unnecessarily expensive.
-
-
-![A section of invariant manifolds for $\theta=0$ at $E=2$ in the
-Conley-McGehee representation. The inner DS is shown in green, middle DS
-in red, outer DS in blue. $\Gamma^i_+$, $\Gamma^a_\pm$ and
-$\Gamma^o_\pm$ are the thick lines on the corresponding DSs shown in
-darker green, red and blue respectively and the curves extending from
-the TSs are their respective invariant manifolds. For clarity, the
-intersections of $W_{\Gamma^i}$ and $W_{\Gamma^o}$ are only
-indicated.[]{label="fig:ConManif2"}](slice2.jpg){#fig:ConManif2
-width="70%"}
-
-Clearly visible is the structure of the manifolds, spherical cylinders
-formed by $W_{\Gamma^i_+}$ and toric cylinders formed by
-$W_{\Gamma^o_\pm}$. This is how the sections of invariant manifolds in
-the extended Conley-McGehee representation near $\theta=0$ shown in
-Figures [\[fig:ConManif2\]](#fig:ConManif2){reference-type="ref"
-reference="fig:ConManif2"} and
-[\[fig:ConManif25\]](#fig:ConManif25){reference-type="ref"
-reference="fig:ConManif25"} should be interpreted. For clarity, the
-invariant cylinders are indicated by the section of invariant manifolds
-for $\theta=0$ in these figures, the scale and complexity of
-intersections of the invariant cylinders would make the figures
-incomprehensible.
-
-One can clearly see that at $E=5$, in fact in the whole energy interval
-$E\geq2.5$, the intersection of $W_{\Gamma^i_+}^{u+}$ with the middle
-and the outer DSs produces a topological circle centred at $P_\theta=0$.
-This is purely the consequence of the spherical geometry induced by
-$\Gamma^i_+$. $W_{\Gamma^o_\pm}$ for the same reason intersects the
-middle DS in two lines that should be seen as circles concentric with
-$\Gamma^a_\pm$. This is in agreement with the sections of invariant
-manifolds on the outward annulus of the middle DS at $E=2.5$ shown in
-Figure [\[fig:roam\_init2\_5\]](#fig:roam_init2_5){reference-type="ref"
-reference="fig:roam_init2_5"}.
-
-Note that $W_{\Gamma^i_+}^{u-}$ intersects the outward hemisphere of the
-middle DS at $E=2.5$ in a shape that cannot be identified as a circle.
-This is due to the fact that we study $W_{\Gamma^i_+}^{u-}$ that is
-asymptotic to $\Gamma^i$ in $B_1^+$ as it leaves from $B_1^+$ to $B_2$.
-Moreover, it is deformed in the proximity of $\Gamma^a$ that exhibits a
-different kind of dynamics than $\Gamma^i$, rotating as opposed to
-vibrating.
-
-According to the findings in Section
-[\[subsec:roaming middle DS\]](#subsec:roaming middle DS){reference-type="ref"
-reference="subsec:roaming middle DS"}, the non-existence of roaming at
-higher energies due to the lack of intersection of $W_{\Gamma^i_\pm}$
-with $W_{\Gamma^o_\pm}$ is immediate from Figures
-[\[fig:ConManifFull\]](#fig:ConManifFull){reference-type="ref"
-reference="fig:ConManifFull"} and
-[\[fig:ConManif25\]](#fig:ConManif25){reference-type="ref"
-reference="fig:ConManif25"}.
-
-
-![A section of invariant manifolds for $\theta=0$ at $E=2.5$ in the
-Conley-McGehee representation. The inner DS is shown in green, middle DS
-in red, outer DS in blue. $\Gamma^i_+$, $\Gamma^a_\pm$ and
-$\Gamma^o_\pm$ are the thick lines on the corresponding DSs shown in
-darker green, red and blue respectively and the curves extending from
-the TSs are their respective invariant manifolds. Note that
-$W_{\Gamma^i}$ and $W_{\Gamma^o}$ do not
-intersect.[]{label="fig:ConManif25"}](slice25.jpg){#fig:ConManif25
-width="70%"}
-
-The situation at $E<2.5$ represented by Figure
-[\[fig:roam\_init2\]](#fig:roam_init2){reference-type="ref"
-reference="fig:roam_init2"} is very similar to the energy interval
-$E\geq2.5$. The main difference here are the heteroclinic intersections
-that cause roaming. These intersections are visible on the middle DS as
-well as in the extended Conley-McGehee representation. We remark that in
-the extended Conley-McGehee representation roaming occurs in the thin
-stripes between the two invariant cylinders $W_{\Gamma^o}^{s-}$ and
-$W_{\Gamma^o}^{u-}$ around $P_r=0$. Clearly the majority of the energy
-surface is occupied by more direct dynamics.
-
-# Conclusion {#sec:conclusions}
-
-We have shown that numerical observations of long dissociation are
-caused by particular structures formed by invariant manifolds of TSs.
-These invariant manifolds are also responsible for multiple recrossings
-of the middle DS and consequently also for roaming.
-
-We have shown that roaming trajectories that originate in the potential
-wells are captured in the homoclinic tangles of the outer TS and the
-middle TS dissociating. The transition for the potential wells into the
-homoclinic tangles is only possible in case the invariant manifolds of
-the inner and outer DS intersect and create a heteroclinic tangle. In
-case of Chesnavich's CH$_4^+$ model, this heteroclinic intersection only
-exists for energies $E\leq 2.5$ and therefore the system does not admit
-roaming at higher energy levels.
-
-Our results can possible be directly extended to other chemical
-reactions, as the only significant assumption on the potential energy is
-that for all $\theta$
-$$U(r,\theta)\in o(r^{-2}) \text{ as } r\rightarrow\infty.$$ This
-condition guarantees the existence of an outer TS thanks to which we may
-restrict roaming to a transport problem from potential wells
-representing a stable molecule to the DS associated with the outer TS.
-
-Furthermore, our findings support then dynamical definition of roaming
-as suggested in [@Mauguiere2014b].
-
-We studied the above-mentioned invariant manifolds on various dividing
-surfaces, some of which highlighted the difficulties posed by the
-unusual energy surface geometry. This was the case even hough all
-surfaces of section satisfy the Birkhoff condition [@Birkhoff27] of
-being bounded by invariant manifolds. These difficulties motivated us to
-construct an extension of the Conley-McGehee representation. Using the
-extension we were able to study the unusual energy surface geometry,
-TSs, the associated invariant manifolds and DSs in full three
-dimensions.
-
-# Acknowledgment {#acknowledgment .unnumbered .unnumbered}
-
-We are grateful to Dayal Strub for many very useful discussions and
-remarks on the contents of this paper.
-
-\bibliographystyle{plain}
+```

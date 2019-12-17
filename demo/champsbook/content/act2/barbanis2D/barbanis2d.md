@@ -116,19 +116,23 @@ unstable manifolds in the 2 DoF Barbanis system.
 
 ## Barbanis 2 DoF Model
 
-
+<!-- #region -->
 [\[sec:model\_prob\_2dof\]]{#sec:model_prob_2dof label="sec:model_prob_2dof"}Model system: coupled harmonic 2 DoF Hamiltonian
 -----------------------------------------------------------------------------------------------------------------------------
 
 As pointed out in the Introduction, our focus is to adopt a
 well-understood model system which is a 2 degrees-of-freedom coupled
-harmonic oscillator with the Hamiltonian $$\begin{aligned}
+harmonic oscillator with the Hamiltonian
+
+$$\begin{aligned}
 \mathcal{H}(x,y,p_x,p_y) =& T(p_x, p_y) + V_{\rm B}(x,y) \\ 
 =& \frac{1}{2}p_x^2 + \frac{1}{2}p_y^2 + \frac{1}{2}\omega_x^2 x^2 + \frac{1}{2}\omega_y^2 y^2 +
 \delta x y^2  
 \end{aligned}
-\label{eqn:Hamiltonian_Barbanis}$$ where $\omega_x, \omega_y, \delta$
-are the harmonic oscillator frequencies of the $x$ and $y$
+\label{eqn:Hamiltonian_Barbanis}$$ 
+
+
+where $\omega_x, \omega_y, \delta$ are the harmonic oscillator frequencies of the $x$ and $y$
 degree-of-freedom, and the coupling strength, respectively. We will fix
 the parameters as $\omega_x 
 = 1.0, \omega_y = 1.1, \delta = -0.11$ in this study. The two
@@ -140,11 +144,12 @@ chemistry ([@heller1980; @davis1981; @martens1987]), structural
 mechanics and ship capsize ([@ThDe1996; @NaRo2017]).
 
 The equilibria of the Hamiltonian vector field are located at
+
 $$\left(-\frac{\omega_y^2}{2\delta}, \pm 
 \frac{1}{\sqrt{2}}\frac{\omega_x \omega_y}{\delta}, 0, 0 \right) \qquad \text{and}  \qquad \left(0, 
-0, 0, 0 \right)$$ and are at total energy
-$E_c = \frac{\omega_x^2 \omega_y^4}{8 \delta^2}$ and $0$ respectively.
-The energy of the two index-1 saddles (as defined and shown in
+0, 0, 0 \right)$$
+
+and are at total energy $E_c = \frac{\omega_x^2 \omega_y^4}{8 \delta^2}$ and $0$ respectively. The energy of the two index-1 saddles (as defined and shown in
 App. [5.2.1](#ssect:linear){reference-type="ref"
 reference="ssect:linear"}) located at positive and negative
 y-coordinates and positive x-coordinate for $\delta < 0$ will be
@@ -188,7 +193,7 @@ space.
 ![](./figures/pes_cont_Barbanis.png){width="30.00000%"}\ ![](./figures/pes_cont_Barbanis_3D.png){width="25.00000%"}\ ![](./figures/Hills_region_Barbanis.png){width="40.00000%"}
 
 Fig. 1. (a) Potential energy function underlying the coupled harmonic Hamiltonian~\eqref{eqn:Hamiltonian_Barbanis} as isopotential contour and surface. The index-1 saddles are shown as red crosses in both the plots. (b) Hill's region for energy below and above the energy of the index-1 saddle. Parameters used are $\omega_x = 1.0, \omega_y = 1.1, \delta = -0.11$.
-
+<!-- #endregion -->
 
 Since this model system is conservative 2 DoF Hamiltonian, that is the
 phase space is $\mathbb{R}^4$, the energy surface is three dimensional,
@@ -361,16 +366,3 @@ used to set up starting guess for other numerical procedures which rely
 on good initial guess or can also be used in conjunction with machine
 learning methods for rendering the smooth pieces of
 NHIM [@bardakcioglu2018; @feldmaier_invariant_2019].
-
-
-## Acknowledgements
-
-We acknowledge the support of EPSRC Grant No.  EP/P021123/1 and ONR
-Grant No. N00014-01-1-0769. We would like to thank Dmitry Zhdanov for
-stimulating discussions.
-
-
-
-
-
-# References

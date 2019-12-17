@@ -1,0 +1,16 @@
+---
+title: "CHAMPS book sprint planning"
+output:
+  md_document:
+    toc: yes
+    variant: markdown_github
+  html_document:
+    theme: united
+    toc: yes
+  pdf_document:
+    highlight: zenburn
+    toc: yes
+---
+
+# Collection of meeting notes, templates, and tests
+

@@ -80,7 +80,9 @@ and CH$_3^+$ in radians. The momenta $p_r$ and $p_\theta$ are
 cannonically conjugate to $r$ and $\theta$ respectively.
 
 The model we study is defined by the Hamiltonian
+
 $$ H(r,\theta,p_r, p_\theta) = \frac{1}{2 \mu} p_r^2 + \frac{1}{2}p_\theta^2 \left(\frac{1}{I} + \frac{1}{\mu r^2}\right)  + U(r,\theta), $$
+
 where $\mu=\frac{m_{CH_3}m_{H}}{m_{CH_3}+m_{H}}$, with $m_{H}=1.007825$
 u and $m_{CH_3}=12.0$ u, is the reduced mass of the system, and
 $I=2.373409$ uÅ$^2$ is the moment of inertia of the rigid body CH$_3^+$.
@@ -90,6 +92,7 @@ Chesnavich's potential $U(r,\theta)$ has the form
 \label{eq:U}
    U(r,\theta ) = U_{CH} (r) + U_{coup} (r,\theta),
 \end{equation}
+
 and it is the sum
 of radial long range potential $U_{CH}$ and short range "hindered rotor"
 potential $U_{coup}$, that represents the anisotropy
@@ -98,6 +101,7 @@ the standard definition of $U_{CH}$ and $U_{coup}$ and standard
 parameter values as suggested by Chesnavich [@Chesnavich1986] and used
 in recent publications [@Mauguiere2014; @Mauguiere2014b; @Krajnak2018],
 namely 
+
 \begin{equation}
 \label{eq:UCH}
    U_{CH} (r) =  \frac{D_e}{c_1 - 6} \left( 2 (3-c_2) e^{c_1 (1-x)}  - \left( 4 c_2 - c_1 c_2 + c_1 \right) x^{-6} - (c_1 - 6) c_2 x^{-4} \right),
@@ -105,6 +109,7 @@ namely
 
 where $x = \frac{r}{r_e}$, $D_e=47$ kcal/mol, $r_e=1.1$ Å, $c_1=7.37$
 and $c_2=1.61$, and 
+
 \begin{equation}
 \label{eq:Ucoup}
    U_{coup} (r,\theta) = \frac{U_e e^{-a(r-r_e)^2}}{2} (1 - \cos 2 \theta ),
@@ -114,7 +119,7 @@ where $U_e=55$ kcal/mol. The parameter $a$ (in Å$^{-2}$) influences the
 value of $r$ at which the transition from vibration to rotation occurs,
 for example $a=1$ represents a late transition
 [@Mauguiere2014b; @Mauguiere2014; @Krajnak2018] and $a=4$ an early
-transition [@Mauguiere2014b]. In this paper we shall explore all values
+transition [@Mauguiere2014b]. In this chapter we shall explore all values
 of $a$ that may be relevant to roaming.
 
 The total energy $H(r,\theta,p_r, p_\theta)=E$ is given in kcal/mol with
@@ -134,6 +139,7 @@ To study the dependence of roaming on the mass of the free atom, we
 replace the free H atom by a atom of mass $m$, so that the reduced mass
 of the system is $\mu_m=\frac{m_{CH_3}m}{m_{CH_3}+m}$ and the
 Hamiltonian then is 
+
 \begin{equation}
 \label{eq:Hamm}
    H_m(r,\theta,p_r, p_\theta) = \frac{1}{2 \mu_m} p_r^2 + \frac{1}{2}p_\theta^2 \left(\frac{1}{I} + \frac{1}{\mu_m r^2}\right)  + U(r,\theta).
@@ -621,12 +627,14 @@ part of the Hamiltonian ([\[eq:Hamm\]](#eq:Hamm){reference-type="ref"
 reference="eq:Hamm"}) and therefore cannot be studied from a
 configuration space perspective. From the Hamiltonian equations of
 motion 
+
 \begin{align*}
    \dot{r} &= \frac{1}{\mu_m} p_r,\\
    \dot{p}_r &= \frac{p_\theta^2}{\mu_mr^3}-\frac{\partial U}{\partial r},\\
    \dot{\theta} &= \left(\frac{1}{\mu_m r^2}+\frac{1}{I}\right)p_\theta, \\
    \dot{p}_\theta &= -\frac{\partial U}{\partial \theta},
 \end{align*}
+
  one can see, that $m$ influences the relation between
 momenta $p_r$, $p_\theta$ and velocities $\dot{r}$, $\dot{\theta}$ as
 well as the centrifugal contribution in $\dot{p}_r$. All of these are
@@ -636,15 +644,18 @@ Provided $m$ is sufficiently large (in practice $m>4$),
 $\frac{1}{\mu r^2}$ is small compared to $\frac{1}{I}$ in the
 interaction region. For the purposes of the following argument we can
 neglect the term $\frac{1}{\mu r^2}$ and consider the Hamiltonian
+
 $$\widetilde{H}_m(r,\theta,p_r, p_\theta) = \frac{1}{2 \mu_m} p_r^2 + \frac{1}{2I}p_\theta^2 + U(r,\theta).$$
 
 The associated equations are 
+
 \begin{align*}
    \dot{r} &= \frac{1}{\mu_m} p_r,\\
    \dot{p}_r &= -\frac{\partial U}{\partial r},\\
    \dot{\theta} &= \frac{1}{I} p_\theta, \\
    \dot{p}_\theta &= -\frac{\partial U}{\partial \theta}.
 \end{align*}
+
 The degrees of freedom in the resulting system are
 only coupled via $U(r,\theta)$ and the mass parameter $m$ only
 influences $\dot{r}$.
@@ -652,14 +663,18 @@ influences $\dot{r}$.
 Let $m_0<m_1$, $H_{m_0}=H_{m_1}=E$ and $p_\theta$ be such that it
 satisfies the fixed energy constraint. Denote by $p_{r_{m_0}}$,
 $p_{r_{m_1}}$ the momenta given by the Hamiltonians defined as follows:
+
 \begin{align*}
    p_{r_{m_0}}&=\sqrt{2 \mu_{m_0}\left(E-U(r,\theta)-\frac{p_\theta^2}{2I}\right)},\\
    p_{r_{m_1}}&=\sqrt{2 \mu_{m_1}\left(E-U(r,\theta)-\frac{p_\theta^2}{2I}\right)}.
 \end{align*}
+
 Then provided $p_\theta$ is not maximal, by
+
 $$\frac{\mu_{m_0}}{\mu_{m_1}}=\frac{\frac{m_{CH_3}m_0}{m_{CH_3}+m_0}}{\frac{m_{CH_3}m_1}{m_{CH_3}+m_1}}=\frac{m_0m_{CH_3}+m_0m_1}{m_1m_{CH_3}+m_0m_1}<1,$$
 
 we have that
+
 $$\frac{p_{r_{m_1}}}{\mu_{m_1}}=\frac{1}{\mu_{m_1}}\sqrt{2 \mu_{m_1}\left(E-U-\frac{p_\theta^2}{2I}\right)}
    =\sqrt{\frac{\mu_{m_0}}{\mu_{m_1}}}\frac{1}{\mu_{m_0}}\sqrt{2 \mu_{m_0}\left(E-U-\frac{p_\theta^2}{2I}\right)}
    =\sqrt{\frac{\mu_{m_0}}{\mu_{m_1}}}\frac{p_{r_{m_0}}}{\mu_{m_0}}<\frac{p_{r_{m_0}}}{\mu_{m_0}}.$$
@@ -740,12 +755,16 @@ where $p_\theta$ becomes a constant of motion. $U(r)$ is monotonic, $U(r)<0$ and
 $U\in o(r^{-2})$ as $r\rightarrow\infty$, therefore the reduced system
 admits an equilibrium given by $r=r_{p_\theta}$, $p_r=0$, where $r_{po}$
 is the solution of
+
 $$\dot {p}_r = -\frac{\partial H}{\partial r} = \frac{1}{\mu r_{po}^3} p_\theta^2 - U'(r_{po}) = 0,$$
+
 or equivalently
+
 \begin{equation}
 \label{eq:pr}
   \frac{p_\theta^2}{\mu r_{po}^2} =r_{po} U'(r_{po}).
 \end{equation}
+
  In the full
 system this relative equilibrium is manifested as a periodic orbit with
 initial conditions $r=r_{po}$, $\theta=const$, $p_r=0$ and
@@ -754,30 +773,35 @@ $p^\pm_\theta$ such that $H(r_{po}, 0, \theta, p^\pm_\theta)=E$.
 To understand the influence of $m$ on the periodic orbit, let us first
 establish the relationship between $r_{po}$ and $p^\pm_\theta$ and
 incorporate the dependence on $\mu_m$ subsequently. Combining
-$H(r_{po}, 0, \theta, p^\pm_\theta)=E$, i.e. 
+$H(r_{po}, 0, \theta, p^\pm_\theta)=E$, i.e.
+
 \begin{equation}
 \label{eq:Epr0}
-   E=\frac{p^{\pm 2}_\theta}{2I}+\frac{p^{\pm 2}_\theta}{2\mu_m r_{po}^2}+U(r_{po}),
+   E=\frac{(p^\pm_\theta)^2}{2I}+\frac{(p^\pm_\theta)^2}{2\mu_m r_{po}^2}+U(r_{po}),
 \end{equation}
+
 with ([\[eq:pr\]](#eq:pr){reference-type="ref" reference="eq:pr"})
 yields 
-$$E=\frac{p^{\pm 2}_\theta}{2I}+\frac{1}{2}r_{po} U'(r_{po})+U(r_{po}).$$
+
+$$E=\frac{(p^\pm_\theta)^2}{2I}+\frac{1}{2}r_{po} U'(r_{po})+U(r_{po}).$$
 
 If $\frac{1}{2}r U'(r)+U(r)$ is monotonic in $r$ (for $r$ sufficiently
 large), then we find that $r_{po}$ increases or decreases with
-$p^{\pm 2}_\theta$. In case of Chesnavich's CH$_4^+$ model,
+$(p^\pm_\theta)^2$. In case of Chesnavich's CH$_4^+$ model,
 $\frac{1}{2}r U'(r)+U(r)$ is positive and monotonically decreasing. This
 is due to the leading term of $U$ for large $r$ being $-cr^{-4}$, where
 $c>0$, while that of $\frac{1}{2}r U'(r)$ must be $2cr^{-4}$. It is
 sufficient that $U(r)<0$ and $U\in o(r^{-2})$ as $r\rightarrow\infty$.
-Consequently we see that an increase in $p^{\pm 2}_\theta$ must lead to
+Consequently we see that an increase in $(p^\pm_\theta)^2$ must lead to
 an increase in $r_{po}$ and vice versa for every fixed energy $E$.
 
 To gain insight on the influence of $m$, we rewrite
 ([\[eq:pr\]](#eq:pr){reference-type="ref" reference="eq:pr"}) as
 
-$$p^{\pm 2}_\theta =\mu_m r_{po}^3 U'(r_{po}),$$
+$$(p^\pm_\theta)^2 =\mu_m r_{po}^3 U'(r_{po}),$$
+
 and plug it into ([\[eq:Epr0\]](#eq:Epr0){reference-type="ref" reference="eq:Epr0"}) to obtain
+
 $$E=\frac{\mu_m r_{po}^3 U'(r_{po})}{2I}+\frac{\mu_m r_{po}^3 U'(r_{po})}{2\mu_m r_{po}^2}+U(r_{po})=\frac{\mu_m r_{po}^3 U'(r_{po})}{2I}+\frac{1}{2}r_{po}U'(r_{po})+U(r_{po}).$$
 
 We have already noted that (for $r$ sufficiently large)
@@ -788,7 +812,7 @@ decreasing, provided $U\in o(r^{-3})$ which is the case for Chesnavich's
 potential. Therefore to maintain a fixed energy $E$ and increase in
 $\mu_m$ must be compensated by an increase in $r_{po}$.
 
-We see that $r_{po}$ and $p^{\pm 2}_\theta$ increase with $m$. Note that
+We see that $r_{po}$ and $(p^\pm_\theta)^2$ increase with $m$. Note that
 the reasoning remains true any potential that is rotationally symmetric,
 monotonic and in the class $o(r^{-3})$ for $r$ sufficiently large and
 can be extended to systems with non-zero total angular momentum.
@@ -804,7 +828,7 @@ Implications for $\gamma^{s-}_{o}$:
 
 
 As justified in Section [7](#sec:outer){reference-type="ref"
-reference="sec:outer"}, $r_{po}$ and $p^{\pm 2}_\theta$ increase with
+reference="sec:outer"}, $r_{po}$ and $(p^\pm_\theta)^2$ increase with
 $m$. Therefore for $m<m_H$ we see that $\Gamma^o_\pm$ moves inward and
 $p_\theta$ along $\gamma^{s-}_{o}$ decreases. This alone does not
 suffice to make conclusions regarding roaming, because we know that
